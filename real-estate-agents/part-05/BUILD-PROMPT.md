@@ -1,0 +1,10 @@
+# Claude build prompt: How to Write Real Estate Listings with AI
+
+**What you need:** Claude Code on a paid Claude plan (Pro or higher, at the time of checking), a test folder, and made-up test data. Never use real client details. Claude should ask you before it changes anything.
+
+Part 5 of AI for Real Estate Agents. Copy everything below the line into Claude.
+Use made-up test data only, never real client details.
+
+---
+
+Goal: build a small local tool that turns an MLS field export into draft public remarks plus a compliance report, for me to check by hand. Inputs: a CSV in a new test folder with the columns ListingId, BedroomsTotal, BathroomsTotalInteger, LivingArea, LotSizeAcres, YearBuilt, ArchitecturalStyle, InteriorFeatures, Appliances. My MLS may label them differently, so show me your column mapping and wait for my yes. Steps, in order: 1. Create the test folder and a dummy CSV of five made-up homes, with no real addresses or names. 2. Write a Python script using the Anthropic SDK and the model claude-haiku-5-5. For each row, request public remarks from those fields only, under [800] characters, plus a list of assumptions. 3. Send each draft through a second request that flags fair housing wording under 24 CFR 100.75, plus contact details, branding, links, showing or lockbox details, occupancy status, compensation and concessions. 4. Count characters in Python, not with the model, and mark any draft over the limit. 5. Add an option to send the same requests through the Message Batches API at half price, and tell me how long results can take. Safety rails: drop any PrivateRemarks, owner, seller or agent columns before sending anything. Use dummy data only. No MLS login, no uploads, no writes outside the test folder. Show me the cost of a run before making it. Stop and ask me before running anything that changes data. Output: drafts_to_check.csv with ListingId, draft, character count, fair housing flags, MLS flags and assumptions, plus a short README with the run steps.

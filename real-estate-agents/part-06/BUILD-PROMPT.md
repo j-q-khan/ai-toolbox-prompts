@@ -1,0 +1,10 @@
+# Claude build prompt: AI Virtual Staging for Real Estate
+
+**What you need:** Claude Code on a paid Claude plan (Pro or higher, at the time of checking), a test folder, and made-up test data. Never use real client details. Claude should ask you before it changes anything.
+
+Part 6 of AI for Real Estate Agents. Copy everything below the line into Claude.
+Use made-up test data only, never real client details.
+
+---
+
+Goal: build a local Python script that stages every empty-room photo in one listing in a single matching style through my own ComfyUI, then sets up a check sheet for me. Inputs: a new test folder holding [3] empty-room photos of a dummy or stock home, with no people, mail or family photos; one reference image of the first room I staged and approved; and my ComfyUI workflow, built from the Qwen Image Edit 2509 template and exported in ComfyUI's API format. Steps, in order: 1. Ask me for my ComfyUI local address. Read the workflow file and list its image-loading nodes, prompt text node and seed, and ask me to confirm them. The template ships with one image input: if there is no second one for the reference, stop and tell me, and I'll add it in ComfyUI first. 2. For each photo, upload it to my local ComfyUI, set the room image, the reference image, my fixed style prompt and a fixed seed, queue it, wait for the result and download it. 3. Copy the originals untouched into originals, and save results into staged. 4. Make a labeled copy of each result with the words Virtually Staged on the image, and keep the unlabeled one, because MLS rules differ. 5. Write check_sheet.csv pairing each original with its result, with blank columns for changed floors, walls, windows, fixtures and hidden defects. Safety rails: local only, with nothing sent to any website, cloud service or MLS. Test photos only, never real client photos. Don't install models or custom nodes without asking. Never overwrite an original. Stop and ask me before running anything that changes data. Output: originals, staged and labeled folders, check_sheet.csv and a short README.
