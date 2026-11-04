@@ -1,0 +1,17 @@
+# Claude build prompt: ComfyUI Upscale Workflow: Sharper Images and Faces
+
+A small batch upscaler for Claude Code: it sends each test image through your own exported upscale workflow on your local ComfyUI, one at a time, and saves the results in a new folder. Routes and form fields checked against docs.comfy.org and ComfyUI v0.44.0's server.py on 2026-11-04. It talks only to 127.0.0.1, on the port you give it (8188 by default). Not run by us.
+
+Use this in Claude Code (Pro or higher), in an empty test folder. Start in plan mode.
+
+Goal: build a small batch upscaler that sends each test image through my own upscale workflow on my local ComfyUI, one at a time, and saves the results in a new folder.
+Inputs: an upscale workflow I export from ComfyUI with File, then Export (API), saved here as upscale_api.json (Load Image, Load Upscale Model, Upscale Image (using Model), Save Image), and a folder test-images with two or three test pictures, for example upscale-input.jpg from Comfy's docs (github.com/Comfy-Org/docs, images/tutorial/basic/upscale folder, GPL-3.0). My ComfyUI runs on this computer. Ask me for its port: 8188 is ComfyUI's default, but Comfy Desktop can pick another port if that one is busy, so I'll check the address my ComfyUI window shows.
+Steps, in order:
+1. Show me your plan and every command, and wait for my yes. Ask before downloading any test image.
+2. Write a small Python script, batch_upscale.py, using only the standard library. Load upscale_api.json and find the LoadImage node and the SaveImage node by class_type. If there isn't exactly one of each, stop and tell me, and suggest I export the simple four-node upscale workflow instead (Comfy's Z-Image 2K template ends in an ImageCompare node).
+3. First, a dry run: list the images it would send, the node ids it would change, and the output folder, then wait for my yes. Tell me that uploading puts a copy of each test image in ComfyUI's input folder and that ComfyUI saves its own copy of each result in its output folder: those are the only files written outside this test folder.
+4. For each image, in order: upload it with a POST to /upload/image (form fields image, type input, overwrite false), set the LoadImage node's image input to the returned name, set the SaveImage filename_prefix to batch-upscale, and POST the workflow to /prompt as JSON with the key prompt. If the reply has node_errors, print them and stop.
+5. Poll GET /history/ followed by the prompt_id every two seconds, for at most ten minutes per image. When it appears, take each image entry under outputs (filename, subfolder, type) and fetch it with GET /view, then save it into a new folder named upscaled inside this test folder, never overwriting a file.
+6. Write upscale-log.md with each input name, its prompt_id, the output file, its pixel size if readable, and the time it took.
+Safety: connect only to 127.0.0.1 on the port I give you, never to another address, and never suggest starting ComfyUI with --listen. Send one image at a time, never more than the test images I approve, never delete anything from ComfyUI's history, input or output folders, and never install custom nodes or models. Apart from the uploaded copies and ComfyUI's own saved results, write only inside this test folder, and ask me before the first upload. Stop and ask me before running anything that changes data.
+Output: batch_upscale.py, the upscaled folder, upscale-log.md, and a short note on how to swap in a different upscale model.

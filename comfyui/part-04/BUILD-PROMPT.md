@@ -1,0 +1,18 @@
+# Claude build prompt: ComfyUI Flux Workflow: Full Setup with LoRAs
+
+A read-only LoRA stack planner for Claude Code: it reads only the header of each LoRA file (never the weights), checks each LoRA against the workflow's diffusion model, and writes a fixed-seed strength test plan. File format checked against the safetensors README, metadata keys against Stability-AI ModelSpec and kohya-ss/sd-scripts, and node names against ComfyUI v0.44.0 and the official Flux templates on 2026-11-04. Not run by us.
+
+Use this in Claude Code (Pro or higher), in an empty test folder. Start in plan mode.
+
+Goal: build a read-only LoRA stack planner that reads a ComfyUI workflow JSON and the header of each LoRA file, checks that every LoRA matches the workflow's diffusion model, and writes a fixed-seed test plan.
+Inputs: a workflow JSON file and a folder of LoRA .safetensors files. For testing, use Comfy's official template flux_depth_lora_example.json from github.com/Comfy-Org/workflow_templates (templates folder, MIT licence), saved into this folder, and three tiny fake LoRA files that your script creates in a test-loras folder. Each fake file holds only a header and one tiny tensor, with __metadata__ such as modelspec.architecture flux-1-dev/lora, modelspec.trigger_phrase testword, ss_network_dim 16, and one file with no metadata at all.
+Steps, in order:
+1. Show me your plan and every command, and wait for my yes. Ask before downloading the test workflow.
+2. Write a small Python script, lora_plan.py, using only the standard library. For each .safetensors file, open it read-only, read the first 8 bytes as an unsigned little-endian 64-bit number N, refuse any N above 100 MB, read the next N bytes as JSON, and keep only the __metadata__ map. Never load tensor data.
+3. From the metadata, report modelspec.architecture, modelspec.title, modelspec.trigger_phrase, modelspec.usage_hint, ss_base_model_version, ss_network_dim, ss_network_alpha and ss_output_name, plus the ten most frequent tags in ss_tag_frequency as possible trigger words. Write "not stated in the file" for anything missing. Never guess.
+4. Read the workflow, including nodes inside subgraphs under definitions, subgraphs; each subgraph has its own links list, so follow the links of the graph or subgraph a node lives in. Find the model loaders (UNETLoader, CheckpointLoaderSimple) and every LoraLoaderModelOnly (widgets: lora name, strength) and LoraLoader (widgets: lora name, model strength, clip strength). Follow the links from the model loader to the sampler to list the LoRAs in chain order. Accept links as lists or objects.
+5. Compare each LoRA's architecture or base model field with the diffusion model's file name (for example flux1-dev, flux1-schnell, flux-2-klein, flux2_dev, flux3). Mark each LoRA "matches", "does not match" or "unknown", and say why.
+6. Write a test plan with a fixed seed: each LoRA alone at strength 0.5, 0.8 and 1.0, then the full chain, and remind me that Load LoRA strength ranges from -100 to 100 but is usually between 0 and 1.
+7. Write lora-plan.md with a table of LoRAs (file, base model, trigger phrase, rank, match), the chain order from the workflow, and the test plan.
+Safety: read-only. Never edit, move or overwrite a workflow or LoRA file, never load model weights, never download a model, make no network calls except the one test-workflow download I approve, never run the workflow or connect to ComfyUI, and work only inside this folder. Stop and ask me before running anything that changes data.
+Output: lora_plan.py, lora-plan.md, and a three-line summary of which LoRAs to check by hand.

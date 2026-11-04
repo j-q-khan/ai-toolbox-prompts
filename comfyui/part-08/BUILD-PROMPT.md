@@ -1,0 +1,18 @@
+# Claude build prompt: ComfyUI Image to Video Workflow
+
+A frame-count calculator and an approve-each-job queue script for Claude Code. Frame rules checked against ComfyUI v0.44.0's node definitions and the official Wan 2.2 and LTX-2.3 templates on 2026-11-04. Not run by us.
+
+Use this in Claude Code (Pro or higher), in an empty test folder. Start in plan mode.
+
+Goal: build a read-only frame-count calculator for ComfyUI video models, plus a queue script that sends test variations of my own image-to-video workflow to my own local ComfyUI, only after I approve each job.
+Inputs: for the calculator, nothing but these documented rules (ComfyUI v0.44.0 node definitions and the official templates, checked 2026-11-04): Wan 2.2 14B image to video runs at 16 FPS, WanImageToVideo length has min 1 and step 4 (default 81); Wan 2.2 5B runs at 24 FPS, Wan22ImageToVideoLatent length has step 4 (template uses 121); LTX-2.3's template uses 25 FPS and EmptyLTXVLatentVideo length has step 8 (default 97). The templates compute frames as seconds times FPS plus one. For the queue script: a workflow file I export with the main menu, then File, then Export (API), saved in this folder as workflow_api.json, and the server address I type in (Portable and manual installs default to 127.0.0.1:8188).
+Steps, in order:
+1. Show me your plan and every command, and wait for my yes.
+2. Write frames.py. For a model and a number of seconds, compute seconds times FPS plus one, then snap up to the nearest valid count (1 plus a whole number of steps), and print the frame count and the real length in seconds. Snapping up is deliberate, so the clip is at least as long as asked: the nodes themselves round an off-grid length down, making ((length - 1) // step) + 1 latent frames (comfy_extras/nodes_wan.py and nodes_lt.py, v0.44.0). Also print what the node would make from the unsnapped value. Add a table mode that prints 1 to 10 seconds for every model. Write tests with pytest for 5 seconds on Wan 14B (81), 5 seconds on Wan 5B (121) and one value that must snap.
+3. Write queue_clips.py. Load workflow_api.json read-only. Find the length setting: first a node whose title (in _meta) contains Duration, otherwise the length input of WanImageToVideo, Wan22ImageToVideoLatent or EmptyLTXVLatentVideo. If an input is a link (a list), change its source node instead, and tell me which one. The Wan template's Duration is a float: pass values like 4.9 as floats, never rounded to an integer, before snapping. Find every seed or noise_seed input that is a number.
+4. Before sending anything, GET /system_stats and /object_info from my server, read-only, and check that every class_type in the workflow exists there. Stop and list any that don't. Refuse any server that is not 127.0.0.1 or localhost unless I pass --allow-remote, and warn me that ComfyUI's local API has no authentication.
+5. Dry run by default: print each planned job (seed and duration) and the frame count from frames.py, and send nothing.
+6. With --send, ask me to confirm each job, then POST it to /prompt with a fresh UUID as prompt_id, and print the prompt_id and queue number it returns. If ComfyUI replies with an error, print node_errors and stop.
+7. Write README.md with how to export the workflow, how to run a dry run, and how to send.
+Safety: test data only. Never upload images (use a picture already in ComfyUI's input folder), never call /upload, /interrupt, /free or /history POST, never edit workflow_api.json, never start ComfyUI and never use --listen, and work only inside this folder. Stop and ask me before running anything that changes data.
+Output: frames.py, queue_clips.py, test_frames.py, README.md, and a printed table of valid frame counts for 1 to 10 seconds.
