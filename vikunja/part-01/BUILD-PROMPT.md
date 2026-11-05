@@ -1,0 +1,19 @@
+# Claude build prompt: Vikunja Review: A Self-Hosted Todoist Alternative
+
+A "should I switch?" checker for Claude Code. Read-only: it looks at your Todoist CSV exports and writes one checklist file. Rules checked against Todoist's and Vikunja's own help pages on 2026-11-04 (Vikunja v2.7.1). Not run by us.
+
+Use this in Claude Code (Pro or higher), in an empty test folder. Start in plan mode.
+
+Goal: build a read-only checker that looks at my Todoist CSV exports and writes a "should I switch to Vikunja?" checklist: what moves over cleanly with Vikunja's CSV import, what needs fixing first, and what won't come across.
+Inputs: one or more CSV files in a subfolder called todoist-export, one per Todoist list, made in Todoist with the list's three-dot menu, then Import and export, then Export to CSV. Todoist's columns include TYPE (task, section or note), CONTENT, DESCRIPTION, PRIORITY, INDENT, AUTHOR, RESPONSIBLE, DATE, DATE_LANG, TIMEZONE, DURATION, DURATION_UNIT and DEADLINE. If I have no export yet, first make three small fake CSV files with made-up tasks in that format, and use those.
+Steps, in order:
+1. List the files you found and the commands you plan to run, and wait for my yes. Only open files inside this folder.
+2. For each file, count the rows by TYPE: tasks, sections and notes (notes are comments on the task above).
+3. Count the tasks that are subtasks (INDENT of 2 or more), that have an assignee (RESPONSIBLE not empty), that repeat (DATE starting with "every"), that have a DEADLINE, and that have a DURATION.
+4. Before mapping priorities, ask me to name one task I know is p1 (highest) in Todoist, find its row, and confirm with me which PRIORITY value it has in my file; use that to confirm the direction of the scale. Then count tasks by Todoist PRIORITY, counting empty PRIORITY cells separately without assuming what they mean. Todoist's help page says 1 is the highest and 4 the lowest. Vikunja's priority runs the other way: 1 Low, 2 Medium, 3 High, 4 Urgent, 5 DO NOW. Suggest a mapping (for example Todoist 1 to Vikunja 4, 2 to 3, 3 to 2, 4 to 1) and show it to me; don't apply it.
+5. Compare against Vikunja's CSV import, which maps a column only to title, description, due date, start date, end date, priority, labels, project, reminder or ignore. Mark each Todoist feature as "moves cleanly", "needs fixing first" (priorities, repeating dates) or "won't come across" (sections, comments, subtask nesting, assignees, durations, deadlines). Warn that section and note rows still have CONTENT, so a straight import would turn them into stray tasks.
+6. Add these facts to the checklist, as written: Todoist's CSV leaves out completed tasks. Vikunja's own docs call its CalDAV phone sync an early alpha with bugs, and its phone app is an alpha. Deleting a list (Vikunja calls it a project) is permanent, with no trash. Vikunja's built-in Todoist importer needs a Todoist developer app and a server reachable from the internet.
+7. Write switch-checklist.md with a summary table per file, the three groups from step 5, the priority mapping, and a final line: "Switch now", "Switch after fixing the items above" or "Stay for now", with the reason.
+8. Ask me before writing anything else. Only if I say yes, write vikunja-ready.csv copies in a new folder with the priority mapping applied, keeping only rows whose TYPE is task, and list the section and note rows you left out, and never overwrite the originals.
+Safety: test data or my own exports only, in this folder. No installs, no network calls, no Todoist or Vikunja logins, no API keys. Never send the files anywhere. Stop and ask me before running anything that changes data.
+Output: switch-checklist.md and a three-line summary.
