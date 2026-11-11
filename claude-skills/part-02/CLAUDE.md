@@ -1,0 +1,2 @@
+- Write dates as day, month, year, like 11 November 2026.
+- Never edit, create or delete a .env file. They hold passwords and keys. If a change needs a new value, tell me the exact line and I'll add it myself.
