@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "ask": [
+      "mcp__openscad__model",
+      "mcp__openscad__scad_eval"
+    ],
+    "deny": [
+      "mcp__openscad__export_model"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__openscad__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/no-save.sh",
+            "onFailure": "block"
+          }
+        ]
+      }
+    ]
+  }
+}
