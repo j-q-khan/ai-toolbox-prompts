@@ -1,0 +1,17 @@
+# Antigravity CLI, Windows PowerShell (from its README, checked 2026-11-12):
+irm https://antigravity.google/cli/install.ps1 | iex
+# Antigravity CLI, Mac Terminal:
+curl -fsSL https://antigravity.google/cli/install.sh | bash
+# Then open a new terminal window. Same on Windows and Mac:
+mkdir agent-test
+cd agent-test
+agy
+# In agy: type /config, set Agent Mode to default, check Tool Permission is request-review,
+# set Enable Telemetry to off if you'd rather not share, then press Esc.
+
+# Gemini CLI, only if your company gives you Gemini Code Assist (Node.js 20 or later first):
+npm install -g @google/gemini-cli
+# If agent-test already exists, skip mkdir and go straight to cd agent-test.
+mkdir agent-test
+cd agent-test
+gemini --approval-mode default

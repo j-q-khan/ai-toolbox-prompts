@@ -1,0 +1,10 @@
+# Antigravity CLI: /config writes section 3 for you. Edit the file by hand only if it already exists,
+# and change only those two lines, keeping the rest of the file as it is.
+# Gemini CLI: if ~/.gemini/settings.json doesn't exist yet, save section 4 as that file.
+# Windows, Notepad: paste, then File, Save as. Set the box called Save as type to All files.
+#   File name: %USERPROFILE%\.gemini\settings.json
+# Mac, TextEdit: Format, then Make Plain Text, then paste. In the save box, press Shift-Command-G
+#   and type ~/.gemini, then name the file settings.json. If TextEdit asks, choose Use .json.
+# If the file already exists, add only the "general" lines to it, so you keep your other settings.
+# setup-checklist.md, for the build prompt: save section 1 the same way, into your test folder,
+#   named setup-checklist.md (Notepad: Save as type All files; TextEdit: plain text, then Use .md if asked).
