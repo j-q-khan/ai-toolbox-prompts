@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "deny": [
+      "mcp__playwright__browser_run_code_unsafe",
+      "mcp__playwright__browser_file_upload"
+    ],
+    "ask": [
+      "mcp__playwright__browser_evaluate"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__playwright__browser_(navigate|tabs)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PROJECT_DIR}/.claude/check-site.js"],
+            "onFailure": "block"
+          }
+        ]
+      }
+    ]
+  }
+}
