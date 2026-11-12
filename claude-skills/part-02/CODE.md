@@ -75,6 +75,14 @@ fi
 exit 0
 ```
 
+**Windows: fix the line endings once (added 2026-11-12).** If you saved protect-env.sh in Notepad, it has Windows line endings, which break a bash script, so the hook can't run and your .env file is quietly no longer protected. Run this once in PowerShell, in your folder, to convert it:
+
+```powershell
+((Get-Content .claude/hooks/protect-env.sh -Raw) -replace "`r", "") | Set-Content -NoNewline -Encoding ascii .claude/hooks/protect-env.sh
+```
+
+A git clone of this repo already keeps .sh files with Linux line endings.
+
 ### 5. Where the files go
 ```
 your-folder/
