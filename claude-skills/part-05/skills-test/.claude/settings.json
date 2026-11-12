@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "defaultMode": "default",
+    "ask": [
+      "WebFetch",
+      "Bash(git push *)"
+    ],
+    "deny": [
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Read(**/.env)",
+      "Read(**/.env.*)"
+    ]
+  },
+  "disableSkillShellExecution": true,
+  "env": {
+    "SUPERPOWERS_DISABLE_TELEMETRY": "1"
+  }
+}
