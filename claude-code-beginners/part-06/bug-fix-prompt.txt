@@ -1,0 +1,5 @@
+# After the app is open in your browser. Click the terminal, paste this, and press Enter:
+If pressing Enter or clicking Add with nothing typed adds an empty task to the list, stop that from happening and change nothing else. If the app already ignores empty tasks, tell me so and change nothing.
+# If there's a change, look it over and choose the plain Yes. Then click the app's browser tab and reload (F5 on Windows, Cmd + R on a Mac).
+# Press Enter with nothing typed: nothing should be added. Click Delete on any empty task saved before the fix.
+# A change went wrong? In the terminal, with Claude's typing box empty, press Esc twice to open the rewind menu, pick the prompt, choose "Restore code and conversation".

@@ -1,0 +1,12 @@
+Example output: the kind of change Claude may show in app.js for the bug-fix prompt.
+Written by hand for the video; Claude Code was not run to make it, and yours will differ.
+Lines starting with - are taken out, lines starting with + are added, the rest stay as they are.
+
+   event.preventDefault();
+-  tasks.push({ text: input.value, done: false });
++  const text = input.value.trim();
++  if (text === '') {
++    return;
++  }
++  tasks.push({ text: text, done: false });
+   input.value = '';

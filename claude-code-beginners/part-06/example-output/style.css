@@ -1,0 +1,63 @@
+/* Example output: written by hand for the video to show the shape of the file. Claude Code was not run to make it; yours will differ. */
+body {
+  background: #f4f1ff;
+  color: #22223b;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 16px;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+h1 {
+  color: #4b2fd6;
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+}
+
+button {
+  background: #4b2fd6;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e4e0f5;
+}
+
+li span {
+  flex: 1;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: #8a87a3;
+}
