@@ -1,0 +1,19 @@
+# Windows: open a new PowerShell window, paste this line, press Enter (from the Codex README, checked 2026-11-12):
+powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
+# Mac: open Terminal, paste this line, press Enter:
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+# Then open a new window. Same on Windows and Mac:
+codex --version
+# If codex-test already exists, skip mkdir and go straight to cd codex-test.
+mkdir codex-test
+cd codex-test
+codex
+# Inside Codex: /status shows the session's settings, /permissions changes them, /exit quits.
+# Before editing config.toml, type /exit to leave Codex. Each line below opens the file as plain text, or makes it if it's missing.
+# Windows PowerShell (if Notepad offers to create the file, choose Yes):
+notepad "$env:USERPROFILE\.codex\config.toml"
+# Mac Terminal (opens it in TextEdit):
+mkdir -p ~/.codex && touch ~/.codex/config.toml && open -e ~/.codex/config.toml
+# Paste the config.toml lines at the very top, save (Ctrl+S or Command+S), then start codex again.
+# Another way to start with the Auto preset for one session, named on the command line (docs, Agent approvals & security):
+codex --sandbox workspace-write --ask-for-approval on-request

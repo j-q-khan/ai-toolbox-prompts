@@ -1,0 +1,7 @@
+# The Auto preset, written down (OpenAI's Codex docs, checked 2026-11-12).
+# Edits and commands inside the folder you start in run by themselves; edits outside it and network access ask first.
+# Paste these lines at the very top of the file, above any line in [square brackets], and keep what Codex wrote below.
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+# network_access in the [sandbox_workspace_write] section, written on one line so it stays a top-level line:
+sandbox_workspace_write.network_access = false

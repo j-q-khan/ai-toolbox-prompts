@@ -1,0 +1,13 @@
+# config.toml goes in the hidden .codex folder in your home folder, and Codex has most likely made it
+# already: choosing Trust and continue saves your folder choice there. So open it and add to it, never replace it.
+# Type /exit first, then open it with the line for your system in install-lines.txt (it makes the file if it's missing).
+# Paste the config.toml lines at the very top, above any line in [square brackets]: a setting pasted below
+# one of those belongs to that section instead. If the file already has an approval_policy or sandbox_mode line
+# or a sandbox_workspace_write line or [sandbox_workspace_write] section, delete the old one first (a duplicate is an error), and remove any line
+# that says approval_policy = "untrusted" (the docs say it's retired and can stop Codex starting).
+# Save with Ctrl+S (Windows) or Command+S (Mac).
+# AGENTS.md and setup-checklist.md are new files in your test folder (codex-test, inside your home folder):
+#   Windows, Notepad: paste, then File, Save as. Set the box called Save as type to All files, and name it AGENTS.md.
+#   Mac, TextEdit: Format, then Make Plain Text, then paste. Save it in codex-test as AGENTS.md; if TextEdit asks, choose Use .md.
+#   (Shift-Command-G in the save box reaches any folder by its path, such as ~/codex-test.)
+# Codex picks up AGENTS.md when a session starts, so type /exit and start codex again after saving it.
