@@ -1,0 +1,15 @@
+# Make one folder called opencode-sandbox, and put your test folder sandbox-test inside it.
+# Save section 3 as opencode-sandbox/Dockerfile (no extension) and section 4 as opencode-sandbox/docker-compose.yml.
+# Save section 5 as opencode-sandbox/sandbox-test/opencode.jsonc, then commit it in sandbox-test.
+#   Windows, Notepad: paste, then File, Save as. Set the box called Save as type to All files,
+#   and type the name exactly, so Notepad doesn't add .txt.
+#   Mac, TextEdit: Format, then Make Plain Text, then paste, then save with the exact name.
+#   If TextEdit offers to add .txt, choose Don't Append (or Use .yml / .jsonc).
+# Claude Code in sbx: Claude Skills Part 5's settings.json goes in a hidden folder, sandbox-test/.claude/settings.json.
+#   Make the folder first. PowerShell:  New-Item -ItemType Directory sandbox-test\.claude   Terminal:  mkdir -p sandbox-test/.claude
+#   Mac, in TextEdit's Save box: press Shift-Command-G and type the folder's path, such as ~/sandbox-test/.claude
+#   Windows, in Notepad's Save as box: type the full name, sandbox-test\.claude\settings.json, with Save as type set to All files.
+#   Then commit it in sandbox-test before the agent starts.
+# sandbox-checklist.md and sbx-lines.txt are notes: save them wherever you keep notes, the same way.
+# Check the names in PowerShell with:  Get-ChildItem opencode-sandbox
+# or in Terminal with:  ls opencode-sandbox

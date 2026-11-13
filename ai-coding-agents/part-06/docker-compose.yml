@@ -1,0 +1,29 @@
+# OpenCode 2 in a do-it-yourself Docker sandbox (The AI Toolbox, AI Coding Agents Part 6, checked 2026-11-12).
+# Folder layout: opencode-sandbox/Dockerfile, opencode-sandbox/docker-compose.yml, opencode-sandbox/sandbox-test/
+# Start it from opencode-sandbox with:  docker compose run --rm opencode
+# Inside OpenCode: /connect, pick your provider, paste a throwaway key with a spend limit.
+# Wipe it afterwards, key and history included, with:  docker compose down --volumes
+services:
+  opencode:
+    build: .
+    image: ai-sandbox/opencode:2.2.7
+    pull_policy: build                 # always build from the Dockerfile here; never pull this name from a registry
+    volumes:
+      - ./sandbox-test:/workspace      # the ONLY folder on your computer the agent can see, and it can change all of it
+      - agent-home:/home/agent         # OpenCode's settings, history and the key you add with /connect live here
+    working_dir: /workspace
+    cap_drop: [ALL]                    # no extra kernel powers
+    security_opt:
+      - no-new-privileges:true         # nothing inside can gain root
+    mem_limit: 4g
+    cpus: 2
+    pids_limit: 256                    # a runaway loop can't fork-bomb the machine
+    stdin_open: true
+    tty: true
+    # Deliberately absent: privileged, network_mode: host, and any mount of /var/run/docker.sock.
+    # The Docker socket is your computer's own Docker; an agent that can reach it can reach everything.
+    # Not here, unlike Docker's sbx: network rules. The network is open, so whatever the agent fetches or sends goes through.
+    # Not here either: read_only: true, because OpenCode in this image hasn't been tested with a read-only system folder.
+
+volumes:
+  agent-home:

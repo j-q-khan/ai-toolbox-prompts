@@ -1,0 +1,53 @@
+# Docker Sandboxes (sbx), from docs.docker.com/ai/sandboxes (checked 2026-11-12, sbx v0.53.0).
+# Windows 11, once: open PowerShell as administrator (right-click PowerShell, Run as administrator):
+Enable-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform -All
+# Restart if Windows asks. Then, in a normal PowerShell window (installs for your user only):
+winget install -h Docker.sbx
+# Mac with Apple silicon, Terminal:
+brew trust docker/tap
+brew install docker/tap/sbx
+# Then, on both. Sign in with a Docker account (a browser opens):
+sbx login
+# Store your throwaway key; it asks for the value. Claude Code:
+sbx secret set anthropic
+# Codex:
+sbx secret set openai
+# A test folder and a first commit, before any agent starts:
+mkdir sandbox-test
+cd sandbox-test
+git init
+git add -A
+git commit --allow-empty -m "before the agent"
+# Start an agent in this folder. The first time, choose the Balanced network preset when asked.
+sbx run claude
+#   or
+sbx run codex
+# In a second window: your sandboxes, their agents and the folder each one shares.
+sbx ls
+# The network rules in effect:
+sbx policy ls
+# Inside Claude Code, to get approval prompts back: /permissions
+# Afterwards, in sandbox-test on your own computer. First, git's own settings file, as plain text:
+# a core.fsmonitor or core.hooksPath line you didn't add can make git run a program, so delete it before git status.
+# Windows PowerShell:
+Get-Content .git\config
+# Mac Terminal:
+cat .git/config
+# Then:
+git status
+git diff
+# Git hooks don't show in git diff. Windows PowerShell:
+Get-ChildItem -Force .git\hooks
+# Mac Terminal:
+ls -la .git/hooks
+# A fresh repo has only files ending in .sample there; delete anything else you didn't add.
+# Undo the agent's changes: put changed files back, preview new files, then remove them.
+git restore .
+git clean -nd
+git clean -fd
+# Clone mode instead: your repo comes in read-only, the agent works on its own copy.
+sbx run --clone claude .
+# Stop or delete a sandbox, by the name sbx ls shows (my-sandbox here):
+sbx stop my-sandbox
+sbx rm my-sandbox
+# Linux (Ubuntu 24.04 or newer, KVM turned on): see docs.docker.com/ai/sandboxes/install for the apt route.
