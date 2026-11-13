@@ -1,0 +1,19 @@
+// Make OpenCode 2 ask first (OpenCode docs: Permissions and Agents, checked 2026-11-12).
+// Every agent asks before shell commands, folders outside this one, and starting a helper (subagent).
+// The build agent also asks before editing files. Last matching rule wins.
+// The subagent rule also turns the shipped general and explore helpers' block on starting helpers into ask.
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permissions": [
+    { "action": "shell", "resource": "*", "effect": "ask" },
+    { "action": "external_directory", "resource": "*", "effect": "ask" },
+    { "action": "subagent", "resource": "*", "effect": "ask" }
+  ],
+  "agents": {
+    "build": {
+      "permissions": [
+        { "action": "edit", "resource": "*", "effect": "ask" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# Windows: install Node.js from https://nodejs.org first, then open PowerShell, paste this line, press Enter (OpenCode docs, checked 2026-11-12):
+npm install -g @opencode/cli
+# If PowerShell says running scripts is disabled, use this instead, and type opencode.cmd wherever these lines say opencode:
+npm.cmd install -g @opencode/cli
+# Windows without Node.js: download and extract https://opencode.ai/update/api/latest/cli/opencode/opencode-windows-x64.zip
+# then start it by its full path, for example from inside opencode-test (change the path to where you extracted it):
+#   & "$env:USERPROFILE\Downloads\opencode-windows-x64\opencode.exe"
+# Mac: open Terminal, paste this line, press Enter:
+curl -fsSL https://opencode.ai/v2/install | bash
+# Mac with Homebrew, instead:
+brew install anomalyco/tap/opencode-v2
+# Then open a new window. Same on Windows and Mac (2.2.7 or later; 1.x means version 1):
+opencode --version
+# Before the first start: make the settings folder and open the settings file.
+# Windows PowerShell (Notepad asks to create the file: choose Yes):
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.config\opencode" | Out-Null; notepad "$env:USERPROFILE\.config\opencode\opencode.jsonc"
+# Mac Terminal (opens it in TextEdit as plain text):
+mkdir -p ~/.config/opencode && touch ~/.config/opencode/opencode.jsonc && open -e ~/.config/opencode/opencode.jsonc
+# Paste opencode.jsonc, save (Ctrl+S or Command+S). Then the test folder (if it already exists, skip mkdir):
+mkdir opencode-test
+cd opencode-test
+opencode
+# Inside OpenCode: /connect adds a provider, /models picks a model, Shift+Tab switches Build and Plan,
+# Ctrl+X then N starts a new session, Ctrl+C quits.

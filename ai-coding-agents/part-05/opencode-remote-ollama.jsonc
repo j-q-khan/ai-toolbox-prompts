@@ -1,0 +1,15 @@
+// Only when Ollama runs on another machine (OpenCode docs: Providers, Ollama, checked 2026-11-12).
+// For Ollama on this computer you need none of this: OpenCode finds it by itself.
+// Merge the "providers" part into your existing ~/.config/opencode/opencode.jsonc; never paste a second { }.
+// Change the address to your server's, keep /v1 at the end, and keep your Part 4 permissions as they are.
+{
+  "$schema": "https://opencode.ai/config.json",
+  "providers": {
+    "ollama": {
+      "settings": {
+        "baseURL": "https://ollama.example.com/v1",
+        "apiKey": "{env:OLLAMA_API_KEY}"
+      }
+    }
+  }
+}

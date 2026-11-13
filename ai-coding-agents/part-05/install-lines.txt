@@ -1,0 +1,27 @@
+# Install Ollama (ollama.com/download, checked 2026-11-12). Windows PowerShell:
+irm https://ollama.com/install.ps1 | iex
+# Mac Terminal:
+curl -fsSL https://ollama.com/install.sh | sh
+# Then open a new window. Same on Windows and Mac:
+ollama --version
+ollama pull gpt-oss:20b
+# Set Context length to 64k in the Ollama app's Settings (slider). Then, after an agent has used the model:
+ollama ps
+# Linux, or Ollama without the app: start the server with a 64k context instead (Ollama docs, Context length):
+#   OLLAMA_CONTEXT_LENGTH=64000 ollama serve
+# OpenCode 2 (nothing to configure for Ollama on this computer):
+cd opencode-test
+opencode
+# Inside OpenCode: /models, then pick gpt-oss:20b under Ollama.
+# Codex CLI: first add oss_provider = "ollama" to config.toml (section 3). Open it with the line for your system.
+# Windows PowerShell (if Notepad offers to create the file, choose Yes):
+notepad "$env:USERPROFILE\.codex\config.toml"
+# Mac Terminal (opens it in TextEdit):
+mkdir -p ~/.codex && touch ~/.codex/config.toml && open -e ~/.codex/config.toml
+# Then, in your test folder:
+cd codex-test
+codex --oss -m gpt-oss:20b
+# Inside Codex: /status shows the permissions, /exit quits.
+# One run with the model named and the provider chosen on the command line, instead:
+#   codex --oss --local-provider ollama -m gpt-oss:20b
+# (With oss_provider set in config.toml, --local-provider isn't needed.)

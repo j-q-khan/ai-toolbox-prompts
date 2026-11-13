@@ -1,0 +1,7 @@
+# config.toml: add one line to the file you made in Part 3, at the very top, then save (Ctrl+S or Command+S).
+# If the file already has an oss_provider line, change it instead of adding a second one (a duplicate is an error).
+# opencode.jsonc: no change for Ollama on this computer.
+# setup-checklist.md is a new file, saved wherever you keep notes:
+#   Windows, Notepad: paste, then File, Save as. Set the box called Save as type to All files, and name it setup-checklist.md.
+#   Mac, TextEdit: Format, then Make Plain Text, then paste, then save; if TextEdit asks, choose Use .md.
+#   (Shift-Command-G in a Finder window or the save box reaches hidden folders such as ~/.codex.)

@@ -1,0 +1,9 @@
+# opencode.jsonc goes in the hidden .config\opencode folder in your home folder (Mac: ~/.config/opencode).
+# Open it with the line for your system in install-lines.txt: it makes the folder first, then opens the file.
+# If the file already has text, merge our rules into it: one pair of { } for the whole file, no second copy.
+# Save with Ctrl+S (Windows) or Command+S (Mac).
+# AGENTS.md and setup-checklist.md are new files in your test folder (opencode-test, inside your home folder):
+#   Windows, Notepad: paste, then File, Save as. Set the box called Save as type to All files, and name it AGENTS.md.
+#   Mac, TextEdit: Format, then Make Plain Text, then paste. Save it in opencode-test as AGENTS.md; if TextEdit asks, choose Use .md.
+#   (Shift-Command-G in a Finder window or the save box reaches any folder by its path, such as ~/opencode-test or ~/.config/opencode.)
+# After saving AGENTS.md, press Ctrl+X, then N, in OpenCode for a new session.

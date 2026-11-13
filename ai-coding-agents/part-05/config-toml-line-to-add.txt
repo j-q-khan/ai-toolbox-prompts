@@ -1,0 +1,8 @@
+# Make Ollama the default local provider for codex --oss (Codex docs, Advanced Configuration, checked 2026-11-12).
+# Paste this line at the very top of the file, above any line in [square brackets].
+# Keep the Part 3 lines below it as they are, and don't add a second copy of any of them.
+oss_provider = "ollama"
+# The Part 3 lines stay below it, unchanged (shown here as comments so a paste can't duplicate them):
+# approval_policy = "on-request"
+# sandbox_mode = "workspace-write"
+# sandbox_workspace_write.network_access = false
