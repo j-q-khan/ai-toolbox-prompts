@@ -1,0 +1,8 @@
+plan,includes_claude_code,price_when_checked,usage_wording,limits,training_on_your_data,checked,source
+Free,No,$0,Limited usage,Every 5 hours and every week,"Used for training when the setting is on (personal plan)",2026-11-13,https://claude.com/pricing
+Pro,Yes,"$20 a month, or $17 a month billed yearly ($200 up front)",More usage than Free,"5-hour and weekly, shared with Claude chat","Used for training when the setting is on (personal plan)",2026-11-13,https://claude.com/pricing
+Max,Yes,$100 a month,5x Pro usage,"5-hour and weekly, shared with Claude chat","Used for training when the setting is on (personal plan)",2026-11-13,https://claude.com/pricing
+Ultra,Yes,$200 a month,10x Pro usage every week,"Weekly; no 5-hour limit for verified accounts; shared with Claude chat","Used for training when the setting is on (personal plan)",2026-11-13,https://claude.com/pricing
+Team,Yes,Priced per seat (see the source),More usage than Pro (standard seat),Per seat,"Not used for training unless the company opts in (commercial terms)",2026-11-13,https://claude.com/pricing
+Enterprise,Yes,Per seat plus usage (see the source),Usage cost scales with model and task,Per seat,"Not used for training unless the company opts in (commercial terms)",2026-11-13,https://claude.com/pricing
+Pay as you go (Claude Console),Yes,Pre-paid credits,Billed for what you use,None stated as 5-hour or weekly,"Not used for training unless the customer opts in (commercial terms)",2026-11-13,https://code.claude.com/docs/en/setup
