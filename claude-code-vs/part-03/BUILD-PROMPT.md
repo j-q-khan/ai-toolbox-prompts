@@ -1,0 +1,12 @@
+Use this in Claude Code, in a new, empty test folder (never your home folder) that holds only claude-code-places-2026-11-13.csv. Before you paste it, switch the mode to Plan: in the terminal press Shift+Tab until it says plan mode; in VS Code or the desktop app, click the mode under or at the bottom of the prompt box and choose Plan. Don't paste anything secret.
+
+Goal: help me choose where to run Claude Code (terminal, VS Code extension or the desktop app's Code tab) from a dated file, then set up one small test folder I can open in each place. You install nothing and run nothing.
+Steps, in order:
+1. Find claude-code-places-2026-11-13.csv in this folder. If it isn't there, stop and tell me to save it from the link in the video's description.
+2. Ask me these questions one at a time and wait for each answer: Have I typed commands in a terminal before? Do I already write code in VS Code or a JetBrains editor? Do I want to script Claude Code or run it from automatic jobs? Is my code on GitHub? Which Claude plan am I on?
+3. Recommend one place using only the facts in the CSV and my answers. Quote the CSV cells you relied on, with the checked date. Don't prefer any place by default.
+4. Tell me which cells are versions, starting modes or plans that may have changed since the checked date, with each source link, so I can check them myself.
+5. Show me the text for two files and wait for my yes before saving. CLAUDE.md, which says: "This is a test folder. Only create or edit counter.html. Don't install anything, don't go online, and ask before running any command." And same-task.md, which says: "Create counter.html, one page with a button and a number that goes up by one on each click. Use plain HTML and JavaScript in that one file."
+6. After my yes, I'll switch you from Plan to Manual so you can save; then save CLAUDE.md and same-task.md in this folder. Then tell me how to open this same folder in the terminal, in the VS Code extension and in the desktop app's Code tab (Local, then Open folder), to check the mode first in each, and to ask Claude in each place what CLAUDE.md tells it, so I can see the same file is picked up everywhere.
+Safety: create only CLAUDE.md and same-task.md in this folder. Don't edit or delete any other file, don't install anything, don't run commands and don't go online.
+Output: CLAUDE.md, same-task.md and a three-line summary of why you picked that place for me.
