@@ -1,0 +1,62 @@
+# Full code: Claude for Finance: Budget vs Actual and Variance Analysis
+
+
+
+### 1. corner-bakery-budget.csv
+```
+Category,Type,Budget,Actual,Note
+Bread sales,Income,9000,8400,
+Cake sales,Income,6000,7100,Two wedding cake orders
+Coffee sales,Income,4000,4300,
+Total income,Total,19000,19800,
+Flour and ingredients,Expense,5200,5900,Flour price went up mid-month
+Staff wages,Expense,7000,7000,
+Rent,Expense,2500,2500,
+Electricity,Expense,600,840,Second oven running since 1 October
+Packaging,Expense,400,310,
+Marketing,Expense,500,200,Flyer campaign moved to November
+Total expenses,Total,16200,15910,
+Profit,Total,2800,3890,
+```
+
+### 2. how-to-check.txt
+```
+Practice budget: corner-bakery-budget.csv (an invented bakery, October 2026; every number is made up)
+
+Open it
+- Download it from the link in the description: on the file's page, click "Download raw file".
+- Optional: open it in Notepad (Windows) or TextEdit (Mac) first. It is plain text: 13 lines, no formulas, nothing hidden.
+- Open it in Excel. If everything lands in column A, use Data, then From Text/CSV, and pick "Comma" as the delimiter.
+- Save it as a workbook at once: File, then Save As, then "Save as type" (Windows) or "File Format" (Mac) = Excel Workbook (.xlsx).
+
+Layout
+- A = Category, B = Type, C = Budget, D = Actual, E = Note. Lines 2-4 income, 5 total income, 6-11 expenses, 12 total expenses, 13 profit.
+
+The planted mistake (try to find it before you look)
+- D12 (Total expenses, Actual) is typed as 15910. D6:D11 add up to 16750. The 840 for Electricity (D9) is left out.
+- So D13 (Profit, Actual) should be 19800 - 16750 = 3050, not 3890.
+
+Variances, Actual minus Budget, after the fix
+- Bread sales -600 (-6.7%) Unfavourable
+- Cake sales +1100 (+18.3%) Favourable
+- Coffee sales +300 (+7.5%) Favourable
+- Total income +800 (+4.2%) Favourable
+- Flour and ingredients +700 (+13.5%) Unfavourable
+- Staff wages 0, Rent 0
+- Electricity +240 (+40.0%) Unfavourable
+- Packaging -90 (-22.5%) Favourable
+- Marketing -300 (-60.0%) Favourable
+- Total expenses +550 (+3.4%) Unfavourable (with the typo it looks like -290, under budget)
+- Profit +250 (+8.9%) Favourable (with the typo it looks like +1090, +38.9%)
+- Item lines over 10% or over $500: Bread, Cake, Flour, Electricity, Packaging, Marketing. Claude may also flag Total income (+800) and, once fixed, Total expenses (+550), both over $500.
+
+Check Claude's work by hand
+- Totals: select C2:C4, D2:D4, C6:C11 and D6:D11 in turn; the Sum in the strip at the bottom of the Excel window should match C5, D5, C12 and D12 (D12 only after the fix).
+- One line: Electricity 840 - 600 = 240; 240 / 600 = 40%.
+- Reasons: every reason must come from column E. Bread, Coffee, Packaging, Staff wages and Rent have no note, so the honest answer is "unknown: ask the owner".
+
+Safety
+- Not financial advice. A qualified person checks anything real.
+- Only use Claude for Excel with trusted spreadsheets (Anthropic's warning).
+- What you paste goes to Anthropic. Keep real client data, account numbers and salaries out unless your employer allows it.
+```

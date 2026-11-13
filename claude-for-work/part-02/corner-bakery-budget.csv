@@ -1,0 +1,13 @@
+Category,Type,Budget,Actual,Note
+Bread sales,Income,9000,8400,
+Cake sales,Income,6000,7100,Two wedding cake orders
+Coffee sales,Income,4000,4300,
+Total income,Total,19000,19800,
+Flour and ingredients,Expense,5200,5900,Flour price went up mid-month
+Staff wages,Expense,7000,7000,
+Rent,Expense,2500,2500,
+Electricity,Expense,600,840,Second oven running since 1 October
+Packaging,Expense,400,310,
+Marketing,Expense,500,200,Flyer campaign moved to November
+Total expenses,Total,16200,15910,
+Profit,Total,2800,3890,
