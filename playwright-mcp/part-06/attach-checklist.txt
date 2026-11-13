@@ -1,0 +1,32 @@
+Letting Claude use a logged-in browser: the six locks (Playwright MCP series, Part 6, checked 2026-11-12)
+
+BEFORE EACH SESSION
+[ ] 1. Exact version: /mcp shows playwright, added with @playwright/mcp@0.0.85, never @latest.
+[ ] 2. Local connections only: the add command says http://127.0.0.1:9222, and the server has no --port.
+       While that Chrome is open, any app on this computer can connect to port 9222, so browse nothing else in it.
+[ ] 3. Rules: .claude/settings.json denies browser_evaluate, browser_run_code_unsafe and browser_file_upload,
+       and asks for mcp__playwright__*. No --caps=storage on this server (it gets and sets cookies).
+[ ] 4. Hook: /hooks shows the PreToolUse matcher, and check-site.js lists ONLY your test site.
+       It checks the site named in each call. It can't see a click on a link, a redirect or a page's own scripts.
+[ ] 5. A profile of its own: the Chrome window was started with --user-data-dir pointing at chrome-claude-test,
+       never your everyday profile. Only ONE test account is signed in there. No email, bank or work accounts.
+[ ] 6. You'll switch it off after (below).
+
+MODES TO AVOID WITH YOUR EVERYDAY PROFILE
+- Chrome DevTools MCP --autoConnect: with several profiles open, it connects to Chrome's default profile
+  and can reach all its open windows. Use --browserUrl http://127.0.0.1:9222 with the Chrome above instead.
+- Playwright MCP --extension: install the Playwright Extension only in a test profile, and name it with
+  --profile-dir-name. By default it picks the last used profile that has the extension installed.
+- Browser MCP: one browser tool (it can also run JavaScript in the page), your real profiles, @latest,
+  --scope user, and a self-updating extension. Its own README: treat pages agents browse as able to read
+  any file you can read and overwrite any file you can write.
+- Claude in Chrome: shares your browser's login state. Choose its sites in the extension's settings,
+  and leave "Enabled by default" off in /chrome unless you want it in every session.
+
+SWITCH IT OFF WHEN YOU'RE DONE
+[ ] In Claude Code: /mcp, pick playwright, choose Disable.
+[ ] Shut the test Chrome window. Its debugging port goes with it.
+[ ] If you ever ticked "Allow remote debugging" at chrome://inspect/#remote-debugging, untick it.
+[ ] Remove any browser extension you tried (chrome://extensions).
+[ ] To wipe the test profile, delete the chrome-claude-test folder in your home folder.
+[ ] To delete the server: claude mcp remove playwright (inside attach-test).
