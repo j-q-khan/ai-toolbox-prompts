@@ -1,0 +1,8 @@
+# After the page is built and open in your browser, go back to the terminal window by clicking its button on the taskbar along the bottom of the screen on Windows, or its icon in the Dock on a Mac.
+# Then paste this and press Enter to send it. Check the change is only the colour, then choose Yes:
+In style.css, change the page's background colour to pale blue, and change nothing else.
+# See it: click the page's browser tab and refresh (F5 on Windows, Cmd + R on a Mac).
+# Undo it: in the terminal, with the typing box empty, press Esc twice to open the rewind menu (or type /rewind and press Enter).
+# Pick the colour prompt with the arrow keys and press Enter, choose "Restore code and conversation" and press Enter, then refresh the browser again.
+# The colour prompt comes back into the typing box: don't press Enter, or it makes the change again.
+# Esc once stops Claude Code in the middle of a task.

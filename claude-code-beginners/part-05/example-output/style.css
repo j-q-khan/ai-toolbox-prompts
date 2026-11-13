@@ -1,0 +1,28 @@
+/* Example output: written by hand for the video to show the shape of the file. Claude Code was not run to make it; yours will differ. */
+body {
+  background: #fff4e6;
+  color: #4a2c1a;
+  font-family: Georgia, serif;
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  color: #b5542a;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #8a3b1c;
+  border-bottom: 2px solid #e8c9a8;
+}
+
+.welcome {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+li {
+  margin-bottom: 6px;
+}
