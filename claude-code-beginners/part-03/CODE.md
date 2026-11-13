@@ -1,0 +1,52 @@
+# Full code: Claude Code in VS Code: Beginner Tutorial for the Extension
+
+Everything from this video, written from Anthropic's and Microsoft's docs (checked 2026-11-13). Nothing was installed or run; outputs shown in the video are labelled "Example output". vscode-user-setting.json only shows what the setting looks like once the Settings editor has saved it: don't paste it over your VS Code settings file, because that file may already hold other settings; set it in the Settings editor instead (Ctrl+, or Cmd+,, User tab, search initial permission mode, choose manual). If you'd rather see the file itself, vscode-setup-steps.txt step 6 says how to open it safely. The JSON was parsed with Python's json module.
+
+### 1. practice-prompts.txt
+```text
+# Paste into the Claude Code panel in VS Code, in your claude-test folder, with the mode indicator on Manual.
+# Prompt 1: when it asks, click Yes. Skip "Yes, and don't ask again".
+Make a file called shopping-list.txt with three items on it, one per line.
+# Prompt 2: read the side-by-side diff first. Yes accepts, No rejects, or type what to do instead.
+Add milk to shopping-list.txt.
+# Nearly right? Type in the "Tell Claude what to do instead" box, for example:
+make it oat milk
+# Undo: hover over prompt 2, click the rewind button, choose "Rewind code to here".
+# The list goes back to three items; the conversation stays.
+```
+
+### 2. vscode-setup-steps.txt
+```text
+# Claude Code in VS Code: the safe setup (Anthropic's and Microsoft's docs, checked 2026-11-13)
+# 1. Install VS Code 1.94 or later from https://code.visualstudio.com/download
+#    Click the big download button. The file lands in your Downloads folder.
+#    Windows: open the installer, choose I accept the agreement, click Next on each screen,
+#    then Install, then Finish (it opens VS Code). No administrator rights needed.
+#    Mac: open the .dmg, drag Visual Studio Code to Applications, open it from there.
+#    Asked whether you're sure you want to open it? Click Open.
+# 2. Extensions view: Ctrl+Shift+X (Windows) or Cmd+Shift+X (Mac). Search Claude Code.
+#    Pick the one published by Anthropic ("Claude Code for VS Code"). Click Install.
+#    Asked to trust the publisher? Only if it says Anthropic: then click the button to trust and install.
+#    Not showing after install? Restart VS Code, or Command Palette (Ctrl+Shift+P or Cmd+Shift+P): Developer: Reload Window.
+# 3. File > Open Folder: pick your claude-test folder, or click New Folder and make one.
+#    Never your Desktop or home folder.
+#    Trust it: "Yes, I trust the authors" (leave the parent-folder box unticked),
+#    or the Restricted Mode bar's Manage link, then Trust in the Workspace Trust tab that opens. Claude Code doesn't work in Restricted Mode.
+# 4. Click Claude Code at the right end of the status bar (bottom of the window). Click Sign in.
+# 5. Click the mode indicator at the bottom of the typing box and choose Manual.
+#    Asked whether to switch your setting to Auto? No.
+# 6. Pin Manual: Settings (Ctrl+, or Cmd+,), User tab (not Workspace),
+#    search initial permission mode, choose manual. It saves straight away.
+#    Check: Command Palette, Claude Code: New Conversation. The mode indicator says Manual.
+#    To see the file instead: Command Palette, Preferences: Open User Settings (JSON).
+#    Never paste over it. Add the one line from vscode-user-setting.json inside the outer { },
+#    put a comma after the line above it, and save (Ctrl+S or Cmd+S).
+# 7. Typing claude in VS Code's own terminal needs the standalone install (Part 2).
+```
+
+### 3. vscode-user-setting.json
+```json
+{
+  "claudeCode.initialPermissionMode": "manual"
+}
+```

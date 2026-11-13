@@ -1,0 +1,9 @@
+# Paste into the Claude Code panel in VS Code, in your claude-test folder, with the mode indicator on Manual.
+# Prompt 1: when it asks, click Yes. Skip "Yes, and don't ask again".
+Make a file called shopping-list.txt with three items on it, one per line.
+# Prompt 2: read the side-by-side diff first. Yes accepts, No rejects, or type what to do instead.
+Add milk to shopping-list.txt.
+# Nearly right? Type in the "Tell Claude what to do instead" box, for example:
+make it oat milk
+# Undo: hover over prompt 2, click the rewind button, choose "Rewind code to here".
+# The list goes back to three items; the conversation stays.
