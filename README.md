@@ -19,3 +19,7 @@ Each `part-NN/` folder has:
 - Read what a prompt or script will do before you run it. Start with read-only access.
 - Prices, plans and features change, so check the official pages. Nothing here is legal, tax or customs advice.
 - Not affiliated with any tool named.
+
+## Licence
+- The prompts, code and files in this repo are free to use under the MIT licence (see [LICENSE](LICENSE)).
+- The videos themselves are not covered by that licence. © The AI Toolbox: please don't re-upload them; link to the channel instead.
