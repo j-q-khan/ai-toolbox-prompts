@@ -1,0 +1,4 @@
+# Paste into Claude Code after pressing Shift+Tab until the status bar says manual mode on.
+# If it first asks only to look at the file, choose Yes. When it shows the change, Yes is highlighted: press Enter.
+# Skip "for this session" and "switch to auto mode". Don't press Shift+Tab on a question: there it picks the for-this-session option.
+Make every new Claude Code session on this computer start in Manual mode. If ~/.claude/settings.json exists, keep everything in it and add "defaultMode": "default" inside "permissions". If it doesn't exist, create it with only that setting. Make the change as a file edit, so I approve it in the permission question, and change no other file.

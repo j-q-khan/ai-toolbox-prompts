@@ -1,0 +1,30 @@
+# Install Claude Code: one path per system (Anthropic's terminal guide, checked 2026-11-13)
+
+# WINDOWS
+# 1. Optional, but this course uses it later: install Git for Windows from
+#    https://git-scm.com/downloads/win
+#    Click Next on each screen. Keep the default editor. On "Adjusting your PATH environment",
+#    keep the recommended option.
+# 2. Open PowerShell: press Win + X and choose Windows PowerShell (or Terminal).
+#    Each line should start with PS. No PS means you're in CMD: open PowerShell instead.
+#    You don't need the Admin entry.
+# 3. Paste this line and press Enter. It shows no progress; wait for "Claude Code successfully installed!"
+irm https://claude.ai/install.ps1 | iex
+
+# MAC
+# 1. Open Terminal: press Cmd + Space, type Terminal, press Enter.
+# 2. Paste this line and press Enter. It shows no progress; wait for "Claude Code successfully installed!"
+curl -fsSL https://claude.ai/install.sh | bash
+
+# BOTH: open a fresh terminal window, then check it worked (prints a version number):
+claude --version
+
+# BOTH: make a new, empty test folder, move into it, and start Claude Code there:
+mkdir claude-test
+cd claude-test
+claude
+# The first time, a browser window opens to sign in. If it doesn't, press c to copy the link.
+# Then press Shift+Tab until the status bar says "manual mode on" (one press from auto mode).
+# Check Manual mode stuck: type exit to leave, then start it again; the status bar says manual mode on.
+exit
+claude

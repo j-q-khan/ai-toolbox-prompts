@@ -1,0 +1,23 @@
+# Fixes from Anthropic's terminal guide (checked 2026-11-13). Run only the one for the error you see.
+
+# WINDOWS: 'claude' is not recognized
+# The install folder isn't on your PATH. Paste these two lines into PowerShell, then open a new
+# PowerShell window and type claude again:
+$currentPath = [Environment]::GetEnvironmentVariable('PATH', 'User')
+[Environment]::SetEnvironmentVariable('PATH', "$currentPath;$env:USERPROFILE\.local\bin", 'User')
+
+# WINDOWS: 'irm' is not recognized
+# You're in CMD, not PowerShell. Open PowerShell (Win + X, Windows PowerShell) and paste the install line again.
+
+# WINDOWS: 'Claude Code does not support 32-bit Windows'
+# You opened "Windows PowerShell (x86)". Open the entry without (x86) in its name and paste the install line again.
+
+# MAC: command not found: claude
+# The installer prints the exact fix under "Setup notes"; run that, or these two lines (Zsh, the Mac default),
+# then open a new Terminal window and type claude again:
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+# MAC: a page of web code, or "App unavailable in region"
+# Claude Code isn't offered in your country: https://www.anthropic.com/supported-countries
+# Otherwise, run the install line again.

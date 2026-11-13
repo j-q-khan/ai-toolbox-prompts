@@ -1,0 +1,6 @@
+# Inside your claude-test folder, in Manual mode. Choose Yes each time it asks.
+Make a text file called hello.txt with one line that says hello.
+Change the line in hello.txt to goodbye.
+# Then, with the prompt box empty, press Esc twice, pick the goodbye prompt,
+# and choose "Restore code and conversation". hello.txt says hello again.
+# Esc once stops Claude Code in the middle of whatever it's doing.
