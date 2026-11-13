@@ -1,0 +1,48 @@
+# Claude Code setup: the settings to change first (checked 2026-11-13)
+# Open your terminal. Windows: press Win + X, choose Windows PowerShell or Terminal (not Admin).
+# Mac: press Cmd + Space, type Terminal, press Enter.
+# Start Claude Code in your test folder (made in the install video, in your home folder). Press Enter after each line:
+cd claude-test
+claude
+# Check the status bar under the typing box says: manual mode on. If not, press Shift+Tab until it does.
+
+# 1. A deny rule for .env files: copy the prompt in deny-env-prompt.txt, click in the terminal,
+#    paste it (Ctrl+V on Windows, Cmd+V on a Mac) and press Enter.
+#    If it first asks only to look at the file, press Enter on the highlighted Yes.
+#    When it shows the change (a "deny" list with Read(**/.env)), press Enter on the plain Yes.
+#    Check the rule is there: type this and press Enter, press the right arrow key until you see the deny rules, then press Esc:
+/permissions
+#    The rule covers .env files in the folder you start Claude Code in and the folders inside it,
+#    for Claude Code's own file tools and the file commands it recognises. It doesn't cover a script that opens files itself,
+#    a .env in a folder above, or names like .env.local. In the desktop app, /permissions says "isn't available in this environment",
+#    but the rules in your settings file still apply there.
+
+# 2. Undo (Esc twice with the typing box empty, or /rewind) doesn't put back: files changed only by commands Claude ran,
+#    most edits made by subagents, or changes you make yourself. Checkpoints are deleted after about 30 days. Use Git for these.
+
+# 3. Git. Leave Claude Code running and open a second window.
+#    Windows: press Win + X, choose Windows PowerShell or Terminal (not Admin). Mac: press Cmd + N in Terminal. Then type this and press Enter:
+git --version
+#    A version number means Git is installed: click back on the Claude Code window.
+#    Windows, "git is not recognized": open https://git-scm.com/downloads/win, click the download link, open the file
+#    from your Downloads folder, choose Yes if Windows asks to allow changes, click Next on each screen, then Install and Finish.
+#    Then type exit in the Claude Code window, open a fresh PowerShell window (Win + X) and start Claude Code again:
+exit
+cd claude-test
+claude
+#    Mac, a box offers to install the command line developer tools: click Install, agree to the licence if it asks,
+#    wait for it to finish, then type git --version again.
+#    In Claude Code, paste the commit prompt from git-prompts.txt. Before each Git command that changes something,
+#    it asks: press Enter on the plain Yes, never "Yes, and don't ask again" (on a command, that saves an allow rule).
+#    To go back to your last commit, paste the go-back prompt from git-prompts.txt, check its list, then type yes or no and press Enter.
+
+# 4. CLAUDE.md, a note Claude loads every session. Type this and press Enter:
+/init
+#    It shows you the file and asks first: press Enter on the plain Yes. Keep it under 200 lines.
+#    Check it saved: paste this and press Enter, and Claude prints the file:
+Show me what's in CLAUDE.md in this folder.
+#    To add the lines from claude-md-example.txt, paste: Add these lines to CLAUDE.md in this folder, keep everything already in it, and show me the change.
+#    Then paste the lines after it.
+
+# 5. Never paste a key or password into a prompt. Transcripts of every session are kept in plain text
+#    in ~/.claude/projects/ for at least 30 days, including anything a tool opened.

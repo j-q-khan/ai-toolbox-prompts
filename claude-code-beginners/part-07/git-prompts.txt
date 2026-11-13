@@ -1,0 +1,6 @@
+# Paste into Claude Code in your claude-test folder, in Manual mode (Ctrl+V on Windows, Cmd+V on a Mac, then Enter).
+# Choose the plain Yes on each Git command. When it lists what will change, type yes or no and press Enter.
+# Commit (a save point for the whole folder):
+Set up Git in this folder if it isn't set up yet, then commit my changes with a descriptive message. Leave any .env file out of the commit and tell me if you find one. If Git says it needs a name and email, stop and ask me what to use, and set them for this folder only. Don't change my files, any other folder or any global Git settings, and don't send anything online.
+# Go back to your last commit (changes since then are thrown away, so check its list first):
+Put every file in this folder back the way it was at my last commit. Before you change anything, list the files that will change and what I'll lose, and wait for my yes. Use git restore for this, never git reset, git clean or any force option. Leave any new files I haven't committed where they are and tell me their names, keep all my commits, and don't touch any other folder.

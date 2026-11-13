@@ -1,0 +1,4 @@
+# Paste into Claude Code in your claude-test folder, with the status bar showing manual mode on (Ctrl+V on Windows, Cmd+V on a Mac, then Enter).
+# If it first asks only to look at the file, press Enter on the highlighted Yes. When it shows the change, press Enter on the plain Yes.
+# Skip any option that says "for this session". Then type /permissions, press the right arrow key until you see the deny rules, and press Esc.
+Add a permission rule to my user settings file, ~/.claude/settings.json, that stops you opening any file called .env. If the file exists, keep everything in it exactly as it is and add "Read(**/.env)" to the "deny" list inside "permissions", creating "permissions" or "deny" if they aren't there. If the file doesn't exist, create it with only that rule. Make the change as a file edit, so I approve it in the permission question, and change no other file.

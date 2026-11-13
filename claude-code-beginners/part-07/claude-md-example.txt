@@ -1,0 +1,8 @@
+# An example CLAUDE.md for the claude-test folder. These are requests Claude tries to follow, not locks:
+# a deny rule is what actually blocks something.
+# My test folder
+- This folder holds small practice websites and apps in plain HTML, CSS and JavaScript, with no libraries.
+- Ask me before deleting or renaming any file.
+- Explain each change in one or two plain sentences.
+- Never open or print .env files, or anything that looks like a key or password.
+- When something works, remind me to ask for a commit.
