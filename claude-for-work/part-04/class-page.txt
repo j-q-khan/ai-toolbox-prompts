@@ -1,0 +1,22 @@
+Practice page: an invented pottery studio's class page, written out as plain text so you can see each part search engines look at. Every name and number is made up.
+
+Page URL: https://puddlestone.example/beginner-pottery-classes
+Title tag: Beginner Pottery Classes on Saturdays | Puddlestone Pottery
+Meta description:
+
+H1: Beginner Pottery Classes for Adults
+Text: Our beginner pottery classes are for adults who have never touched clay. In two and a half hours on a Saturday morning, you'll learn to centre clay on the wheel, shape a mug or a bowl, and choose a glaze. Our two teachers keep each class to six people, so you get help when the clay won't behave.
+Image: wheel.jpg
+Alt text: Hands shaping a small bowl on a pottery wheel
+
+H2: What you'll make
+Text: Most people make two or three pieces. We glaze and fire them for you, and they're ready to collect two weeks later.
+Image: finished-mugs.jpg
+Alt text:
+
+H2: Class dates and price
+Text: Saturdays 9, 16, 23 and 30 January 2027, 10:00 to 12:30. $45 per person, with clay, glazes and firing included.
+
+H1: Book your Saturday place
+Text: Wear clothes you don't mind getting muddy, and bring nothing else.
+Link: See class dates and book (goes to https://puddlestone.example/beginner-pottery-classes/book)
