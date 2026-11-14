@@ -1,0 +1,11 @@
+# Sign in: start Claude Code in the test folder, then
+claude
+/mcp
+#   pick figma > Authenticate > in the browser, Allow access
+#   you should see: Authentication successful. Connected to figma.
+# After saving block 2, start Claude Code again and test the ask rule (whoami doesn't count toward Figma's limit), as a prompt:
+#   Use the figma server's whoami tool. Show my plans and seats.
+# Switch it off: in Claude Code, /mcp > figma > Clear authentication, then in the terminal:
+claude mcp remove figma
+# Installed the plugin instead? In Claude Code:
+/plugin uninstall figma@claude-plugins-official
