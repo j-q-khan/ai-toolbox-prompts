@@ -1,0 +1,3 @@
+claude mcp remove github
+claude mcp add github -e 'GITHUB_PERSONAL_ACCESS_TOKEN=${GITHUB_MCP_PAT}' -- docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN -e GITHUB_READ_ONLY=1 ghcr.io/github/github-mcp-server:v2.1.0
+claude mcp list

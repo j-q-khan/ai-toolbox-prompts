@@ -1,0 +1,7 @@
+# Look-only token, 7 days, view-only Contents, Issues and Pull requests (Metadata comes with it):
+https://github.com/settings/personal-access-tokens/new?name=MCP+look-only+test&description=GitHub+MCP+server+test,+one+repo&expires_in=7&contents=read&issues=read&pull_requests=read
+
+# Later, for chapter 5 only: Issues raised to read and write, everything else unchanged:
+https://github.com/settings/personal-access-tokens/new?name=MCP+issues+test&description=GitHub+MCP+server+test,+issues+only&expires_in=7&contents=read&issues=write&pull_requests=read
+
+# Click Generate token and leave that page open: copy the token only when the line in block 2 or 3 asks for it, because copying these lines first would replace it on your clipboard.

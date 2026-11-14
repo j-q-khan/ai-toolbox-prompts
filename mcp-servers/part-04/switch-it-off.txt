@@ -1,0 +1,8 @@
+# Claude Code, in the github-test folder:
+claude mcp remove github
+# VS Code: Chat: Open Customizations, MCP Servers, github's ... menu, Disable, or delete github-test\.mcp.json
+# VS Code, optional: turn the built-in github-mcp-server back on from the same menu
+# GitHub: profile picture, Settings, Developer settings, Fine-grained tokens, your token, Delete
+# Deleting the token ends the token's access. Disabling the server stops VS Code using your sign-in; to end that sign-in itself, see
+# https://docs.github.com/en/apps/using-github-apps/reviewing-and-revoking-authorization-of-github-apps (revoking an app there may sign it out elsewhere too)
+# Close the terminal window: the GITHUB_MCP_PAT variable goes with it

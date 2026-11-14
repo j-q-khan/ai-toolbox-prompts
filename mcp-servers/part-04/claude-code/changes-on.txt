@@ -1,0 +1,4 @@
+claude mcp remove github
+claude mcp add --transport http github https://api.githubcopilot.com/mcp/ --header 'Authorization: Bearer ${GITHUB_MCP_PAT}'
+# VS Code: don't drop /readonly from block 5 (its sign-in reaches every repository your account can).
+# Use block 6 instead, with "url": "https://api.githubcopilot.com/mcp/", so changes stay on your one test repository.
