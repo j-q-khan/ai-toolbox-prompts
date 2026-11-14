@@ -1,0 +1,4 @@
+# Claude Code, in the test folder:
+claude mcp remove filesystem
+# Claude Desktop: delete the "filesystem" entry from claude_desktop_config.json, then quit Claude Desktop and open it again
+# VS Code: Chat: Open Customizations > MCP Servers > the server's ... menu > Disable, or delete server-test\.mcp.json
