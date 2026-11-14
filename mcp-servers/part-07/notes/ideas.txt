@@ -1,0 +1,1 @@
+Made-up ideas for testing: try list_notes, then get_note with welcome.txt.
