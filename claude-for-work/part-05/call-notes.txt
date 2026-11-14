@@ -1,0 +1,12 @@
+Call notes: Quillhaven Bakehouse (invented; every name and number is made up)
+
+Demo request from our website form, Monday 11 January 2027:
+"We run two bakeries with 32 staff, and building the schedule every week is a headache. Can we see how your app works?" Dana Whitlock, Operations manager
+
+Short phone call with Dana, Tuesday 12 January 2027:
+1. Dana builds the schedule in a spreadsheet every Sunday evening. She says it takes about three hours.
+2. Shift swaps come in by text message, and some get missed. Last month two bakers both missed the 5 a.m. shift.
+3. Dana can approve spending up to $100 a month. Anything more needs Tom Ashby, the owner.
+4. Not discussed yet: what they use for payroll, and whether every staff member has a smartphone.
+
+Demo booked: Thursday 21 January 2027, 10:00, 30 minutes, video call. Dana will be there, and Tom might join.

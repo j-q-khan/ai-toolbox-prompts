@@ -1,0 +1,91 @@
+# Full code: Claude for Sales: Prospecting, Call Prep and Outreach
+
+
+
+### 1. seller-notes.txt
+```
+Seller notes: Fernhollow (an invented company; every name and number is made up)
+
+What we sell: Fernhollow Shifts, a staff scheduling app for food businesses. Managers build the week's schedule on a phone or laptop, and staff swap shifts in the app.
+Who we are: a company of three people. Website: https://fernhollow.example
+Price: $4 per staff member a month. Free 30-day trial, no card needed.
+
+Our ideal customer profile
+- Industry: independent cafes, bakeries and restaurants. Partial fit: caterers and hotels.
+- Size: 10 to 60 staff.
+- Buyer: the owner or the operations manager.
+- Deal-breakers: more than 3 locations (bigger chains have their own systems), or already a customer.
+
+What we can say: managers see every swap in one place, and staff get a reminder the day before each shift.
+What we can't claim: we have no awards, no published reviews and no measured time savings. Don't invent any.
+```
+
+### 2. prospects.csv
+```
+Company,Type,Staff,Locations,Buyer,Note
+Quillhaven Bakehouse,Bakery,32,2,Operations manager,Asked for a demo on our website
+Copperfinch Noodle Bar,Restaurant,22,1,Owner,Posted a job ad for weekend kitchen staff
+Juniperfold Catering,Caterer,45,1,Owner,Met us at a local food fair
+Pinewhistle Coffee,Cafe,40,6,Operations manager,Opening a seventh cafe in the spring
+Larkspoon Tearoom,Cafe,4,1,Owner,Follows us on social media
+Fallowmere Hotel,Hotel,120,1,General manager,Found in a business directory
+```
+
+### 3. call-notes.txt
+```
+Call notes: Quillhaven Bakehouse (invented; every name and number is made up)
+
+Demo request from our website form, Monday 11 January 2027:
+"We run two bakeries with 32 staff, and building the schedule every week is a headache. Can we see how your app works?" Dana Whitlock, Operations manager
+
+Short phone call with Dana, Tuesday 12 January 2027:
+1. Dana builds the schedule in a spreadsheet every Sunday evening. She says it takes about three hours.
+2. Shift swaps come in by text message, and some get missed. Last month two bakers both missed the 5 a.m. shift.
+3. Dana can approve spending up to $100 a month. Anything more needs Tom Ashby, the owner.
+4. Not discussed yet: what they use for payroll, and whether every staff member has a smartphone.
+
+Demo booked: Thursday 21 January 2027, 10:00, 30 minutes, video call. Dana will be there, and Tom might join.
+```
+
+### 4. how-to-check.txt
+```
+Practice files: seller-notes.txt, prospects.csv and call-notes.txt (an invented seller, Fernhollow, and invented prospects; every name and number is made up; the websites ending .example are reserved example names, not real sites)
+
+Open them
+- Download each from the link in the description: on the file's page, click "Download raw file".
+- Optional: open them in Notepad (Windows) or TextEdit (Mac) first. Plain text, no formulas, nothing hidden.
+- In Claude: new chat, the "+" button at the lower left of the message box, "Add files or photos", pick the files.
+
+1. Ranking the prospect list (Prompt 1, seller-notes.txt and prospects.csv)
+- Fit score out of 10, from the account-tiering skill: industry (exact 3, partial fit 1, other 0) + size (10 to 60 staff 3, within 50% of that range 1, outside 0) + buyer (owner or operations manager 2, another manager 1) + no deal-breakers (none 2, a deal-breaker 0). The skill's cutoff: 6 or more is a good fit.
+- Quillhaven Bakehouse: bakery 3 + 32 staff 3 + operations manager 2 + none 2 = 10.
+- Copperfinch Noodle Bar: restaurant 3 + 22 staff 3 + owner 2 + none 2 = 10.
+- Juniperfold Catering: caterer, partial fit 1 + 45 staff 3 + owner 2 + none 2 = 8.
+- Larkspoon Tearoom: cafe 3 + 4 staff 0 (below 5, half of 10) + owner 2 + none 2 = 7.
+- Fallowmere Hotel: hotel, partial fit 1 + 120 staff 0 (above 90, which is 60 plus half of 60) + general manager 1 + none 2 = 4. Under the cutoff of 6.
+- The planted problem (try to find it before you look): Pinewhistle Coffee scores cafe 3 + 40 staff 3 + operations manager 2 + deal-breaker 0 = 8, but it has 6 locations and the seller's rule is 3 at most. It goes to the bottom, marked out, whatever its points.
+- Check: redo one score by hand (Juniperfold above). Then look down the Locations column for anything over 3: only Pinewhistle, with 6.
+
+2. The call brief (Prompt 2, call-notes.txt and seller-notes.txt)
+- Example objective: a free trial that Tom Ashby, the owner, is happy with.
+- What we know, with the line it comes from: two bakeries, 32 staff (the demo request); the schedule is built in a spreadsheet every Sunday, about three hours (line 1); swaps sent by text get missed, and two bakers missed the 5 a.m. shift last month (line 2).
+- The sum: $4 x 32 staff = $128 a month. Dana can approve up to $100 (line 3), so Tom decides.
+- Example discovery questions: What happens after a missed swap? What does Tom need to see to say yes? Does every staff member have a smartphone? What do you use for payroll? (The last two weren't discussed, line 4, so they must stay questions, not facts.)
+- Check: every fact in Claude's brief matches a line in the call notes, the sum is right, and nothing the notes don't say appears as a fact.
+
+3. The first email (Prompt 3, seller-notes.txt and the Copperfinch line)
+- Example output (87 words in the body):
+  Hi [owner's name],
+  I saw that Copperfinch Noodle Bar is hiring weekend kitchen staff, so next week's schedule may be on your mind.
+  Fernhollow Shifts is a staff scheduling app for food businesses. You build the week's schedule on your phone or laptop, you see every swap in one place, and staff get a reminder the day before each shift.
+  It's $4 per staff member a month, with a free 30-day trial and no card needed.
+  Would a short call next week help you see if it fits your kitchen?
+  [Your name], Fernhollow
+- Check: every claim is in the seller notes (swaps in one place, the reminder, $4, the free 30-day trial). No awards, reviews or time savings, because the notes say there are none. The name is a gap in square brackets, not invented.
+- Before sending a real email: check the hook is real and current, add the name, and send it yourself.
+
+Safety
+- What you paste goes to Anthropic. Keep customer details, contact lists, people's names and emails and anything personal out, and follow your employer's rules.
+- Claude can't see your CRM, inbox or LinkedIn unless you connect them. With email connected, the plugin sends only when you ask; set that tool to Needs approval.
+- Follow the consent and anti-spam rules where you and the recipient are. Not legal advice. A person checks, edits and sends every message.
+```
