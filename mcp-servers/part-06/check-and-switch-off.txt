@@ -1,0 +1,6 @@
+# Audit logs, a daily file for each running server (operation type and success; no DAX text, no model contents):
+#   %LOCALAPPDATA%\Microsoft\powerbi-authoring-mcp\Logs
+# Save the copy in Power BI Desktop only when you're happy with the change.
+# Switch it off: exit Claude Code, then in PowerShell, in the model-test folder:
+claude mcp remove powerbi
+# Claude Desktop: delete the "powerbi" entry from claude_desktop_config.json, then quit and open it again

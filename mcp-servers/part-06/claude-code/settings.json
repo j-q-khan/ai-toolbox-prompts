@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "ask": ["mcp__powerbi__*"],
+    "deny": [
+      "mcp__powerbi__security_role_operations"
+    ]
+  }
+}
