@@ -1,0 +1,69 @@
+order_id,order_date,product,quantity,unit_price,order_total
+W-1201,2027-04-01,Earl grey 100g,2,9,18
+W-1202,2027-04-02,Tea infuser,4,7,28
+W-1203,2027-04-02,Earl grey 100g,1,9,9
+W-1204,2027-04-02,Green sencha 100g,4,11,44
+W-1205,2027-04-03,Breakfast blend 100g,1,8,8
+W-1206,2027-04-04,Tea infuser,4,7,28
+W-1207,2027-04-04,Green sencha 100g,1,11,11
+W-1208,2027-04-06,Gift box,1,28,28
+W-1209,2027-04-06,Breakfast blend 100g,1,8,8
+W-1210,2027-04-06,Tea infuser,1,7,7
+W-1211,2027-04-06,Earl grey 100g,2,9,18
+W-1212,2027-04-07,Breakfast blend 100g,2,8,16
+W-1213,2027-04-08,Earl grey 100g,1,9,9
+W-1214,2027-04-08,Breakfast blend 100g,1,8,8
+W-1215,2027-04-09,Earl grey 100g,2,9,18
+W-1216,2027-04-10,Earl grey 100g,2,9,18
+W-1217,2027-04-11,Green sencha 100g,1,11,11
+W-1218,2027-04-11,Breakfast blend 100g,2,8,16
+W-1219,2027-04-11,Earl grey 100g,3,9,27
+W-1220,2027-04-12,Breakfast blend 100g,3,8,24
+W-1221,2027-04-13,Green sencha 100g,1,11,11
+W-1222,2027-04-13,Peppermint 50g,1,6,6
+W-1223,2027-04-13,Earl grey 100g,1,9,9
+W-1224,2027-04-15,Tea infuser,2,7,14
+W-1225,2027-04-15,Gift box,1,28,28
+W-1226,2027-04-15,Breakfast blend 100g,1,8,8
+W-1227,2027-04-16,Gift box,2,28,56
+W-1228,2027-04-16,Tea infuser,2,7,14
+W-1229,2027-04-16,Peppermint 50g,1,6,6
+W-1230,2027-04-16,Breakfast blend 100g,2,8,16
+W-1231,2027-04-17,Tea infuser,3,7,21
+W-1232,2027-04-17,Gift box,1,28,28
+W-1233,2027-04-17,Chai spice 100g,3,10,30
+W-1234,2027-04-17,Earl grey 100g,3,9,27
+W-1235,2027-04-18,Breakfast blend 100g,1,8,8
+W-1236,2027-04-18,Earl grey 100g,3,9,27
+W-1237,2027-04-18,Green sencha 100g,2,11,22
+W-1238,2027-04-19,Breakfast blend 100g,1,8,8
+W-1239,2027-04-19,Breakfast blend 100g,1,8,8
+W-1240,2027-04-19,Breakfast blend 100g,1,8,8
+W-1241,2027-04-20,Glass teapot,2,34,68
+W-1242,2027-04-20,Green sencha 100g,3,11,33
+W-1243,2027-04-20,Chai spice 100g,1,10,10
+W-1244,2027-04-21,Peppermint 50g,4,6,24
+W-1245,2027-04-21,Earl grey 100g,3,9,27
+W-1246,2027-04-21,Green sencha 100g,1,11,11
+W-1247,2027-04-22,Earl grey 100g,3,9,27
+W-1248,2027-04-22,Breakfast blend 100g,3,8,24
+W-1249,2027-04-23,Peppermint 50g,1,6,6
+W-1250,2027-04-23,Gift box,1,28,28
+W-1251,2027-04-23,Peppermint 50g,1,6,6
+W-1252,2027-04-24,Earl grey 100g,4,9,36
+W-1253,2027-04-24,Earl grey 100g,2,9,18
+W-1254,2027-04-25,Breakfast blend 100g,1,8,8
+W-1255,2027-04-25,Green sencha 100g,4,11,44
+W-1256,2027-04-26,Chai spice 100g,1,10,10
+W-1257,2027-04-26,Tea infuser,1,7,7
+W-1258,2027-04-26,Earl grey 100g,4,9,36
+W-1259,2027-04-26,Tea infuser,1,7,7
+W-1260,2027-04-26,Chai spice 100g,2,10,20
+W-1261,2027-04-27,Tea infuser,1,7,7
+W-1262,2027-04-29,Tea infuser,2,7,14
+W-1263,2027-04-29,Breakfast blend 100g,1,8,8
+W-1264,2027-04-29,Breakfast blend 100g,3,8,24
+W-1265,2027-04-30,Breakfast blend 100g,1,8,8
+W-1266,2027-04-30,Glass teapot,1,34,34
+W-1267,2027-04-30,Chai spice 100g,1,10,10
+W-1268,2027-04-30,Breakfast blend 100g,1,8,8

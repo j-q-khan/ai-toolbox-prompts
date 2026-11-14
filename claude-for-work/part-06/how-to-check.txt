@@ -1,0 +1,67 @@
+Practice files: orders-2027-01.csv to orders-2027-06.csv (six monthly order files for an invented tea shop, Wrenfield Tea; every order, product and number is made up; there are no customer names, emails or phone numbers in them, on purpose)
+
+Open them
+- Download each from the link in the description: on the file's page, click "Download raw file".
+- Each line is one order: order_id, order_date, product, quantity, unit_price, order_total (quantity x unit_price, whole dollars).
+- 416 lines in all: 408 different orders, plus 8 March orders listed twice (the planted problem).
+- Optional: open them in Notepad (Windows) or TextEdit (Mac) first. Plain text, no formulas, nothing hidden.
+
+The planted problem (try to find it before you look)
+- The March file has 74 order lines but only 66 different order numbers.
+- Its last 8 lines (lines 68 to 75 of the file, counting the header as line 1) repeat 8 earlier March orders word for word:
+  W-1137 $16, W-1143 $136, W-1155 $7, W-1157 $16, W-1158 $68, W-1180 $36, W-1183 $28, W-1185 $8.
+- They add $315 to March: 16 + 136 + 7 + 16 + 68 + 36 + 28 + 8 = 315.
+
+Monthly totals (whole dollars)
+  Month     As the file stands   Without repeats
+  January          1,193              1,193
+  February         1,568              1,568
+  March            1,842              1,527
+  April            1,272              1,272
+  May              1,484              1,484
+  June             1,587              1,587
+  Six months       8,946              8,631
+- As the files stand, March looks like the best month. Without the repeats, June is first ($1,587), February second ($1,568), March third ($1,527).
+
+1. Chat (Prompt 1, the March file, explore-data skill)
+- Expect Claude to report 74 order lines, 66 different order numbers, 8 repeated lines that are identical, March $1,842 as it stands and $1,527 without the repeats.
+
+2. Cowork (Prompt 2, a folder holding only the six files, set to Manual)
+- Before you start: the permission setting in the message box is Manual ("Manually approve" on some screens). Auto is the default on Pro, Max, Ultra and Team.
+- With Manual on, Claude asks you to Allow or Deny its actions. Expect one new spreadsheet, monthly-summary.xlsx, matching the table above, and the six original files unchanged.
+
+3. Claude Code (Prompt 3, a throwaway folder holding only the six files)
+- Start it in Manual mode: claude --permission-mode manual
+- Before you say yes to creating the script, check: it opens only orders-*.csv in this folder, it writes one new file (monthly-totals.csv) and deletes nothing, and a repeated order number is skipped and listed, not added twice.
+- Expected output (Example output, written from the files, not run by us):
+  408 orders, 8 repeated lines skipped
+    repeat: W-1137 (identical)
+    repeat: W-1143 (identical)
+    repeat: W-1155 (identical)
+    repeat: W-1157 (identical)
+    repeat: W-1158 (identical)
+    repeat: W-1180 (identical)
+    repeat: W-1183 (identical)
+    repeat: W-1185 (identical)
+  2027-01 1193
+  2027-02 1568
+  2027-03 1527
+  2027-04 1272
+  2027-05 1484
+  2027-06 1587
+
+Check one total by hand (any route)
+- Open orders-2027-03.csv in Excel, or import it in Google Sheets (File, then Import). Click an empty cell outside column F (for example H2) and type =SUM(F:F). It adds the order_total column: 1842. (Typed inside column F, it would add itself and give an error.)
+- The last 8 lines are the copies: 16 + 136 + 7 + 16 + 68 + 36 + 28 + 8 = 315.
+- 1,842 - 315 = 1,527, the corrected March. If Claude's number is different, ask it to show its working.
+- To find repeats in your own files: sort by order_id and the copies sit side by side, or put =COUNTIF(A:A,A2) in an empty column and fill it down; any 2 is an order number that appears twice.
+
+Check the chart
+- Bar charts should start at zero (the data plugin's data-visualization skill: "Bar charts start at zero: Always.").
+- With the axis starting at 1,500, June's bar (1,587) looks over three times March's (1,527): 87 above the axis against 27. From zero they are about 4% apart (60 / 1,527).
+
+Safety
+- What you paste or connect goes to Anthropic. Keep customer details (names, emails, phone numbers, card numbers) out, and follow your employer's rules.
+- Cowork and recent versions of Claude Code start on Auto. For work files, set Manual so they ask before they act.
+- Give Cowork and Claude Code a folder that holds only the files for the task, and keep backups.
+- Read every script before it runs. Run the example script only in a throwaway folder with these practice files.
