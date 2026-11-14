@@ -1,0 +1,27 @@
+WEBSITE SUPPORT SERVICES AGREEMENT
+(Practice document for a video. Both companies are invented, every name and number is made up, and the websites ending .example are reserved example names, not real sites. This is not a template to use and not legal advice.)
+
+This agreement is between Kestrelpine Studio (the "Provider", https://kestrelpine.example) and Marrowfield Garden Supply (the "Customer", https://marrowfield.example).
+
+1. Services. The Provider will look after the Customer's website: security updates, a daily backup, and up to 10 hours of changes each month that the Customer asks for by email.
+
+2. Fees. The Customer will pay $1,500 a month. The Provider will send an invoice at the start of each month, and the Customer will pay it within 30 days.
+
+3. Term and renewal. This agreement starts on 1 February 2027 and lasts 12 months. It then renews automatically for another 12 months each time, unless either party gives written notice of non-renewal at least 10 days before the end of the current term.
+
+4. Ending the agreement early. Either party may end this agreement by written notice if the other party seriously breaks it and does not put things right within 30 days of being told in writing.
+
+5. Confidentiality. Each party will keep the other party's non-public business information confidential and use it only for this agreement, during the agreement and for 2 years after it ends.
+
+6. Ownership. The Customer owns its website text, images and data. The Provider keeps ownership of the tools and code it had before this agreement, and gives the Customer the right to use them on the Customer's website while this agreement lasts.
+
+7. Indemnity. Each party will cover the other party's reasonable costs of any claim brought by an outside party that results from its own breach of this agreement.
+
+8. Limitation of liability. Each party's total liability under this agreement is capped at an amount equal to 12 months of fees ($18,000). Neither party is liable for indirect or consequential losses.
+
+9. Governing law. This agreement is governed by the laws of the State of New York.
+
+10. General. This document is the whole agreement between the parties. Notices go by email to the addresses each party gives the other in writing.
+
+Signed for Kestrelpine Studio: ____________________
+Signed for Marrowfield Garden Supply: ____________________
