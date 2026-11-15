@@ -1,0 +1,13 @@
+# move-checklist.txt: moving off the standalone site (claude.ai/design) before it turns read-only on December 14, 2026
+# From Anthropic's move help page (checked 2026-11-15). Rolling out to paid plans; only a design's owner can move it.
+# Move all your own at once, or pick some. Team and Enterprise Owners: Move everything.
+[ ] Design systems first: Anthropic says to move them now (banner on Claude's Artifacts page)
+[ ] Open the design on claude.ai/design
+[ ] Start the review from the pop-up or the banner at the top
+[ ] In the review, download the .zip copy before you confirm
+[ ] Confirm the move, and keep the tab open until it finishes
+[ ] Find it on the Artifacts page in Claude
+[ ] Save anything you need from its chats and comments: they don't move
+[ ] Replace public links to it: they stop working after December 14, 2026
+# After a move, the old copy is read-only for everyone, and that can't be undone.
+# Can't move yet? Share, then Project HTML, keep Project archive, then Export (free, no usage).

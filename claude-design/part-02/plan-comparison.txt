@@ -1,0 +1,12 @@
+# plan-comparison.txt: Claude plans for Claude Design, as Anthropic listed them on 2026-11-15
+# Prices: was, when checked on https://www.anthropic.com/pricing (2026-11-15). Check the page before you buy.
+Free   $0              "Free for everyone", "Limited usage" every 5 hours and every week; lists Claude Design, Slides, Docs
+Pro    $20 a month     or $17 a month on a yearly plan ($200 billed up front); "More usage than Free"
+Max    $100 a month    "5x Pro usage" every 5 hours and every week
+Ultra  $200 a month    "10x Pro usage every week"; "No 5-hour limit" for verified accounts
+# Claude Design shares your plan's usage limits with the rest of Claude, Claude Code included.
+# Usage credits (pay as you go after your limit, up to a monthly spend limit): Pro, Max, Ultra. Not Free.
+# Design systems (beta): Pro, Max, Ultra, Team, Enterprise. Not Free.
+# Claude Motion (beta): Team and Enterprise only.
+# No plan publishes an exact number of messages or designs.
+# See how much you've used, and when it resets: Settings, then Usage.
