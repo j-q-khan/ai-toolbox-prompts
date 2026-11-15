@@ -1,0 +1,11 @@
+Paste this into a new chat in Claude, on any plan, Free included. Before you send it, pick a lower effort if your model offers one (the model name next to the send button, then Effort, then Low), switch off any connected apps for this chat, and don't attach files. It uses only made-up details, so don't add anything real about yourself, your work or anyone else.
+
+Goal: help me practise three habits from Anthropic's help pages that make my Claude usage last (starting a fresh chat, keeping reused files in a Project, and choosing a lower effort for routine jobs), on a made-up bakery, so I can use them on my own work.
+Steps, in order:
+1. Tell me in two sentences that we're practising with an invented business, Corner Bakery, and that I shouldn't add any real names, numbers or documents.
+2. Here is a made-up long chat in short: we compared three flour suppliers, picked the second one, agreed to order on Mondays, and still need to decide on a delivery day and a weekly budget. Write a handover note under 120 words I could paste into a fresh chat to carry on.
+3. Corner Bakery uses these made-up files: a weekly order sheet (used every week), this year's menu (used most weeks), last year's tax summary (used once), and a supplier price list (used every week). Tell me which belong in a Project because they're reused, and which I should attach only once, with one reason each.
+4. Here are five made-up jobs: fix the spelling in a two-line notice, plan next month's menu around seasonal fruit, turn three order numbers into a total, compare three suppliers' terms for a contract decision, write a friendly closing-early message. For each, say whether a low or a higher effort level suits it, with one short reason.
+5. Finish with a three-line reminder that Anthropic publishes no exact message counts, that the Usage page in Settings shows your session and weekly limits on paid plans, and that menu names can change.
+Safety: don't search the web, don't use any connected apps, don't ask for my name, email or any account details, and label everything "Example output: practice on a made-up bakery".
+Output: the two-sentence note, the handover note, the file table, the effort table and the reminder, in that order, all short.
