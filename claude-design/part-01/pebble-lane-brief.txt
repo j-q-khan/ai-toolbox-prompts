@@ -1,0 +1,9 @@
+# pebble-lane-brief.txt: a made-up brief for your first Claude Design one-pager
+# Pebble Lane Bakery is not a real business. Use made-up briefs like this, never client files.
+# Type this after Output, then Design in the message box (Settings, then Capabilities, then Create and edit files must be on).
+Goal: sign-ups for Pebble Lane Bakery's weekend bread class.
+Layout: big heading, date and price box, three reasons, sign-up line.
+Information: Saturday 10:00 to 13:00, 25 dollars, sign up at the counter.
+Audience: neighbours who've never baked bread.
+Also say: flour and aprons are included.
+Make it a one-pager, mark it as a draft, and use only these facts.
