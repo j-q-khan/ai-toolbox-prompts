@@ -1,0 +1,29 @@
+# 1. A new, empty test folder
+mkdir small-agent
+cd small-agent
+
+# 2. A virtual environment, switched on (Python 3.11 or later: langchain 1.5.0 needs it)
+# Windows (PowerShell):
+py -m venv .venv
+.venv\Scripts\Activate.ps1
+# Mac (Terminal):
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 3. Exact versions (langchain also installs langgraph)
+pip install langchain==1.5.0 langchain-anthropic==1.7.10
+
+# 4. A throwaway API key with a spend limit, for this terminal window only
+# Windows (PowerShell):
+$env:ANTHROPIC_API_KEY = "your-api-key"
+# Mac (Terminal):
+export ANTHROPIC_API_KEY=your-api-key
+
+# 5. Run the agent
+python small_agent.py
+
+# 6. Switch the key off when you've finished (or close the window), then delete the key
+# Windows (PowerShell):
+Remove-Item Env:ANTHROPIC_API_KEY
+# Mac (Terminal):
+unset ANTHROPIC_API_KEY

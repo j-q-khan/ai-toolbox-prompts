@@ -1,0 +1,45 @@
+Lines quoted exactly from each project's docs (checked 2026-11-16). "…" marks skipped lines.
+
+A. LangChain create_agent: asking first and a call limit
+   Two examples from docs.langchain.com/oss/python/langchain/middleware/built-in, joined (langchain 1.5.0)
+
+middleware=[
+    HumanInTheLoopMiddleware(
+        interrupt_on={
+            "your_send_email_tool": {
+…
+    ModelCallLimitMiddleware(
+        thread_limit=10,
+        run_limit=5,
+
+B. LangGraph: asking first and the step limit
+   From docs.langchain.com/oss/python/langgraph/interrupts and
+   docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT (langgraph 1.2.22)
+
+from langgraph.types import interrupt
+
+def approval_node(state: State):
+    # Pause and ask for approval
+    approved = interrupt("Do you approve this action?")
+…
+graph.invoke({...}, {"recursion_limit": 1000})
+
+C. Deep Agents: asking first
+   From docs.langchain.com/oss/python/deepagents/human-in-the-loop (deepagents 0.7.39)
+
+checkpointer = MemorySaver()
+
+agent = create_deep_agent(
+…
+    interrupt_on={
+        "remove_file": True,  # Default: approve, edit, reject, respond
+        "fetch_file": False,  # No interrupts needed
+…
+    checkpointer=checkpointer,  # Required!
+
+Defaults (docs and source, checked 2026-11-16):
+- LangGraph recursion_limit: 10,007 super-steps (graph-api docs).
+- create_agent and create_deep_agent: recursion_limit 9,999, set in their source
+  (langchain 1.5.0 agents/factory.py; deepagents 0.7.39 graph.py). Deep Agents' docs give no number.
+- ModelCallLimitMiddleware thread_limit and run_limit: "Defaults to no limit."
+- Asking first: off in all three until you set it. All three need a checkpointer and a thread_id.

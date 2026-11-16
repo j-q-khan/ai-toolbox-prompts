@@ -1,0 +1,9 @@
+Example output (not run; your wording will differ)
+
+Approval needed: save_note {'text': 'Tuesday: 2pm to 3pm'}
+Allow this action? (y/n): y
+(pretend save) Tuesday: 2pm to 3pm
+I've saved Tuesday's free hour, 2pm to 3pm, as a note.
+
+With thread_limit=1, the run stops after the first model call and ends with:
+Model call limits exceeded: thread limit (1/1)
