@@ -1,0 +1,12 @@
+# export-checklist.txt: before you send a Claude Slides deck
+# From Anthropic's help page "What are artifacts and how do I use them?" (checked 2026-11-15).
+[ ] Click through the slideshow in Claude: Present, then Present again in its menu; Right arrow or Space, Left arrow, Escape to end
+[ ] In the slideshow: F turns full screen on or off; 1 to 9 jumps to that slide
+[ ] Click Export and pick one: PowerPoint, PDF, or Google Slides (as editable files)
+[ ] PowerPoint: if someone will keep editing it in PowerPoint
+[ ] Google Slides: if your team works there
+[ ] PDF: if people only need to look through it
+[ ] Open the exported file yourself and click through every slide before you send it
+# Deleted a slide by accident? Ctrl+Z on Windows, Cmd+Z on a Mac, brings it back.
+# Need your company's PowerPoint template? The Claude for PowerPoint add-in works inside PowerPoint
+# (Pro, Max, Team and Enterprise, checked 2026-11-15 on claude.com/docs/office-agents/powerpoint).

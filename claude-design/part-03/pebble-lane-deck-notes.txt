@@ -1,0 +1,10 @@
+# pebble-lane-deck-notes.txt: made-up notes for your first Claude Slides deck
+# Pebble Lane Bakery is not a real business. Use made-up notes like these, never client files.
+# Paste them after Output, then Slides in the message box (Settings, then Capabilities, then Create and edit files must be on).
+Deck: 5 slides for the Pebble Lane Bakery team meeting, about the first month of the weekend bread class.
+Slide 1: Weekend bread class, month one.
+Slide 2: What we ran: four Saturday classes, 10:00 to 13:00, 25 dollars a place.
+Slide 3: What people said: they liked taking their loaf home, and they wanted more time for shaping.
+Slide 4: What we change next month: add 30 minutes for shaping, and keep flour and aprons included.
+Slide 5: Our ask: two volunteers to help on Saturdays.
+Also say: mark every slide as a draft, and use only these facts.
