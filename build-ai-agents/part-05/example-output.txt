@@ -1,0 +1,24 @@
+Example output (not run; your wording will differ)
+
+Approve send_invite?
+Input: {'to': 'sam@example.com', 'time': 'Tuesday 2pm to 3pm'}
+Type 'yes' to approve:
+yes
+
+Processing your input...
+[pretend] Invite to sam@example.com for Tuesday 2pm to 3pm (nothing was sent)
+Crew: Invite sent to sam@example.com for Tuesday 2pm to 3pm.
+
+Example output with anything but yes (not run):
+
+Approve send_invite?
+Input: {'to': 'sam@example.com', 'time': 'Tuesday 2pm to 3pm'}
+Type 'yes' to approve:
+no
+
+Processing your input...
+Crew: The invite wasn't sent: the send_invite tool was blocked.
+
+Example output with max_iter=1 and verbose=True on the planner (not run; trimmed):
+
+Maximum iterations reached. Requesting final answer.

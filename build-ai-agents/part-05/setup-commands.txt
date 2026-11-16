@@ -1,0 +1,44 @@
+# 1. A new, empty test folder
+mkdir my-crew
+cd my-crew
+
+# 2. A virtual environment, switched on (CrewAI 1.15.41 needs Python 3.10 to 3.13:
+#    check with python --version, or python3 --version on a Mac)
+# Windows (PowerShell):
+py -m venv .venv
+# (Several Pythons installed? py -3.12 -m venv .venv picks 3.12)
+.venv\Scripts\Activate.ps1
+# If PowerShell blocks Activate.ps1, run this first:
+#   Set-ExecutionPolicy -Scope Process RemoteSigned
+# Mac (Terminal):
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 3. One exact version, with the Anthropic extra (the connector to Claude)
+pip install "crewai[anthropic]==1.15.41"
+# Windows: if it stops with a chroma-hnswlib build error ('float.h'), the docs say to
+# install Visual Studio Build Tools with "Desktop development with C++", then try again.
+
+# 4. A throwaway API key, for this terminal window only
+#    Make it at platform.claude.com, and set a monthly spend limit at
+#    platform.claude.com/settings/spend-limits
+# Windows (PowerShell):
+$env:ANTHROPIC_API_KEY = "your-api-key"
+# Mac (Terminal):
+export ANTHROPIC_API_KEY="your-api-key"
+
+# 5. CrewAI's anonymous telemetry is on by default; this turns it off
+# Windows (PowerShell):
+$env:CREWAI_DISABLE_TELEMETRY = "true"
+# Mac (Terminal):
+export CREWAI_DISABLE_TELEMETRY=true
+
+# 6. Run the crew
+python team_crew.py
+
+# 7. Switch the key off when you've finished (or shut the window),
+#    then delete the key on platform.claude.com
+# Windows (PowerShell):
+Remove-Item Env:ANTHROPIC_API_KEY
+# Mac (Terminal):
+unset ANTHROPIC_API_KEY
