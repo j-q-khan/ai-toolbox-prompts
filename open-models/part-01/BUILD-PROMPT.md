@@ -1,0 +1,15 @@
+Paste this into Claude Code, started in a new, empty test folder (not your home folder and not real work). First press Shift+Tab until the status bar says manual mode on, so Claude Code stops and asks you before it edits files or runs commands. It checks LM Studio's command line tool, starts LM Studio's local server on your own computer only, and writes one small Python script that sends a test message to your model. No API key, nothing installed, nothing sent outside your computer. Written from LM Studio's docs, checked 2026-11-16.
+
+Goal: in this test folder, check that LM Studio's local server answers, with one small Python script that sends one chat message to LM Studio's OpenAI-compatible endpoint on my own computer and prints the reply. Test only.
+Steps, in order:
+1. Tell me in one sentence what you'll do, and that you'll ask me before running any command or writing any file.
+2. Ask me to confirm that LM Studio is installed, that I've opened it at least once, and that I've downloaded a model. If not, stop and tell me to install LM Studio from lmstudio.ai/download (the Download LM Studio button, not Bionic, and not the install commands) and come back. Never install anything yourself.
+3. Ask before running lms --help. If lms isn't found, stop: tell me lms ships with LM Studio, that LM Studio has to be opened once first, and to open a new terminal window and try again.
+4. Ask before running lms ps to see which model is loaded. If none is, tell me to load one in LM Studio's Chat tab, from the bar that says Select a model to load, and wait for me.
+5. Ask before running lms server start --port 1234. Never add --bind or --cors: the server stays on this computer only.
+6. Ask before running python --version on Windows, or python3 --version on a Mac (3.10 or later). If neither works, stop and tell me to get Python from python.org. Then plan one file, ask_local.py, using only Python's standard library (urllib and json, no pip installs), and show me the plan first. It sends GET http://localhost:1234/v1/models, uses the model id I give on the command line or else the first listed id that isn't an embedding model, then sends POST http://localhost:1234/v1/chat/completions with one short user message and prints the model id and the reply. No API key. If the server can't be reached, the chat call fails, or the reply has no text, it prints one plain line (how to start the server, or to pass a model id from lms ps) and exits cleanly, with no traceback.
+7. Wait for my yes, then write ask_local.py.
+8. Ask before running python ask_local.py (python3 ask_local.py on a Mac), then explain the output in three plain lines.
+9. Ask before running lms server stop at the end, and tell me the server can also be stopped from LM Studio's Developer tab.
+Safety: create only ask_local.py in this folder. No installs, no API keys, no network calls except to localhost:1234, nothing outside this folder, and never set Claude Code itself to use LM Studio or any non-Claude model.
+Output: ask_local.py, and a short explanation of which lines find the model and which send the message.
