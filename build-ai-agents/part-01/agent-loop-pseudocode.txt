@@ -1,0 +1,7 @@
+for step in range(10):
+    reply = ask_model(task, results)
+    if reply.wants_no_tool:
+        break
+    if reply.tool.writes_sends_or_spends and not you_say_yes():
+        break
+    results.add(run_tool(reply.tool))
