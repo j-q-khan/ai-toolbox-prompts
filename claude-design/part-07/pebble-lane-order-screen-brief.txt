@@ -1,0 +1,11 @@
+# pebble-lane-order-screen-brief.txt: a made-up design brief that works in Claude Design or in Figma
+# Pebble Lane Bakery is not a real business. Use made-up or your own non-confidential details, never client files.
+# Claude Design: paste it into a new design in Claude. Figma: hand it to the person designing the frame.
+Brand: Pebble Lane Bakery (made up, not a real business). Mark everything Draft.
+Screen: a one-page order screen for a phone app.
+Goal: a customer picks bakes, checks the basket and orders in under a minute of tapping.
+Sections, top to bottom: header with the bakery name; menu list of 6 items [name, price]; basket summary; Order button.
+Colours: flour cream background, crust brown text and buttons, sage green accents.
+Text: placeholders in square brackets only. No slogans, prices, reviews or awards unless the owner gives them.
+Phone: buttons big enough for a thumb, and the Order button always in view.
+Never: copy or imitate any real company's logo, brand, colours or lettering.
