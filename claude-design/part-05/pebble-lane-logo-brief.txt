@@ -1,0 +1,12 @@
+# pebble-lane-logo-brief.txt: a made-up brief for a Claude Design logo and one-page brand kit
+# Pebble Lane Bakery is not a real business. Use made-up briefs like this, never client files.
+# Paste it after Output, then Design in the message box (Settings, then Capabilities, then Create and edit files must be on).
+Make: a logo for Pebble Lane Bakery, a small neighbourhood bakery.
+Mark: a round mark with one wheat stalk, plain shapes only.
+Name: Pebble Lane Bakery, in a warm, rounded font.
+Colours: flour cream #F5EBDD, crust brown #8A5A2B, sage green #8FA382.
+Fonts: one warm, rounded font for the name and headings, and one plain, easy-to-read font for body text.
+Where it goes: a shop sign, a paper bag and the top of a website.
+First: show three different logo ideas side by side, plain shapes only.
+Then: one brand kit page with the chosen logo, the three swatches with their colour codes, the two fonts with a sample line each, and one line on where the logo shouldn't go.
+Also say: mark everything as a draft, use only these facts, and don't imitate any real company's logo.
