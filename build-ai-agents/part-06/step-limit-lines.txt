@@ -1,0 +1,25 @@
+The step-limit lines from Parts 2, 3 and 5, quoted exactly from each part's file
+(written for those videos from the docs; not run), with each project's own docs line below.
+
+A. Claude Agent SDK (Part 2, first_agent.py, claude-agent-sdk 0.2.182)
+        max_turns=5,  # step limit; the default is no limit
+        max_budget_usd=0.50,  # spending cap in US dollars; the default is no limit
+   The docs (agent-sdk/python): max_turns: int | None = None
+   The docs (agent-sdk/agent-loop): Max turns ... No limit. Max budget ... No limit.
+   At the limit: ResultMessage subtype error_max_turns (or error_max_budget_usd).
+
+B. LangGraph (Part 3, first_graph.py, langgraph 1.2.22)
+config = {
+    "configurable": {"thread_id": "test-1"},  # names this run, so the pause carries on from its save
+    "recursion_limit": 10,  # step limit: top level, not inside configurable (default 10,007)
+}
+   The docs (langgraph/graph-api): "Starting in version 1.1.4, the default is 10,007 super-steps."
+   At the limit: LangGraph raises GraphRecursionError.
+
+C. CrewAI (Part 5, team_crew.py, crewai 1.15.41)
+    max_iter=5,  # step limit (the docs say the default is 20; the code sets 25)
+   The docs (concepts/agents): max_iter=20,  # Default: 20 iterations
+   The source at 1.15.41: BaseAgent max_iter Field(default=25).
+   At the limit: "Maximum iterations reached. Requesting final answer." and one more model call, no error.
+
+Checked 2026-11-16. Use a test folder and a throwaway key with a spend limit.
