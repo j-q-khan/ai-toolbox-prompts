@@ -1,0 +1,25 @@
+# compose.yaml: Hermes Agent v0.23.1 in Docker (facts checked 2026-11-16)
+# Written for the video from the Hermes Agent docs (user-guide/docker). Not run by us.
+# Not affiliated with Nous Research or Docker.
+# Save in an empty folder (hermes-docker), then, in that folder:
+#   1. docker compose run --rm hermes setup    (once: the setup wizard)
+#   2. docker compose up -d                     (start it in the background)
+#   3. docker compose ps                        (check: hermes is Up)
+#   4. docker compose exec hermes hermes        (chat with Hermes in the container)
+services:
+  hermes:
+    image: nousresearch/hermes-agent:v0.23.1    # the official image, pinned
+    command: ["gateway", "run"]                 # the docs' always-on gateway mode
+    restart: unless-stopped                     # comes back after a crash
+    volumes:
+      - ./hermes-data:/opt/data                 # the only folder from your computer
+    # No ports: nothing needs to reach in. The dashboard is covered in its own part.
+    # Linux only: match the user that owns hermes-data (id -u, id -g), e.g.
+    # environment:
+    #   - HERMES_UID=1000
+    #   - HERMES_GID=1000
+    deploy:
+      resources:
+        limits:
+          memory: 4G                            # the docs' example limits
+          cpus: "2.0"
