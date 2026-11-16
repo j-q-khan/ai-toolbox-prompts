@@ -1,0 +1,10 @@
+# pebble-lane-landing-brief.txt: a made-up brief for your first Claude Design landing page
+# Pebble Lane Bakery is not a real business. Use made-up briefs like this, never client files.
+# Paste it after Output, then Design in the message box (Settings, then Capabilities, then Create and edit files must be on).
+Page: a landing page that signs people up for the Pebble Lane Bakery Saturday bread class.
+Who it's for: local beginners who have never baked bread.
+Layout: a big heading, one short line under it, the four dates, the price, and one button that says Book a place.
+On the page: four Saturday mornings, 10:00 to 13:00, 25 dollars a place, flour and aprons included.
+Phones: it must work on a phone as well as a laptop.
+Then: make the Book a place button open a booking screen with the four dates and a name and email form (for show only; use hello@pebblelane.example).
+Also say: mark every screen as a draft, and use only these facts.

@@ -1,0 +1,13 @@
+# handoff-checklist.txt: before and after you hand a Claude Design page to Claude Code
+# From Anthropic's pages "Get started with Claude Design", "Set up Claude Code",
+# "Claude Code on the web" and "Artifacts" (all checked 2026-11-15).
+[ ] Click through the prototype: does Book a place open the booking screen? If not, say so in the chat
+[ ] No Claude Code? Export, then Export as standalone HTML gives you the page as one file
+[ ] Claude Code needs Pro, Max, Ultra, Team or Enterprise (not the Free plan), installed and signed in
+[ ] Export, then Handoff to Claude Code, then pick one:
+[ ]   Send to local coding agent: Claude Code on your own computer
+[ ]   Send to Claude Code Web: Claude Code in the cloud (Pro, Max, Ultra, Team; Enterprise with the right seats)
+[ ] Open the page Claude Code builds in your web browser and put it beside your mock-up
+[ ] Something missing? Tell Claude Code in plain words what's different
+# The other way round: in Claude Code 2.1.265 or later, /design with a brief drafts a Claude Design canvas (templates are in beta).
+# Netlify, Vercel and Wix are on the Export list under "Send to the tools you already use"; each needs its own account.
