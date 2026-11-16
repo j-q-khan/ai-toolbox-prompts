@@ -1,0 +1,20 @@
+Example output (not run; your wording will differ)
+
+Tool: check_calendar
+Approve sending this invite? To sam@example.com, Tuesday 2pm to 3pm
+Allow this action? (y/n): y
+[pretend] Invite to sam@example.com for Tuesday 2pm to 3pm (nothing was sent)
+Claude: Tuesday 2pm to 3pm was free, so I sent Sam an invite for then (pretend).
+Model calls: 3
+
+Example output with n at the question (not run):
+
+Tool: check_calendar
+Approve sending this invite? To sam@example.com, Tuesday 2pm to 3pm
+Allow this action? (y/n): n
+Claude: I didn't send the invite, because you cancelled it.
+Model calls: 3
+
+Example output with "recursion_limit": 2 (not run; a line or two may print first):
+
+Stopped: hit the step limit (recursion_limit)
