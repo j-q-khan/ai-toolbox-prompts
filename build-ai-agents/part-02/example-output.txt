@@ -1,0 +1,10 @@
+Example output (not run; your wording will differ)
+
+Tool: mcp__calendar__check_calendar
+Tool: Write
+
+Approval needed: Write
+Input: {'file_path': '.../my-agent/notes.txt', 'content': 'Tuesday: 2pm to 3pm'}
+Allow this action? (y/n): y
+I saved Tuesday's free hour, 2pm to 3pm, to notes.txt.
+Done: success
