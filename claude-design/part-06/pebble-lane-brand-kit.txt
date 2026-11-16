@@ -1,0 +1,13 @@
+# pebble-lane-brand-kit.txt: a made-up brand kit to build a Claude Design design system from
+# Pebble Lane Bakery is not a real business. Use made-up or your own non-confidential files, never client files.
+# Attach it in a chat with Claude on a paid plan and ask: Build a design system from this brand kit.
+Brand: Pebble Lane Bakery (made up, not a real business).
+Logo: a round mark with one wheat stalk, plain shapes only, with the name Pebble Lane Bakery.
+Colours: flour cream #F5EBDD, crust brown #8A5A2B, sage green #8FA382.
+Colour roles: cream for backgrounds, brown for text and buttons, sage for accents and borders.
+Fonts: warm rounded for headings; plain and easy to read for body text.
+Primary Button: crust brown fill, cream text, rounded corners.
+Card: cream fill, thin sage border, 16-pixel padding.
+Layout: an 8-pixel spacing scale and plenty of white space.
+Voice: warm, plain and short. No slogans, prices or awards unless the owner gives them.
+Always: mark every design as a draft, and don't imitate any real company's brand.
