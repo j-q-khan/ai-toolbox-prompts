@@ -1,0 +1,20 @@
+Office help: questions and answers (made-up test document)
+This is a made-up office for testing an agent in Agent Builder. The office, the rooms, the rules and the email address are not real.
+
+How do I book a meeting room?
+The three meeting rooms are called Oak, Birch and Cedar. Book them in the shared room calendar. A booking longer than two hours needs the office manager's OK.
+
+How much notice do I need to give for time off?
+For a single day off, give two working days' notice. For a week or more, give ten working days' notice. Ask through the time-off form on the staff page.
+
+When is the office open?
+Monday to Friday, from 7:30 in the morning to 6:00 in the evening. The office is shut on public holidays.
+
+How do I get on the guest Wi-Fi?
+The guest network is called MapleGuest. The password changes every Monday and is printed on the card at reception.
+
+How do I report a broken printer?
+Email the help desk at helpdesk@example.com with the printer's floor and its name, which is on the label on top.
+
+Where do I leave parcels for posting?
+Leave them at reception before 3:00 in the afternoon for same-day posting.
