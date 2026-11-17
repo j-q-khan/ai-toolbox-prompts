@@ -1,0 +1,46 @@
+Made-up test thread for Copilot in Outlook (Microsoft Copilot series, Part 3)
+Test mailbox only. Every name, place and detail below is made up.
+Follow your employer's rules. Send these to yourself only.
+
+HOW TO BUILD THE THREAD
+1. Start a new email to yourself. Title (subject): Team lunch
+2. Paste MESSAGE 1 as the body and send it.
+3. When it arrives, select Reply, paste MESSAGE 2 and send it.
+4. When that arrives, select Reply, paste MESSAGE 3 and send it.
+You now have one conversation with three emails in it.
+Open it and select Summary by Copilot (or Summarize) at the top.
+
+----- MESSAGE 1 -----
+Hi team,
+
+I'd like to book our end-of-quarter team lunch. My suggestion is
+next Thursday at 12:30 in the café on the ground floor. The budget
+is $25 a person, and the company covers it.
+
+Please reply by Monday if you can come, and tell Priya about any
+dietary needs.
+
+Thanks,
+Sam
+
+----- MESSAGE 2 -----
+Hi Sam,
+
+Thursday clashes with the monthly client call for four of us.
+Could we move it to next Friday, same time? So far two people have
+told me they're vegetarian.
+
+Thanks,
+Priya
+
+----- MESSAGE 3 -----
+Hi all,
+
+Friday works. I've booked the café for next Friday at 12:30, a
+table for nine.
+
+Priya, could you send me the full dietary list by Wednesday? The
+budget stays at $25 a person.
+
+Thanks,
+Sam
