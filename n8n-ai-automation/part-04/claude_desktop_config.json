@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "n8n-weather": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@0.16.6",
+        "PASTE-YOUR-PRODUCTION-URL-HERE",
+        "--header",
+        "Authorization:${AUTH_HEADER}"
+      ],
+      "env": {
+        "AUTH_HEADER": "Bearer PASTE-YOUR-TOKEN-HERE"
+      }
+    }
+  }
+}

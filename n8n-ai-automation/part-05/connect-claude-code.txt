@@ -1,0 +1,42 @@
+# Connect Claude Code to your own test n8n through n8n's built-in MCP server.
+# n8n 2.13 or later (Part 1 runs 2.47.7). Written from n8n's and Anthropic's docs, checked 2026-11-16.
+# Use your test n8n only (Part 1's), never one that runs real work: Claude Code acts with your account.
+
+# 1. In n8n: Settings, Instance-level MCP, Enable MCP access (owner or admin only).
+#    Then Connect, the OAuth (recommended) tab, Your client: Claude Code.
+#    n8n shows the add command (step 2) with your Server URL already in it: copy it from there.
+#    For Part 1's local install the Server URL is:
+http://localhost:5678/mcp-server/http
+#    Plain http is right for a local install. It is NOT the editor's address from your browser bar.
+
+# 2. In PowerShell (Windows) or Terminal (Mac), in the folder you'll work in:
+claude mcp add --transport http n8n http://localhost:5678/mcp-server/http
+#    This adds n8n for this folder only (Claude Code's default scope), so start Claude Code here.
+
+# 3. Start Claude Code in the same folder, then sign in:
+claude
+/mcp
+#    Pick n8n and choose Authenticate. On the n8n page that opens, every scope starts ticked;
+#    tick "I recognize and trust this URL", then click Allow access.
+#    "You do not have sufficient permissions to authorize this request" = MCP access is off in n8n.
+#    New workflows Claude Code creates are open to it automatically. To let it edit an existing one:
+#    open that workflow, the Workflow menu (...), Settings, and switch on Available in MCP.
+
+# 4. Before you ask for anything: press Shift+Tab until the status bar says manual mode on,
+#    so Claude Code asks before every n8n tool call. Answer Yes one call at a time.
+
+# Check it from PowerShell or Terminal:
+claude mcp list
+
+# Switch it off: in PowerShell or Terminal, sign out and remove it from Claude Code ...
+claude mcp logout n8n
+claude mcp remove n8n
+#    ... or in n8n: Settings, Instance-level MCP, the MCP status control, Disable, then confirm
+#    Disable MCP access (this disconnects every client). To drop one client only: Connected clients, Revoke access.
+
+# Instead of OAuth, n8n's docs also give an API key route (the API key tab in the same dialog).
+# OAuth is used here because an API key can't be limited to some tools: it reaches every tool.
+# n8n's docs name this server n8n-mcp; it's named n8n here so the commands above still match it,
+# and so it can't be confused with the skills plugin's n8n-mcp connection.
+# Replace PASTE-YOUR-N8N-MCP-TOKEN with the token n8n shows once, and never share or commit it:
+# claude mcp add --transport http n8n http://localhost:5678/mcp-server/http --header "Authorization: Bearer PASTE-YOUR-N8N-MCP-TOKEN"

@@ -1,0 +1,7 @@
+Build a new n8n workflow called Weather for three cities.
+Every day at 8 AM, get the weather for Berlin, Paris and Lisbon
+from n8n's Mockingbird practice service (no key needed),
+write one sentence per city, and save each one to my weather log data table.
+Don't publish it, don't run it, and don't change any other workflow.
+Ask me before every n8n tool call, and when you're done, give me the link
+and list any credentials n8n assigned to the nodes.

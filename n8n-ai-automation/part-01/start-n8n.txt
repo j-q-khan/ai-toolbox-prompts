@@ -1,0 +1,17 @@
+# n8n 2.47.7 with Docker Desktop. Works in Windows PowerShell and Mac Terminal.
+# Copy one command at a time (lines starting with # are notes, not commands).
+
+# Command 1, once: make the volume that keeps your workflows and n8n's encryption key
+docker volume create n8n_data
+
+# Command 2: start n8n at a fixed version, open to this computer only (one line).
+# Changed from n8n's README: 127.0.0.1 added, because Docker's docs say a plain -p 5678:5678 publishes to other machines too.
+docker run -it --rm --name n8n -p 127.0.0.1:5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n:2.47.7
+
+# Then open http://localhost:5678 in your browser and create the owner account.
+
+# Stop: press Ctrl+C in that window, or type this in a second window
+docker stop n8n
+
+# Start again: run Command 2 again. Your workflows are in the volume.
+# Update: stop n8n first, change 2.47.7 to the newer stable version, then run Command 2 again.

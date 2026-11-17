@@ -1,0 +1,11 @@
+# The three things to paste while building the Weather Log workflow by hand.
+# From n8n's Build your first workflow guide (docs.n8n.io), checked 2026-11-16.
+
+# Get Berlin weather (the HTTP Request node), the box called URL:
+https://mockingbird.n8n.io/v1/weather/berlin
+
+# Add weather report (the Edit Fields node), Add Field, the Name box:
+report
+
+# The same field's Value box: set it to Expression first, then paste this whole line
+The temperature in {{ $json.city }} is {{ $json.temp_c }}°C. It's currently {{ $json.condition }}.

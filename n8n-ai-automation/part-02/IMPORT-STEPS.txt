@@ -1,0 +1,38 @@
+# Import the Weather Log workflow into your own test n8n (n8n 2.47.7, from Part 1).
+# Written from n8n's docs, checked 2026-11-16. Sample data only: no account, no API key, no AI.
+
+# 1. Save the workflow file
+#    Quickest: download weather-log-workflow.json from this GitHub folder.
+#    Or copy its text into Notepad and save it as weather-log-workflow.json,
+#    with the box called Save as type set to All files.
+#    Mac: in TextEdit, choose Format, Make Plain Text first, then save with the .json name.
+
+# 2. Make the table it writes to (the workflow finds it by name)
+#    In n8n: Personal, then the Data tables tab, then create a data table
+#    named weather log, then Add Column: report
+#    Skip this and the last node stops with: Data table with name "weather log" not found
+
+# 3. Import it
+#    Personal, Create workflow, then the workflow menu (the three dots in the canvas header),
+#    then Import from File, and choose weather-log-workflow.json
+#    Or open the file, copy all its text, click the empty canvas and press Ctrl+V (Mac: Cmd+V)
+
+# 4. Test it
+#    Select Execute under the canvas: four green ticks, 1 item on each wire,
+#    and a new line in Personal, Data tables, weather log
+
+# 5. Set your time zone before you publish
+#    Workflow menu, Settings, Timezone: pick yours, then Save
+#    (self-hosted n8n uses America/New_York unless you set one)
+
+# 6. Publish, so the schedule runs it every day at 8 AM
+#    Select Publish in the canvas header. Runs show in the Executions tab.
+#    It runs only while n8n is running (the Docker window from Part 1).
+#    Changed the hour after publishing? Unpublish, then publish again.
+
+# 7. Stop it
+#    The arrow next to Publish, then Unpublish
+
+# Keys and logins: never paste them into a node or this file. Use n8n's credential store
+# (Personal, Credentials). Exported workflow files include credential names and IDs:
+# check a file before you share it.

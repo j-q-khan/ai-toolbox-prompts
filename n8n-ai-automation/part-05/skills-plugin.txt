@@ -1,0 +1,11 @@
+# Optional: n8n's own skills plugin for Claude Code (n8n-io/skills, Apache 2.0), from its README, checked 2026-11-16.
+# Type these inside a claude session:
+/plugin marketplace add n8n-io/skills
+/plugin install n8n-skills@n8n-io
+#    When asked, enter your n8n instance's base URL only; the plugin adds /mcp-server/http itself.
+/reload-plugins
+/mcp
+#    Pick n8n-mcp and choose Authenticate.
+# This n8n-mcp is n8n's own connection; a third-party server shares the name, so check which one you have.
+# The plugin adds a second connection to the same n8n: turn the first one (n8n) off in /mcp,
+# so the tools aren't doubled.

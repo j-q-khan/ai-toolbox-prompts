@@ -1,0 +1,214 @@
+{
+  "name": "Weather Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {
+          "responseMode": "responseNodes"
+        }
+      },
+      "id": "021f5955-b768-4b8b-93a2-f185647baa9c",
+      "name": "When chat message received",
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "50f5f40a-84ae-4753-b92d-3182535c0442"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You answer questions about today's weather in European cities. Use the Get weather tool to look it up, with the city in lower case. Only when the user asks you to save, write one sentence with the city, the temperature in C and the conditions, and save it with the Save to weather log tool. Saving needs a person's approval first. If the save is denied, tell the user it was not saved and do not try again.",
+          "maxIterations": 5
+        }
+      },
+      "id": "7e8fc814-6f8d-48d1-80ad-d134209196f2",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        260,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "claude-sonnet-5-5",
+          "cachedResultName": "Claude Sonnet 5.5"
+        },
+        "options": {}
+      },
+      "id": "43329805-7da5-45f7-90a8-81c0194d0fcc",
+      "name": "Anthropic Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.6,
+      "position": [
+        120,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Gets today's sample weather for one European city from n8n's Mockingbird practice service: the city, the temperature in C and the conditions. Supported cities, in lower case: amsterdam, athens, barcelona, bergen, berlin, bordeaux, brussels, budapest, cologne, copenhagen, dublin, edinburgh, frankfurt, geneva, gothenburg, hamburg, helsinki, krakow, lisbon, london, lyon, madrid, marseille, milan, munich, naples, nice, oslo, paris, porto, prague, rome, seville, stockholm, turin, valencia, vienna, warsaw, zurich.",
+        "url": "=https://mockingbird.n8n.io/v1/weather/{{ $fromAI('city', 'One supported European city, in lower case, for example berlin', 'string') }}",
+        "options": {}
+      },
+      "id": "aae81364-1c8b-486b-bc11-588f0c831bb2",
+      "name": "Get weather",
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        320,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "9f712229-24b2-49dc-901f-94c128d23ed6",
+      "name": "Human review",
+      "type": "@n8n/n8n-nodes-langchain.chatHitlTool",
+      "typeVersion": 1.3,
+      "position": [
+        520,
+        240
+      ],
+      "webhookId": "a5c2a38f-0e3e-4bae-8a08-37c56b9c91f1"
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Saves one sentence about the weather as a new row in the weather log data table, in its report column.",
+        "resource": "row",
+        "operation": "insert",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "weather log"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "report": "={{ $fromAI('report', 'One sentence with the city, the temperature in C and the conditions', 'string') }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "report",
+              "displayName": "report",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f8d50d40-eb5e-4f78-bdcb-3e624ab32a82",
+      "name": "Save to weather log",
+      "type": "n8n-nodes-base.dataTableTool",
+      "typeVersion": 1.1,
+      "position": [
+        520,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "message": "={{ $json.output }}",
+        "options": {}
+      },
+      "id": "4fb6c8c6-9344-481a-9ed8-88db93419cdc",
+      "name": "Send reply",
+      "type": "@n8n/n8n-nodes-langchain.chat",
+      "typeVersion": 1.3,
+      "position": [
+        620,
+        0
+      ],
+      "webhookId": "82f898e8-0bec-4876-89b0-3ab1bd79254a"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Send reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anthropic Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get weather": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Human review": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save to weather log": {
+      "ai_tool": [
+        [
+          {
+            "node": "Human review",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

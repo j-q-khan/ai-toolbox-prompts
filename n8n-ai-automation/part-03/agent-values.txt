@@ -1,0 +1,23 @@
+# The values to paste while building the Weather Agent by hand (n8n 2.47.7).
+# Written from n8n's docs, checked 2026-11-16. Sample data only (Mockingbird).
+
+# AI Agent, Options, System Message:
+You answer questions about today's weather in European cities. Use the Get weather tool to look it up, with the city in lower case. Only when the user asks you to save, write one sentence with the city, the temperature in C and the conditions, and save it with the Save to weather log tool. Saving needs a person's approval first. If the save is denied, tell the user it was not saved and do not try again.
+
+# AI Agent, Options, Max Iterations (default 10):
+5
+
+# Get weather (HTTP Request tool), the box called URL: set it to Expression, then paste
+https://mockingbird.n8n.io/v1/weather/{{ $fromAI('city', 'One supported European city, in lower case, for example berlin', 'string') }}
+
+# Get weather, Description: Set Manually, then paste
+Gets today's sample weather for one European city from n8n's Mockingbird practice service: the city, the temperature in C and the conditions. Supported cities, in lower case: amsterdam, athens, barcelona, bergen, berlin, bordeaux, brussels, budapest, cologne, copenhagen, dublin, edinburgh, frankfurt, geneva, gothenburg, hamburg, helsinki, krakow, lisbon, london, lyon, madrid, marseille, milan, munich, naples, nice, oslo, paris, porto, prague, rome, seville, stockholm, turin, valencia, vienna, warsaw, zurich.
+
+# Save to weather log (Data table tool, Insert row, table: weather log), Description: Set Manually, then paste
+Saves one sentence about the weather as a new row in the weather log data table, in its report column.
+
+# Save to weather log, the report column: set it to Expression, then paste
+{{ $fromAI('report', 'One sentence with the city, the temperature in C and the conditions', 'string') }}
+
+# Send reply (Chat node, Send Message), the box called Message: set it to Expression, then paste
+{{ $json.output }}

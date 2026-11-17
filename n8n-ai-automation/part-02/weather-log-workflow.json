@@ -1,0 +1,137 @@
+{
+  "name": "Weather Log",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "26b8f018-40e0-413a-a71f-b63052b14d57",
+      "name": "Every day at 8 AM",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://mockingbird.n8n.io/v1/weather/berlin",
+        "options": {}
+      },
+      "id": "77429890-2626-4ee4-bdbd-d46882b56ac6",
+      "name": "Get Berlin weather",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "27550e17-2b6b-4228-9073-b8d68c923e4f",
+              "name": "report",
+              "value": "=The temperature in {{ $json.city }} is {{ $json.temp_c }}°C. It's currently {{ $json.condition }}.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "4c155f31-8e40-460b-8201-5002b9b2ed6f",
+      "name": "Add weather report",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        480,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "row",
+        "operation": "insert",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "weather log"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "report",
+              "displayName": "report",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "7d4399a5-635c-496f-930b-2260fbb71fec",
+      "name": "Save weather log",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        720,
+        0
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Every day at 8 AM": {
+      "main": [
+        [
+          {
+            "node": "Get Berlin weather",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Berlin weather": {
+      "main": [
+        [
+          {
+            "node": "Add weather report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add weather report": {
+      "main": [
+        [
+          {
+            "node": "Save weather log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

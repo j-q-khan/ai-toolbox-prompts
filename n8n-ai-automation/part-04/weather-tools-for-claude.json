@@ -1,0 +1,76 @@
+{
+  "name": "Weather tools for Claude",
+  "nodes": [
+    {
+      "parameters": {
+        "authentication": "bearerAuth",
+        "path": "6f45ed78-238f-4b93-851d-b36ed7aa928c"
+      },
+      "id": "203bec6f-9ce0-477d-8465-28922f2a2772",
+      "name": "MCP Server Trigger",
+      "type": "@n8n/n8n-nodes-langchain.mcpTrigger",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "6f45ed78-238f-4b93-851d-b36ed7aa928c"
+    },
+    {
+      "parameters": {
+        "description": "Gets today's sample weather for one European city from n8n's Mockingbird practice service and returns one sentence with the temperature in C and the conditions. Supported cities, in lower case: amsterdam, athens, barcelona, bergen, berlin, bordeaux, brussels, budapest, cologne, copenhagen, dublin, edinburgh, frankfurt, geneva, gothenburg, hamburg, helsinki, krakow, lisbon, london, lyon, madrid, marseille, milan, munich, naples, nice, oslo, paris, porto, prague, rome, seville, stockholm, turin, valencia, vienna, warsaw, zurich.",
+        "workflowId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "",
+          "cachedResultName": "Weather lookup"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "city": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('city', 'One supported European city, in lower case, for example lisbon', 'string') }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "city",
+              "displayName": "city",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string"
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "id": "8db44708-4a21-4681-a1e4-234093303b25",
+      "name": "Get weather",
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        220
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Get weather": {
+      "ai_tool": [
+        [
+          {
+            "node": "MCP Server Trigger",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

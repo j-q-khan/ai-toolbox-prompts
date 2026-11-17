@@ -1,0 +1,196 @@
+{
+  "name": "Weather for three cities",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "29358cf6-1246-4d16-a335-a5368803e42a",
+      "name": "Every day at 8 AM",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9bbde47f-a36a-445c-bb32-a2c57a4fd9f5",
+              "name": "city",
+              "value": "={{ ['berlin', 'paris', 'lisbon'] }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "2c50bdf0-c622-4746-9d48-b74d98d16520",
+      "name": "List the cities",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        220,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "city",
+        "options": {}
+      },
+      "id": "fdfb94b6-6e3a-4c37-b9ad-870edb8b03b0",
+      "name": "One item per city",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        440,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "url": "=https://mockingbird.n8n.io/v1/weather/{{ $json.city }}",
+        "options": {}
+      },
+      "id": "29d5c568-4f92-4495-8a57-f3cafc8e625f",
+      "name": "Get the weather",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "cc69cb78-6102-46e5-8a65-5a96ce382697",
+              "name": "report",
+              "value": "=The temperature in {{ $json.city }} is {{ $json.temp_c }}°C. It's currently {{ $json.condition }}.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "0416d73b-fe21-4137-89b0-0de769aa6093",
+      "name": "Add weather report",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        880,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "row",
+        "operation": "insert",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "weather log"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "report",
+              "displayName": "report",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d36775dd-0158-475b-b6cb-655b450cfcbc",
+      "name": "Save weather log",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        1100,
+        0
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Every day at 8 AM": {
+      "main": [
+        [
+          {
+            "node": "List the cities",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "List the cities": {
+      "main": [
+        [
+          {
+            "node": "One item per city",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "One item per city": {
+      "main": [
+        [
+          {
+            "node": "Get the weather",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get the weather": {
+      "main": [
+        [
+          {
+            "node": "Add weather report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add weather report": {
+      "main": [
+        [
+          {
+            "node": "Save weather log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

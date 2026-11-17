@@ -1,0 +1,12 @@
+# Before you publish a workflow Claude Code built (n8n 2.47.7, checked 2026-11-16)
+# 1. Open the link Claude Code gave you. The workflow should be unpublished.
+# 2. Click each node and check its settings against what you asked for.
+# 3. Check every credential box: n8n assigns credentials you already have to new nodes
+#    by itself (HTTP Request nodes are skipped). This workflow needs none: remove any it got.
+# 4. Check the trigger's time, and the workflow's time zone in its Settings
+#    (Part 1's docker run sets none, so n8n uses New York time).
+# 5. Check where it writes: the data table weather log, column report.
+# 6. Click Execute under the canvas and look in Personal, Data tables, weather log:
+#    three new rows, one per city.
+# 7. Only then click Publish yourself.
+# Undo: unpublish it, then archive it from the workflow menu.

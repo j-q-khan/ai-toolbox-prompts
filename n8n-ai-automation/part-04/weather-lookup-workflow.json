@@ -1,0 +1,89 @@
+{
+  "name": "Weather lookup",
+  "nodes": [
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "city"
+            }
+          ]
+        }
+      },
+      "id": "27ddc471-301a-4839-8022-dcceaf233f9e",
+      "name": "When Executed by Another Workflow",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "url": "=https://mockingbird.n8n.io/v1/weather/{{ $json.city }}",
+        "options": {}
+      },
+      "id": "63396414-3ae6-45d6-b7ea-aa660c39cdc7",
+      "name": "Get city weather",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "26facb61-9efb-4c34-909d-c9765bd087cb",
+              "name": "report",
+              "value": "=The temperature in {{ $json.city }} is {{ $json.temp_c }}°C. It's currently {{ $json.condition }}.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "00571a89-a256-4d3f-acaa-92daf46536a8",
+      "name": "Add weather report",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        440,
+        0
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Get city weather",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get city weather": {
+      "main": [
+        [
+          {
+            "node": "Add weather report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

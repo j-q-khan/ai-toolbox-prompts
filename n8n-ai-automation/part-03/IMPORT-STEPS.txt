@@ -1,0 +1,42 @@
+# Import the Weather Agent into your own test n8n (n8n 2.47.7, from Parts 1 and 2).
+# Written from n8n's and Anthropic's docs, checked 2026-11-16. Sample data only.
+
+# 1. Make a throwaway Anthropic key (Claude Console, platform.claude.com)
+#    Settings, API keys, Create key: name it n8n test, leave Linked account on yourself,
+#    pick a short expiration, and choose one workspace for it (a key with no workspace must
+#    send a workspace ID on every request; n8n's credential sends only the key by default).
+#    Settings, Spend limits: set a low Monthly spend limit for your organization.
+#    The key is shown only once. Paste it only into n8n's credential store (step 4).
+#    If the key ever leaks: Disable it (reversible) or Delete it on the API keys page.
+
+# 2. Check the table it writes to (from Part 2)
+#    In n8n: Personal, then the Data tables tab: a table named weather log with a column report.
+#    No table yet? Create it: name weather log, then Add Column: report
+
+# 3. Import the workflow
+#    Download weather-agent-workflow.json from this GitHub folder.
+#    Or copy its text into Notepad and save it as weather-agent-workflow.json,
+#    with the box called Save as type set to All files.
+#    Mac: in TextEdit, choose Format, Make Plain Text first, then save with the .json name.
+#    In n8n: Personal, Create workflow, then the workflow menu (the three dots in the canvas header),
+#    then Import from File, and choose weather-agent-workflow.json
+
+# 4. Add your key
+#    Open Anthropic Chat Model, then in its credential box choose Create new credential,
+#    paste the key into API Key and save. Pick a model from the list if you want another one.
+
+# 5. Test it in the editor
+#    Click Open chat under the canvas and type, for example:
+#    What's the weather in Lisbon, and please save it to my log?
+#    The chat pauses on the review message: Approve saves the sentence, Deny cancels it.
+#    Check Personal, Data tables, weather log for the new line.
+#    Leave Make Chat Publicly Available off in the Chat Trigger.
+#    If a run stops with "Max iterations (5) reached", raise Max Iterations a little
+#    in the AI Agent's options (the default is 10).
+
+# 6. When you're done
+#    Delete the key in the Claude Console (Settings, API keys).
+#    Delete this workflow in n8n if you don't need it.
+
+# Keys never go in a node, a prompt or this file. Every message and tool result goes to Anthropic
+# to be answered: keep work data out unless your employer allows it.
