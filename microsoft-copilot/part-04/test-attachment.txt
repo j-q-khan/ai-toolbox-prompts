@@ -1,0 +1,3 @@
+Test attachment for the Power Automate first-flow test (Microsoft Copilot series, Part 4).
+Made-up file. Attach it to an email you send to yourself with the subject: Flow test
+If the flow works, a copy of this file appears in your OneDrive folder called Flow test.
