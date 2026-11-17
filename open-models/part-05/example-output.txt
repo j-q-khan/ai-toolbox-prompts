@@ -1,0 +1,15 @@
+Example output (not run against OpenRouter: the model is one of the 14 free models listed on 2026-11-17; the reply and token counts are made up to show the layout; the cost field is optional in OpenRouter's docs, which say free models come without cost, so the 0 is assumed, not seen):
+
+python ask.py
+Model asked:    openrouter/free
+Model answered: google/gemma-4-31b-it:free
+Reply:          It's a secret code that identifies you to a service and bills your requests to your account.
+Tokens:         16 in, 22 out
+Cost (credits): 0
+
+python ask.py qwen/qwen3.8-27b
+qwen/qwen3.8-27b isn't a free model, so it spends credits. Add --paid to go ahead.
+
+python ask.py --limits
+Free-model requests today (UTC day): 1 used of 50 - 49 left
+Credit limit on this key: 5 | left: 5
