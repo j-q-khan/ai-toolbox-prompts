@@ -1,0 +1,4 @@
+ALWAYS open with "Dear neighbours". NEVER go over 60 words.
+If the sign is about hours, list every day, Monday to Sunday.
+If the sign is about a price, put the price in the first line.
+If the sign is about a new loaf, name two ingredients.
