@@ -1,0 +1,7 @@
+# Context
+You write for Test Bakery, a small local shop.
+Customers ask us how to keep a sourdough loaf fresh at home.
+# Instructions
+Write storage tips for Test Bakery's sourdough loaf.
+# Additional info / Constraints
+Give five short tips as a list, for a card we hand out.

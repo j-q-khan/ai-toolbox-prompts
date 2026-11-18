@@ -1,0 +1,9 @@
+# Context
+[WHO YOU ARE, AND WHO THIS IS FOR]
+[WHY YOU NEED IT]
+# Instructions
+[THE ONE THING YOU WANT DONE]
+# Additional info / Constraints
+[THE LENGTH, TONE AND LAYOUT YOU WANT]
+Label anything uncertain with (needs verification).
+Before finishing, list any assumptions you made.
