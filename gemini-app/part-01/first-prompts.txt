@@ -1,0 +1,14 @@
+# Paste each prompt into the text box at the bottom of gemini.google.com, then click Submit.
+# Send prompt 2 in the same chat, after the first answer appears.
+# Prompt 3 goes with a test file you added with Add files, then Upload files.
+# Made-up details only. Written from Google's Gemini help pages, checked 2026-11-18.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Plan a 3-day trip to Lisbon for two adults on a small budget.
+
+Make day 2 cheaper and add a rainy-day option.
+
+Summarize this in 5 bullet points.
+
+Where did the information in your last answer come from?
