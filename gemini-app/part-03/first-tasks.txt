@@ -1,0 +1,28 @@
+# Starter tasks for Tasks in Gemini: paste one into the text box after clicking Task.
+# Where: gemini.google.com, below the text box, click Task, paste, then click Submit.
+# These look things up, summarize, watch or make a file;
+# none of them asks Gemini to send, delete or buy anything.
+# Never add sign-in details, payment details or anything sensitive to a task (Google's advice).
+# Replace the examples with your own, with no names, emails or private details.
+# Written from Google's Gemini help pages, checked 2026-11-18. Not run for this video.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Every Monday at 8, give me a 5-line news digest about electric cars, with a link for each story.
+
+# Needs Google Workspace connected to Gemini (Connected Apps), because it uses your inbox:
+Every Monday at 8, summarize my unread newsletters in 5 lines and don't delete anything.
+
+Watch the price of a 1.7 litre electric kettle under 40 dollars and tell me when one drops below that. Don't buy anything.
+
+# Needs Google Workspace connected to Gemini (Connected Apps), because it uses your calendar:
+Every Friday at 5, list my calendar events for next week and flag any that overlap. Don't change or send anything.
+
+Find three free walking routes near my town, compare them in a short table and save it as a document. Ask me before you share anything.
+
+# Not sure what to hand over? Type one of these as your task and Gemini helps you set up:
+set up
+interview me
+
+# Change a running task without starting over: type the change into the text box, for example:
+Also add one story about charging stations.
