@@ -1,0 +1,8 @@
+Reply to the Test Bakery review, in the style of the example.
+<example>
+Review: The queue was slow.
+Reply: Sorry about the wait. We've added a second till.
+</example>
+<review>
+The rolls were cold.
+</review>
