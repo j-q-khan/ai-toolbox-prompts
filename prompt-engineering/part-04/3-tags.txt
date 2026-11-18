@@ -1,0 +1,7 @@
+<instructions>Write a shelf label for our new loaf.</instructions>
+<examples>
+<example>Cheese scone: sharp cheddar, baked this morning.</example>
+<example>Oat cookie: chewy, with raisins. Contains nuts.</example>
+<example>Sourdough loaf: slow-proved, with a crisp crust.</example>
+</examples>
+<notes>Our new loaf: sesame rye, baked daily.</notes>

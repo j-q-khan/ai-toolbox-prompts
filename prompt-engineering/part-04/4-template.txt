@@ -1,0 +1,7 @@
+<instructions>[THE ONE THING YOU WANT DONE]</instructions>
+<examples>
+<example>[EXAMPLE 1]</example>
+<example>[EXAMPLE 2, DIFFERENT FROM EXAMPLE 1]</example>
+<example>[EXAMPLE 3, THE UNUSUAL CASE]</example>
+</examples>
+<notes>[THE FACTS OR THE DOCUMENT TO WORK FROM]</notes>
