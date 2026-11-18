@@ -1,0 +1,9 @@
+# Use this in Claude Code, opened in a new empty folder (install: Claude Code for Beginners, linked in the description).
+# First drag the same screenshot into the Claude Code window, then paste the lines below.
+# Written from Claude Code's Work with images docs, checked 2026-11-17. Made-up details only.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Build a one-page menu for Test Bakery, a made-up bakery, that matches this design mockup: same colours, fonts, spacing and buttons.
+Use plain HTML and CSS in this folder only, with made-up items only, and no sign-in or database.
+When you're done, tell me how to open the page in my browser.

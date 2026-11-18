@@ -1,0 +1,13 @@
+# Paste the prompt into the box saying Ask Framer, on the Agent tab on the right of the Framer editor.
+# Then, for the edit, select the big top banner (the hero) on the canvas first, and send the edit line on its own.
+# Made-up details only: Framer's AI Notice says no personal data. Written from Framer's help pages, checked 2026-11-17.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+# The prompt:
+Build a one-page website for Test Bakery, a made-up neighbourhood bakery. Include a hero with the bakery's name and a short welcome line,
+a menu section with three breads (Sourdough loaf $6, Cinnamon roll $3, Rye bread $5), opening hours, and a contact section showing test@example.com.
+Use a warm, friendly style with large text.
+
+# The edit, with the hero selected:
+Make the hero full-screen.

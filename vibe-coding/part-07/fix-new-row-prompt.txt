@@ -1,0 +1,16 @@
+# Paste the prompt below into your Lovable app's chat, with Build picked,
+# when saving something fails with: new row violates row-level security policy for table
+# If you know the table's name, add it after the word table. Made-up data only.
+# Written from Supabase's Row Level Security docs and Lovable's docs, checked 2026-11-17.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+# The prompt:
+My app shows: new row violates row-level security policy for table.
+Add a policy for adding rows, for signed-in users only,
+that checks the new row's owner is the signed-in user,
+and make the app fill in that owner on every new row.
+Explain the change first. Don't turn Row Level Security off.
+In that explanation, say which table and which action fail, and which policies the table has now.
+Don't use a secret key or a service_role key anywhere in the browser.
+Show me the database change and wait for my approval before you run it.

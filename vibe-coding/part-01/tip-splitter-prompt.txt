@@ -1,0 +1,13 @@
+# Paste the first prompt into Lovable's box ("Ask Lovable to create…") with Build picked in the mode picker.
+# Then send the change prompt on its own, after the first version is ready.
+# Made-up numbers only. Written from Lovable's Quick start, checked 2026-11-17.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Build a tip splitter app: a box for the bill amount, buttons for 10%, 15% and 20% tip, and a box for how many people.
+Show the tip, the total and what each person pays, updating as I type.
+Clean, friendly design with large buttons. Works well on mobile.
+No login or database yet.
+
+# Change prompt, sent on its own:
+Add a "Round up" button that rounds each person's share up to the nearest dollar. Keep everything else the same.

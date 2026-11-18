@@ -1,0 +1,13 @@
+# Use these in the Test Bakery app from Part 2, AFTER you've connected your own Supabase account
+# (in the editor: Settings, then General, then External Supabase, then Connect).
+# Send each prompt on its own in the chat, with Build picked, after the one before has finished.
+# Made-up details only. Written from Lovable's Connect to Supabase docs, checked 2026-11-17.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+# Prompt 1, logins:
+Add email and password login, with a Sign in button at the top.
+
+# Prompt 2, one table. Lovable shows the database change and asks you to approve it in the chat.
+Add a Reserve button to each menu item. Signed-in customers pick a pickup day, and a My reservations page shows only their own reservations.
+Keep reservations in one table, tied to each customer.

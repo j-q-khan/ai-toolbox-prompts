@@ -1,0 +1,19 @@
+# Paste the first prompt into Lovable's box ("Ask Lovable to create…") with Build picked in the mode picker.
+# Send each later prompt on its own, after the one before has finished, and check the preview each time.
+# Made-up details only. Written from Lovable's Quick start and prompting best practices, checked 2026-11-17.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Build a one-page website for Test Bakery, a made-up neighborhood bakery. Include a warm welcome section with a headline and a "See the menu" button, a menu with breads, pastries and cakes and a price for each, an opening hours section, and a "Find us" section.
+It's for people nearby choosing what to pick up today, and the main thing a visitor should do is see the menu.
+Use realistic sample text throughout, with a made-up address and phone number.
+Warm, friendly design with large text. Works well on mobile. No login or database yet.
+
+# Change prompt, typed in the chat:
+In the menu section, add a small "New" badge next to the cinnamon roll. Keep everything else the same.
+
+# With Select elements picked in the preview toolbar, click the "See the menu" button, then type:
+Make this button darker and round the corners more.
+
+# Before your next big change, end that prompt with this line:
+Ask me any questions you need in order to fully understand what I want.
