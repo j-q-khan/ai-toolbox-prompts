@@ -1,0 +1,8 @@
+Write an email telling customers Test Bakery now opens at 7, not 8.
+They're regulars who asked for earlier hours, so thank them.
+Keep it under 80 words, friendly, with a short title line.
+If you're unsure of a detail, say so instead of guessing.
+Here's an example of the style I want:
+Title: Fresh rolls on Fridays
+Hi all, you asked, so we now bake rolls on Fridays too.
+Come early, they go fast. Thank you, Test Bakery

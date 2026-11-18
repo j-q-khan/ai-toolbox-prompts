@@ -1,0 +1,4 @@
+Write an email telling customers Test Bakery now opens at 7, not 8.
+They're regulars who asked for earlier hours, so thank them.
+Keep it under 80 words, friendly, with a short title line.
+If you're unsure of a detail, say so instead of guessing.
