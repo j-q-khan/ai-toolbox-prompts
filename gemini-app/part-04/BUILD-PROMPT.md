@@ -1,0 +1,14 @@
+Paste this into Claude (or into the Gemini app at gemini.google.com), in a new chat. It's a research prompt: it checks whether your own computer and phone can run the Gemini apps, using only Google's, Apple's and Microsoft's own pages, and tells you what to install and where to click to check. It needs no files and no personal details: describe your devices in general terms, with no names, emails, serial numbers or account details. Written from Google's Gemini help pages, checked 2026-11-18.
+
+Goal: check which Gemini app each of my devices can run (the Windows app, the Mac app, the iPhone app or the Android app), and what to use instead where one can't.
+My devices (general terms only, no names, emails or serial numbers):
+[list them here, for example: a Windows laptop, Windows 11, RAM unknown; a Mac, chip unknown; an iPhone on iOS 17; an Android phone on Android 12]
+Steps, in order:
+1. Say in one sentence what you'll check, and that you'll use only Google's official pages (gemini.google and support.google.com/gemini), Apple's (support.apple.com, the App Store listing) and Microsoft's (support.microsoft.com), with a link for every requirement you use.
+2. Look up today's requirements and quote them: Google's "Use the Gemini app for Windows" page (Windows version, RAM, disk space), "Use the Gemini app on Mac" (chip, macOS version, RAM, disk space), "Gemini mobile app availability" (Android version, RAM, iPhone version), and the App Store listing for Google Gemini (its Compatibility line). If two official sources disagree, show both and say which one decides whether the app installs.
+3. For any detail I marked unknown, tell me exactly where to look on that device, quoting the vendor's own steps: on a Mac, Apple menu, About This Mac (Chip or Processor); on Windows, right-click Start, Settings, System, About (Device specifications, installed RAM); on a phone, the system settings page that shows the software version. Then wait for my answers before giving a verdict on that device.
+4. For each device, give one verdict: can run the app, can't (and which requirement it misses), or not sure (and what to check).
+5. For each device that can't run an app, say where to use Gemini instead (the web app at gemini.google.com in a supported browser) and quote Google's list of supported browsers.
+6. Say which features Google's pages list for each app today (for example, skills and Tasks are listed for the web, Mac and mobile apps), and say "not stated" for anything the pages don't say.
+Safety: never ask me for passwords, emails, serial numbers or account details; don't guess a requirement that isn't on an official page, write "not stated" instead; date every fact "checked on" today's date.
+Output: a table with columns Device, What it has, What Google asks for, Verdict, Use instead; then a three-line "next steps" list.
