@@ -1,0 +1,23 @@
+# OpenAI's use case "Create a presentation", on made-up notes.
+# Paste this into ChatGPT with Work switched on, not into Claude. Swap [audience] for who the slides are for.
+# The notes are made up and are part of the prompt, so it needs no files, no websites and no plugins.
+# Written from OpenAI's help pages (Get started with ChatGPT Work), checked 2026-11-19, not run. Check every slide against the notes before you use it.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# Leave these lines starting with # out when you paste into ChatGPT.
+
+Goal: turn the made-up notes at the end of this message into a five-slide presentation for [audience] that I can review.
+Steps, in order:
+1. Before you start, ask me one thing and wait for my answer: what the audience should decide or do after seeing it.
+2. Use only the notes in this message. Don't visit any website, don't use any plugin, and don't open any of my files.
+3. Make five slides: a title slide, three slides on the main themes with the note each point comes from, and a last slide called Needs a human check, listing anything the notes don't support.
+4. Return a draft for my review. Tell me the file's name and where you saved it, then stop.
+Rules: ask me before you visit a website, sign in, buy, send or delete anything. Never ask me for a password or a payment detail. If anything is unclear, ask me first.
+Reminder for me: check every slide against the notes before I use it.
+
+Dummy notes, made up for this video:
+- Sample Cafe Team: a weekend opening trial ran for four weeks.
+- Saturday visits rose each week; Sunday visits stayed flat.
+- Staff asked for a second barista on Saturdays.
+- Two customers asked for oat milk; none asked for soy.
+- Open question: keep Sunday opening or not?

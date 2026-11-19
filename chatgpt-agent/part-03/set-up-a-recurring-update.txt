@@ -1,0 +1,27 @@
+# OpenAI's use case "Set up a recurring update", on a made-up to-do list.
+# A recurring update uses a scheduled task: a task that repeats on a schedule.
+# OpenAI's pricing page, checked 2026-11-19: Scheduled tasks: Free No; Go, Plus and Pro Yes.
+# This prompt writes this week's note and describes the schedule it would set. It does not create the scheduled task.
+# Paste this into ChatGPT with Work switched on, not into Claude. Swap [project] for your project's name.
+# The to-do list is made up and is part of the prompt, so it needs no files, no websites and no plugins.
+# Written from OpenAI's help pages (Get started with ChatGPT Work), checked 2026-11-19, not run. Check the note against the list before you use it.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# Leave these lines starting with # out when you paste into ChatGPT.
+
+Goal: plan a weekly status note for [project], made from the made-up to-do list at the end of this message.
+Steps, in order:
+1. Before you start, ask me which day and time I'd like the note each week, and wait for my answer.
+2. Use only the list in this message. Don't visit any website, don't use any plugin, don't open any of my files, and don't send the note to anyone.
+3. Write this week's status note in this chat, with three headings: Done, Still open, Blocked. Keep it under 150 words.
+4. Then describe the scheduled task you would set up to refresh this note each week at the time I gave: what it would do each time and what it would use. Don't create the scheduled task.
+5. Stop.
+Rules: ask me before you visit a website, sign in, buy, send or delete anything. Never ask me for a password or a payment detail. If anything is unclear, ask me first.
+Reminder for me: check the note against the list before I use it.
+
+Dummy to-do list, made up for this video:
+- Done: draft the newsletter.
+- Done: book the meeting room.
+- Open: print the handouts.
+- Open: confirm the guest list.
+- Blocked: waiting for the logo from the design team.

@@ -1,0 +1,23 @@
+# OpenAI's use case "Create a comparison spreadsheet", on made-up options.
+# Paste this into ChatGPT with Work switched on, not into Claude. Swap [decision] for what you're deciding.
+# The options are made up and are part of the prompt, so it needs no files, no websites and no plugins.
+# Written from OpenAI's help pages (Get started with ChatGPT Work), checked 2026-11-19, not run. Check every number against the options before you use it.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# Leave these lines starting with # out when you paste into ChatGPT.
+
+Goal: compare the made-up options at the end of this message in a spreadsheet that helps me with [decision, for example: where to hold a team lunch].
+Steps, in order:
+1. Before you start, ask me one thing and wait for my answer: which criterion matters most to me.
+2. Use only the options in this message. Don't visit any website, don't use any plugin, and don't open any of my files.
+3. Make a spreadsheet with one line per option and a column for each criterion. Score each option from 1 to 5 on each criterion, and flag any risk or missing information.
+4. Add a summary tab with a recommendation, the reason for it and next steps. Say which numbers come from the options and which are your scores.
+5. Tell me the file's name and where you saved it, then stop.
+Rules: ask me before you visit a website, sign in, buy, send or delete anything. Never ask me for a password or a payment detail. If anything is unclear, ask me first.
+Reminder for me: check every number against the options before I use it.
+
+Dummy options, made up for this video (comma-separated values):
+option,price_per_person,walk_minutes,seats,notes
+Sample Venue A,12,5,20,no booking needed
+Sample Venue B,9,15,40,booking needed
+Sample Venue C,15,2,12,shut on Mondays
