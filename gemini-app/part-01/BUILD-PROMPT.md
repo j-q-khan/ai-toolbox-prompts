@@ -5,7 +5,7 @@ About me (edit this line, no names or private details): I'm a complete beginner 
 Steps, in order:
 1. Say in one sentence what you'll make, and that you'll use only Google's official pages and give a link for every fact.
 2. Day 1: three starter prompts for my situation, each with one follow-up prompt that improves the answer.
-3. Day 2: how the model picker works (the model list, Flash-Lite, the lock icon), what the auto model selection setting does, and what usage limits are, in Google's words, with no invented numbers.
+3. Day 2: how the model picker works (Auto, the models, the lock icon) and what usage limits are, in Google's words, with no invented numbers.
 4. Day 3: how to add a file safely, with a made-up test file I can practise on.
 5. Day 4: how to check an answer with the Sources button, and what to do when there isn't one.
 6. Day 5: what the History setting stores, how to turn it off, and when to use Temporary chat, quoting Google's privacy page.

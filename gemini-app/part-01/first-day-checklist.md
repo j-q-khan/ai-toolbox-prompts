@@ -13,7 +13,7 @@ To keep a copy: paste this into Notepad and save it with the box called Save as 
 - [ ] Reply in the same chat with prompt 2 to change the answer.
 
 ## The model picker
-- [ ] Click the model's name at the bottom of the chat box to see the models you can choose. Leave auto model selection on for now (at the bottom left: Settings, then Usage limits).
+- [ ] Click the model's name at the bottom of the chat box. Without a Google AI plan, Auto is your choice for chats: it selects Hydrogen or a fast, lightweight model for each prompt.
 - [ ] A lock icon means a higher plan is needed.
 - [ ] Usage limits refresh every 5 hours until you reach your weekly limit (Google's words). No fixed numbers are published.
 

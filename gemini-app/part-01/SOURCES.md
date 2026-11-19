@@ -4,7 +4,7 @@ Part 1 of the How to Use Gemini series.
 
 - Use the Gemini web app (fetched 2026-11-18): https://support.google.com/gemini/answer/13275745?hl=en&co=GENIE.Platform%3DDesktop
 - Requirements (fetched 2026-11-18): https://support.google.com/gemini/answer/13278668?hl=en
-- About Gemini models (fetched 2026-11-18): https://support.google.com/googleone/answer/18648722?hl=en&co=GENIE.Platform%3DDesktop
+- About Gemini models (page changed on the evening of 2026-11-18; re-fetched 2026-11-19, and saved copies read): https://support.google.com/googleone/answer/18648722?hl=en&co=GENIE.Platform%3DDesktop
 - Gemini Apps limits (fetched 2026-11-18): https://support.google.com/gemini/answer/16275805?hl=en&gl=us
 - Attach & analyze files (fetched 2026-11-18): https://support.google.com/gemini/answer/14903178?hl=en&co=GENIE.Platform%3DDesktop
 - Create docs, apps & more with Canvas (fetched 2026-11-18): https://support.google.com/gemini/answer/16047321?hl=en&co=GENIE.Platform%3DDesktop
