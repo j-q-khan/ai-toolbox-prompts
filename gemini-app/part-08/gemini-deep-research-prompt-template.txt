@@ -1,0 +1,17 @@
+# Gemini Deep Research: prompt template (facts checked 2026-11-18)
+# Where: gemini.google.com on a computer. In the text box, click Add Files, then Deep Research.
+# You need to be 18 or over and signed in. Google lists Deep Research on the Free plan.
+# Swap each [bracket] for your own words. Use made-up names, never real people's details.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+I'm [what you're doing, e.g. choosing a robot vacuum for a small flat with a cat].
+Research [the 3 or 4 things you need, e.g. the main types, what matters for pet hair, typical price ranges].
+Focus on [your country or region, and how recent, e.g. the US, from the last 12 months].
+Give me [the format, e.g. a short table, then a one-paragraph summary].
+List the sources you used, and say where sources disagree.
+
+# After you click Submit, Gemini shows a research plan. Nothing runs yet.
+# Missing something? Click Edit plan and say what to change, in plain words.
+# Then click Start research. It usually takes about 5-10 minutes (Google). You can leave the chat.
+# Your own files only? Add Files, then Files; then Sources, and deselect Google Search.
