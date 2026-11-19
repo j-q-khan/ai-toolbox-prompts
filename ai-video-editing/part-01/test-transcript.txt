@@ -1,0 +1,13 @@
+# A made-up transcript of a cooking clip, for trying the build prompt.
+# To keep a copy: paste this into Notepad and save it as test-transcript.txt with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# The lines starting with # are notes for you: delete them before you use the file.
+[00:00:00] Welcome to the test kitchen, today we're making a simple loaf of bread.
+[00:00:08] So, um, you'll need flour, water, salt and a little yeast.
+[00:00:20] Mix it all in a big bowl until it comes together.
+[00:01:10] Chapter two, kneading. Push the dough away, fold it back, and turn it.
+[00:01:40] Uh, keep going for about ten minutes, it gets smoother as you go.
+[00:03:30] Chapter three, shaping. Flatten it out, then roll it up tight.
+[00:04:05] Put it in the tin, cover it, and leave it somewhere warm.
+[00:05:20] Chapter four, baking. Into a hot oven until the top is golden.
+[00:06:00] And that's your loaf, let it cool before you slice it on a wooden board.
