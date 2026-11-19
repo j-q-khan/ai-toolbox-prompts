@@ -1,0 +1,29 @@
+# A made-up caption file for a cooking clip, for trying the build prompt.
+# To keep a copy: paste this into Notepad and save it as test-captions.srt with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# The lines starting with # are notes for you: delete them before you use the file anywhere else.
+1
+00:00:00,500 --> 00:00:02,500
+Welcome to the test kitchen
+
+2
+00:00:02,500 --> 00:00:06,000
+Today we're making a simple loaf of bread with flour, water and salt
+
+3
+00:00:06,000 --> 00:00:06,400
+Um
+
+4
+00:00:06,400 --> 00:00:09,000
+Knead it for ten seconds
+then fold it back
+and turn it
+
+5
+00:00:09,000 --> 00:00:18,000
+Now shape the lofe
+
+6
+00:00:17,500 --> 00:00:20,000
+Into the oven
