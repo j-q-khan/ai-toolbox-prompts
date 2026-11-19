@@ -1,0 +1,28 @@
+# Paste this into Figma Make's chat box, not into Claude:
+# open Figma Make, start a new file, paste everything below the # lines, and send it.
+# Every word of text is in the prompt and made up, so it needs no files, no logins and no websites.
+# It uses some of the AI credits on your plan.
+# Written from Figma's help pages, checked 2026-11-19, not run. Check every part of what it makes before you use it.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# Leave these lines starting with # out when you paste into Figma Make.
+
+Goal: build a one-screen sign-up page for a made-up book club, then explain each part of the screen in plain words.
+Steps, in order:
+1. Before you build anything, ask me two things and wait for my answers: which colour I want for the main button, and whether the page is for a phone screen or a computer screen.
+2. Use only the text at the end of this message. Don't add a login, a database, payments, real names or pictures of real people, and don't visit any website.
+3. Build one screen: the club name as a heading, the short line under it, a box for a first name, a box for an email address, a choice called How often can you meet? with the three options below, and the Join the club button.
+4. When I press Join the club, show the thank-you message on the same screen. Don't send, save or store anything.
+5. Then explain each part of the screen in plain words, one short line each, for someone who has never used Figma.
+6. Tell me this is a rough draft, list three things I should check, and stop.
+Rules: never ask me for a password or a payment detail. Don't use any of my files. If anything is unclear, ask me first.
+Reminder for me: check every part of the page before I use or share it.
+
+Text to use, made up for this video:
+- Club name: The Tuesday Page Turners
+- Line under it: A friendly book club for people who like a good story, made up for practice.
+- First name box label: Your first name
+- Email box label: Your email (for example test@example.com)
+- Choice: How often can you meet? Options: Weekly, Every two weeks, Monthly
+- Button: Join the club
+- Thank-you message: Thanks for joining! This is a practice page, so nothing was sent.
