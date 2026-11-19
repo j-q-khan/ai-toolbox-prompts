@@ -1,0 +1,25 @@
+# Paste the prompt (the lines under this note, down to "Don't pick one for me.") into the same Claude chat, with the Canva connector switched on.
+# Canva's developer docs don't use the word "carousel": the format name they give is Instagram Post, so the prompt asks for that, with 5 pages.
+# The docs don't promise a page count. If the design has fewer pages than you asked for, finish it by hand in Canva's editor.
+# The connector doesn't post to Instagram. Export the pages and post them yourself.
+# Made-up details only. The lines starting with # are notes for you: don't paste them.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Using Canva, make an Instagram Post with 5 pages for a made-up shop called Test Bakery.
+Purpose: one bread tip per page, to be swiped through as a carousel.
+Audience: home bakers who follow the shop.
+Tone: friendly and short.
+One idea per page, with the exact words:
+Page 1: "3 bread mistakes beginners make"
+Page 2: "1. Too much flour"
+Page 3: "2. Water that's too hot"
+Page 4: "3. Not enough resting time"
+Page 5: "Bread workshop on Saturday. test@example.com"
+If you show me options, let me choose. Don't pick one for me.
+
+# Follow-up 1, sent on its own once you have the link (the check):
+How many pages are in my carousel?
+
+# Follow-up 2, the files. The download links expire: use them straight away.
+Export every page of my carousel as a PNG.
