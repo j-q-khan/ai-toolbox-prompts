@@ -1,0 +1,29 @@
+# PROMPT 1 goes into Claude Code (in a terminal, in the folder of a copy of your app or a throwaway branch), not into Figma Make or the Figma agent.
+# Copy all of it, swap the words in square brackets, and send it. It checks your setup and asks three questions first.
+# It installs nothing, captures one page into a new file in your drafts, then waits for your link before it changes anything.
+# Writing to the canvas is free during Figma's beta and will become a usage-based paid feature (checked 2026-11-19).
+# The calls that look at your file count toward your seat's limit (View and Collab seats and the Starter plan: 20 a month, checked 2026-11-19).
+# Written from Figma's pages, checked 2026-11-19, not run. Check every change in Figma before you keep it.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# Leave these lines starting with # out when you paste.
+
+# PROMPT 1: capture one page, then rebuild it with your library (the one in the video)
+Goal: bring one small page of my test app into a new Figma file in my drafts with Figma's code to canvas, then rebuild it with my team's components and variables using write to canvas. Made-up data only.
+Before you start, check these and tell me what you found:
+1. Figma's remote server is connected in this session and lists the tools generate_figma_design and use_figma. If they're missing, stop and tell me why that may be: the server may have been added only in another folder (claude mcp add adds it to the current folder by default), or a desktop server at http://127.0.0.1:3845/mcp may be hiding the remote-only tools, as Figma says. Point me to https://youtu.be/ah5iCrbRZcE and https://developers.figma.com/docs/figma-mcp-server/remote-server-installation/ . Don't install, add or remove MCP servers or plugins, and don't change settings files, yourself.
+2. This folder is a copy of my app or a throwaway git branch, with made-up data only. If it isn't, stop and ask me.
+3. Ask me these three questions one at a time, and wait for each answer: (a) which page to capture ([the page, for example the pricing page]); (b) the exact name of my team's library ([your library name]); (c) my Figma plan and seat (Starter, Professional, Education, Organization or Enterprise; Full or Dev). If I'm on Starter, tell me I can capture but can't write to the canvas, then do step 1 only.
+Step 1, capture: start a local server for my app and capture only that page in a new Figma file in my drafts, using generate_figma_design. Tell me before you add the capture script to my app, and list every file you change. Then give me the new file's link and stop.
+Step 2, wait: I'll right-click the captured frame in Figma, choose Copy link to selection, and paste the link here: [link to the captured frame].
+Step 3, refine: using that selection and use_figma, look at the file first, then replace the captured buttons and colours with components and variables from the [your library name] library. Work in small steps, and change nothing else. Don't write to any file outside my drafts without asking me first. Don't generate images, vector illustrations or Figma Make prompts, because they use Figma AI credits.
+Step 4, report: list what you changed, any layer you couldn't match to a library component or variable, and any placeholder image or missing font.
+Stop and tell me what it said if a rate limit or permission message appears.
+Rules: never ask me for a password, a payment detail or any personal data. Don't open client or personal files. Don't remove the capture script from my app unless I ask. If anything is unclear, ask me first.
+Reminder for me: writing to the canvas is free during Figma's beta and will become a usage-based paid feature, and the calls that look at my file count toward my seat's limit. Check every change in Figma before I keep it.
+
+# PROMPT 2: one more refinement (Claude Code, same chat, after prompt 1)
+Using this selection: [link to a layer in the captured file], also replace the remaining text styles with styles from the [your library name] library. Change nothing else, and tell me what you changed.
+
+# PROMPT 3: the shortcut from the video: capture into a draft file that already has your library (Claude Code, in your test app's folder)
+Start a local server for my app and capture [the page, for example the pricing page] in [link to your draft file], so Figma can bind my library's matching variables. Tell me before you add the capture script, and list every file you change.

@@ -1,0 +1,14 @@
+# Type these in your terminal (PowerShell on Windows, Terminal on a Mac), in your test app's folder, not inside Claude Code.
+# From Figma's setup and code to canvas pages, checked 2026-11-19.
+# 1. Add Figma's remote server here. By default Claude Code adds it to the current folder only,
+#    so if you followed our setup video in another folder, add it again here.
+#    To use it in every folder, put --scope user after "add".
+claude mcp add --transport http figma https://mcp.figma.com/mcp
+# Then start Claude Code, type /mcp, pick figma, choose Authenticate and click Allow access in the browser.
+# Or instead, Figma's recommended plugin, which includes Figma's skills (then use settings.plugin.json):
+#    claude plugin install figma@claude-plugins-official
+# 2. If Claude Code can't find generate_figma_design or use_figma, the desktop server is usually answering instead.
+#    The first line lists your servers. If one points at http://127.0.0.1:3845/mcp, remove it with the second
+#    (use the name the list shows, if it isn't figma-desktop). Then restart Claude Code.
+claude mcp list
+claude mcp remove figma-desktop
