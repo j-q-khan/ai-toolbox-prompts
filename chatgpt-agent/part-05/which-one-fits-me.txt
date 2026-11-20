@@ -1,0 +1,28 @@
+# Paste this into whichever one you're trying: ChatGPT with Work switched on, Claude, or Comet Assistant. The same words work in all three.
+# ChatGPT desktop app: choose ChatGPT, then use the toggle above the message box to pick Work. Claude: type in the message box (select Cowork if you see the option). Comet: open the Assistant panel beside your page.
+# It needs no websites, no plugins and no files. It doesn't pick a product for you or quote prices.
+# Written from each company's help pages, checked 2026-11-19, not run. Check what it says against each company's own pricing and help pages before you decide.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# Leave these lines starting with # out when you paste: copy from the word Help to the end.
+
+Help me work out which kind of AI helper fits how I work.
+Don't recommend a product and don't quote prices. Help me describe myself, then stop.
+
+Rules for this whole task:
+1. Ask me before you visit a website, sign in, buy, send or delete anything. This task needs no websites.
+2. Never ask me for a password, a card number or any payment detail, and never ask me to type one into this chat.
+3. Ask me the five questions below one at a time, and wait for each answer. If an answer is unclear or missing, ask me again before you go on.
+
+The five questions:
+1. Which web browser do I use most, and would I be happy to switch to a new browser?
+2. Which AI plans do I already pay for, if any (for example a ChatGPT, Claude or Perplexity plan)?
+3. Where do I mostly work: on a phone, on a computer (Windows, Mac or Linux), or both?
+4. What is the first job I would hand over, and does it need files on my computer, websites, or neither?
+5. How closely do I want to watch: approve every step, check in now and then, or come back to a finished file?
+
+When I have answered all five:
+1. Describe the type of person my answers fit in two or three sentences, for example "someone who already pays for one plan and wants finished files from one request" or "someone who wants help on the page in front of them".
+2. List what I should check on each company's own pricing and help pages before I decide, with no prices filled in.
+3. Remind me that plans and prices change, and that I should check those pages myself.
+Then stop.
