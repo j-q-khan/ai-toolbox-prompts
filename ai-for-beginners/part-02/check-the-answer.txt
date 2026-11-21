@@ -1,0 +1,34 @@
+# Check the answer: three questions to ask before you trust a chatbot's answer.
+# From AI for Beginners, Part 2. Facts checked 2026-11-21. Written from the makers' help pages, not run.
+# Works with any chatbot (ChatGPT, Claude, Gemini or Microsoft Copilot).
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it check-the-answer.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as check-the-answer.txt
+# Why you need it: a chatbot writes by guessing the next likely word, so it can sound sure and still be wrong.
+# OpenAI's help page: "Confidence isn't reliability" and "Use ChatGPT as a first draft, not a final source."
+
+1. DOES IT MATTER?
+   A fact, a number, a name, a quote, a date, or anything about money, health or the law: check it.
+   A friendly rewrite of your own email: you can judge that yourself.
+
+2. IS IT RECENT?
+   A price, opening hours, news, or anything that changes: ask it to search the web first.
+   Its knowledge stops at a date (its knowledge cutoff), and it doesn't know what came after unless it searches.
+   Prompt to paste: Search the web first, then answer, and show me where you found it.
+
+3. WHERE DID IT COME FROM?
+   Ask it, then open the links yourself and see whether the page really says that.
+   In Gemini, Google's help page says there's a Sources button at the bottom of the response.
+   Prompt to paste: Where did that answer come from? List the parts I should check myself.
+
+NO LINK, OR THE PAGE DOESN'T SAY IT?
+   Look it up yourself in a trusted place, like the official website, before you rely on it.
+
+A LONG CHAT LOSING TRACK?
+   Start a fresh chat, paste in only the part you're working on, and type your instructions again.
+   OpenAI's help page: "Send just the question or passage you want to work on."
+
+NEVER PASTE
+   Passwords, bank details, health details or anyone's personal information.
+   For work or school, follow your employer's or school's rules first.
