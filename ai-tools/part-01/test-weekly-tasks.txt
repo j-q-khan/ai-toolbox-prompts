@@ -1,0 +1,14 @@
+# A made-up week of tasks for Test Bakery, for trying the build prompt.
+# To keep a copy: paste this into Notepad and save it as test-weekly-tasks.txt with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# The lines starting with # are notes for you: the script skips them.
+Draft a reply to a supplier about a late flour delivery
+Check which flours keep longest in a dry store
+Ask questions about the new oven manual
+Make a picture of a loaf on a wooden board for the website
+Design a flyer for the Saturday cake sale
+Plan next week's baking rota
+Summarise my notes from the staff meeting
+Find out the opening hours rules for bank holidays
+Make a poster for the window
+Sort the shop's tax receipts
