@@ -1,0 +1,15 @@
+Full Claude build prompt: paste this into Claude (a new chat), or into the Gemini app at gemini.google.com. It's a research prompt: it checks whether Google's student offer for Gemini applies in your country, which plan you'd get, the deadline, what you'll need and what it renews at, using only Google's own pages, and then writes you a personal signup checklist with a cancel-reminder date. It needs no files and no personal details: give only your country and the date you plan to redeem. Written from Google's student page, offer terms and help pages, checked 2026-11-21.
+
+Goal: check whether I can claim Google's student offer for Gemini in my country, and write my signup checklist and cancel-reminder date.
+My country: [your country]
+The date I plan to redeem: [a date, on or before December 31, 2026]
+Steps, in order:
+1. Say in one sentence what you'll make, and that you'll follow only Google's official pages: gemini.google/students (and my country's version of it), one.google.com/offer/studentoffer8 (the offer terms), support.google.com/googleone/answer/17422238 (claiming the offer) and support.google.com/googleone/answer/16548195 (where Google AI Plus is available), with a link for every rule you use.
+2. Tell me which plan the offer gives in my country (Google AI Pro, Google AI Plus or none), quoting Google's page, and whether my country is excluded (the terms exclude Hong Kong, Macau and Tunisia). If you can't find my country on Google's pages, say "not stated" and stop there.
+3. List what I'll need, quoting Google: age, a personal Google Account (not a school account), age verified on my Google Account, SheerID verification and what a SheerID document must show, and a payment method.
+4. List who doesn't qualify, quoting the terms (family group members, supervised accounts, Google One through a third party), and ask me to check each.
+5. Give the last day to redeem, then work out my offer's end date as 12 months from my redeem date, and a reminder date about 11 months after my redeem date. Say that the reminder date is your suggestion, not Google's.
+6. Give the monthly price it renews at in my country, quoting Google's page, with "was … when checked on" today's date, and the cancel path on a computer from Google's help page.
+7. Remind me of the catches Google states: student usage limits may differ from paid members', add-ons aren't available, eligibility is verified each year, and storage over 15 GB after the plan ends stops new files and Gmail.
+Safety: never ask me for my name, school, email, student ID, birthday, passwords or card details; never suggest using anyone else's email, a VPN or any way around SheerID; if a rule isn't on an official Google page, say "not stated" instead of guessing; date every fact "checked on" today's date.
+Output: a short answer (which plan, or none), then a table with columns Requirement, Google's words, Link, I have it (yes/no), then my dates (last day to redeem, my offer's end date, my reminder date), then a five-line cancel checklist.
