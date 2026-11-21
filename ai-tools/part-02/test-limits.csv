@@ -1,0 +1,9 @@
+# Made-up limits for trying the build prompt. Only the two Perplexity lines are real numbers (Perplexity's blog, 13 October 2026); every other number is made up, because those companies publish no count.
+# To keep a copy: paste this into Notepad and save it as test-limits.csv with the box called Save as type set to All files. On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# The lines starting with # are notes for you: the script skips them.
+tool,what,limit,period,note
+Perplexity,Pro Search,3,day,From Perplexity's blog
+Perplexity,Research query,1,month,From Perplexity's blog
+Claude,long chats,6,day,Made-up number: Anthropic publishes no count
+Gemini,pictures,10,day,Made-up number: Google publishes no count
+Notion AI,AI responses,20,month,Made-up number: Notion publishes no trial size
