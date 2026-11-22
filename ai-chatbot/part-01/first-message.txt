@@ -1,0 +1,19 @@
+# A first message, a fallback reply and a hand-over line for a website chatbot. From AI Chatbot, Part 1.
+# Facts checked 2026-11-22. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it first-message.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as first-message.txt
+# How to use it: swap Test Bakery, test@example.com and +1 555 0100 for your own business name and contact details,
+# then paste each line into your chatbot builder's settings for its first message, its fallback reply and its hand-over.
+# Why: the EU AI Act, Article 50(1), asks providers to make sure people "are informed that they are interacting with
+# an AI system, unless this is obvious" (enforceable from 2 August 2026). This isn't legal advice.
+
+FIRST MESSAGE
+Hi, I'm Test Bakery's assistant, and I'm an AI, not a person. I answer from our website, and if you'd rather talk to someone, email test@example.com.
+
+FALLBACK REPLY (when it doesn't know)
+I don't have that information. Email test@example.com or call +1 555 0100 and the team will help.
+
+HAND-OVER LINE (when the visitor asks for a person)
+Of course. Leave your question and an email address here, or email test@example.com, and a person from Test Bakery will reply.
