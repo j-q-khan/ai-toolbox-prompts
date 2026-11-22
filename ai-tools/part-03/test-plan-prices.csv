@@ -1,0 +1,17 @@
+# Business plan prices for trying the build prompt, per seat a month in US dollars, from each company's own page on 2026-11-21. Prices change: check each page before you buy.
+# To keep a copy: paste this into Notepad and save it as test-plan-prices.csv with the box called Save as type set to All files. On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# The lines starting with # are notes for you: the script skips them. Empty min_seats or max_seats means the page gives none here.
+tool,plan,price_per_seat,billing,min_seats,max_seats,offer_ends,note
+Microsoft 365 Copilot Business,add-on (offer price),18.00,yearly,,300,2026-12-31,On top of a Microsoft 365 business plan. First year only
+Microsoft 365 Copilot Business,add-on (usual price),21.00,yearly,,300,,On top of a Microsoft 365 business plan
+Microsoft 365 Copilot Business,add-on (monthly),25.20,monthly,,300,,On top of a Microsoft 365 business plan
+Microsoft 365,Business Standard with Copilot,23.50,yearly,,,,Apps and Copilot together
+Google Workspace,Business Standard,14.00,yearly,,300,,Gemini built in. Annual plan
+Google Workspace,Business Standard,16.80,monthly,,300,,Gemini built in. Flexible plan
+ChatGPT,Business,20.00,yearly,,,,Billed annually. OpenAI's pages differ on a seat minimum: check before you buy
+ChatGPT,Business,25.00,monthly,,,,Billed monthly
+Claude,Team (Standard seat),20.00,yearly,2,150,,Billed annually
+Claude,Team (Standard seat),25.00,monthly,2,150,,Billed monthly
+Claude,Enterprise,20.00,yearly,20,,,Plus usage that scales with model and task
+Notion,Business,20.00,yearly,,,,AI Meeting Notes included
+Notion,Business,24.00,monthly,,,,AI Meeting Notes included
