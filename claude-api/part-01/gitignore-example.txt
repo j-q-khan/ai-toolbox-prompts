@@ -1,0 +1,2 @@
+# Keep secrets out of Git: add this line to the .gitignore file in your code folder
+.env
