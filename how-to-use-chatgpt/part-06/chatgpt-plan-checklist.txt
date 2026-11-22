@@ -1,0 +1,45 @@
+# ChatGPT plan checklist: Free, Go, Plus or Pro?
+# From How to Use ChatGPT, Part 6. Facts checked 2026-11-22 from OpenAI's pricing and help pages. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it chatgpt-plan-checklist.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as chatgpt-plan-checklist.txt
+# How to use it: tick each line that's true for you. If any line under Go, Plus or Pro is ticked,
+#   start with the highest of those plans and check it against the others; stay on Free only if
+#   every Free line is ticked and nothing below it is.
+# Plans and limits change: check https://chatgpt.com/pricing on the day you decide.
+
+STAY ON FREE IF ALL OF THESE ARE TRUE
+[ ] I mostly chat. (Free: "unlimited everyday text chats, subject to abuse-prevention safeguards")
+[ ] Three file uploads a day is enough. (Free: "limited to 3 file uploads per day")
+[ ] I make the odd picture. (Free: "Limited image creation")
+[ ] I paste in less than about 12 pages of text at once. (Free, with Instant: "~12 pages of text")
+[ ] Five files in each project is enough. (Free: 5 files per project)
+[ ] Ads may appear, and that's fine with me. (Free and Go: "Ads may appear")
+
+GO IS WORTH A LOOK IF ANY OF THESE ARE TRUE
+[ ] Free's upload limit keeps stopping me. (Go: "More uploads")
+[ ] I want more pictures. (Go: "More image creation")
+[ ] I paste in long documents, up to about 40 pages at once. (Go, with Instant: "~40 pages of text", the same as Plus)
+[ ] I want up to 25 files in each project. (Go and Plus: 25 files per project)
+[ ] Ads may appear, and that's still fine with me.
+
+PLUS IS WORTH A LOOK IF ANY OF THESE ARE TRUE
+[ ] I want ChatGPT to think harder: the Medium and High stops on the Thinking slider. (Plus: "Medium and High: Included". Free and Go: "Not included")
+[ ] I want no ads at all. ("Plus, Pro, Business, Enterprise, and Edu accounts will not have ads.")
+[ ] I want "More complex and accurate image creation".
+[ ] I want ChatGPT Work on the web and phone, not only the desktop app. (Free and Go: "Limited (desktop app)")
+[ ] I want three hours of voice in a rolling 24 hours. (Plus: "3 hours". Go: OpenAI's pages disagree)
+
+PRO IS WORTH A LOOK ONLY IF ANY OF THESE ARE TRUE
+[ ] I'm on Plus and its limits stop me most days.
+[ ] I need the Extra High or Pro stops on the Thinking slider. (Plus: "Not included")
+[ ] I paste in more than about 40 pages at once. (Pro, with Instant: "~250 pages of text")
+[ ] I want up to 40 files in each project.
+[ ] Remember: "A Pro subscription does not include unlimited use of the GPT-6 Pro model."
+
+BEFORE YOU PAY
+[ ] I checked today's prices on https://chatgpt.com/pricing. (When checked on 2026-11-22, Free was $0, Go was $8 a month, Plus was $20 a month, Pro was $100, $200 or $500 a month, in US dollars.)
+[ ] I know there's no yearly billing for Go, Plus or Pro: it's month by month.
+[ ] I know that switching from Plus down to Go keeps Plus until the end of the billing cycle, with no refund. (Profile icon, then Settings, then Account)
+[ ] Not sure? Fill in the last column of chatgpt-plans.csv (yes or no on each row) and use the build prompt to make a comparison page.
