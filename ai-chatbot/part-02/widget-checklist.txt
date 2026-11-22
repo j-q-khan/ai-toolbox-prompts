@@ -1,0 +1,43 @@
+# AnythingLLM chat widget: a settings checklist. From AI Chatbot, Part 2.
+# Facts checked 2026-11-22 from AnythingLLM's docs (docs.anythingllm.com) and its MIT repo. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it widget-checklist.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as widget-checklist.txt
+# How to use it: tick every line before you paste the widget's code into a real website.
+
+BEFORE YOU START
+[ ] I'm using the Docker version ("These settings are only available in the Docker version of AnythingLLM")
+[ ] My computer meets the docs' minimum: 2GB of RAM, a 2-core CPU with AVX2, 5GB of storage
+[ ] If the container stops with "Illegal instruction (core dumped)", my CPU lacks AVX2: the docs' System Requirements page says what to do
+[ ] I started it with the storage folder in the command, so my data survives a restart
+[ ] After a reboot I start it with docker start anythingllm, not by running the install file again (that stops with a name clash)
+
+THE MODEL
+[ ] Built-in model: one of Fastest, Balanced or Most capable is downloaded (our file runs on the processor; a graphics card needs the docs' GPU command)
+[ ] Or a cloud provider: I know they bill me, and that questions and document snippets go to them
+[ ] My provider key is only in the app's settings, never in a web page or the embed code
+[ ] Telemetry: I've decided whether to switch it off (Privacy and Data, in the settings)
+
+THE WORKSPACE
+[ ] My documents are embedded in the workspace (Move to Workspace, then Save and Embed), not attached in a chat
+[ ] Chat Settings is set to Query mode, and I've tested 10 real customer questions
+[ ] I've tested a question that isn't in my documents, and it says it couldn't find it
+[ ] If it misses answers that are there: workspace settings, Vector Database, Document similarity threshold, No restriction
+
+THE WIDGET (settings, Tools, Chat Embed, Create embed)
+[ ] Workspace: the right one
+[ ] Allowed chat method: Query ("only respond to chats related to documents in the workspace")
+[ ] Restrict requests from domains: my own domain is filled in ("Leaving this field empty means anyone can use your embedded chat widget on any site")
+[ ] Max chats per day: a number, not zero (zero means unlimited)
+[ ] Max chats per session: a number, not zero
+[ ] A greeting that says it's an AI, not a person (data-greeting)
+[ ] A way to reach a person (data-support-email)
+
+GOING ONLINE
+[ ] It runs on a server that stays online, not my laptop
+[ ] I have not tunnelled my own computer to the internet ("Do not tunnel your personal machine to the public internet")
+[ ] Password Protection (the docs call it Password Protect Instance) or Multi-User Mode is on, under Security
+[ ] HTTPS: a reverse proxy with a TLS certificate in front, as the docs' Cloud Docker page says
+[ ] Someone checks for new releases and keeps backups of the storage folder
+[ ] Someone looks at Embed Chat History every week and adds the documents it was missing

@@ -1,0 +1,25 @@
+<!--
+  The AnythingLLM chat widget's script tag, in the shape the app itself writes it (CodeSnippetModal in
+  github.com/Mintplex-Labs/anything-llm at v1.20.0, MIT), plus two options from the widget's README (MIT):
+  https://github.com/Mintplex-Labs/anythingllm-embed  (checked 2026-11-22; written from the code and docs, not run)
+  The app starts both URLs with the address you opened it at; here that is http://localhost:3001, and the
+  embed id is a placeholder. Don't copy these values: AnythingLLM makes your real
+  tag for you. In the app, open the settings, then Tools, then Chat Embed, then Create embed. Then click
+  Code on your widget's line, and copy the tag from the window called Copy your embed code.
+  REQUIRED data attributes, in the README's words:
+    data-embed-id      The unique id of your embed with its default settings
+    data-base-api-url  The URL of your anythingLLM instance backend
+  localhost only works on your own computer. For real visitors, AnythingLLM must run on a server that stays
+  online, with Password Protection turned on, under Security. The docs say: do not tunnel your personal machine to the
+  public internet.
+  The two optional lines below are documented options: data-greeting is the first message a visitor sees,
+  and data-support-email lets a visitor email a person. Swap in your own business name and email.
+  Paste the tag at the bottom of your page, before the closing body tag, as the app's own note says.
+-->
+<script
+  data-embed-id="YOUR-EMBED-ID-FROM-ANYTHINGLLM"
+  data-base-api-url="http://localhost:3001/api/embed"
+  data-greeting="Hi, I'm Test Bakery's AI assistant, not a person."
+  data-support-email="test@example.com"
+  src="http://localhost:3001/embed/anythingllm-chat-widget.min.js"
+></script>
