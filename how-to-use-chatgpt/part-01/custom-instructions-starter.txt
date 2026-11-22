@@ -1,0 +1,21 @@
+# Custom instructions starter for ChatGPT
+# From How to Use ChatGPT, Part 1. Facts checked 2026-11-21 from OpenAI's help pages. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it custom-instructions-starter.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as custom-instructions-starter.txt
+# Where it goes: website or desktop app: Settings, then Personalization, check Enable customization is on,
+#   then paste into Custom Instructions. Phone: Settings, then Customize ChatGPT.
+# Copy only the lines below the dashed line, and swap every [square bracket] for your own general details.
+# The text below the line is under 1,000 characters, inside the 1,500 that Free and Go allow.
+# Never put passwords, bank details, health details or anyone's private information in it.
+# ------------------------------------------------------------
+About me: I'm [your job or role, in general words], and I mostly want help with [two or three kinds of task, like emails, planning and explaining things].
+How to answer:
+- Use plain English and short paragraphs, and explain any technical word the first time you use it.
+- Start with the answer, then the detail.
+- Keep answers under [200] words unless I ask for more.
+- If my request is unclear, ask me one short question before you answer.
+- When you search the web, show the pages you used, so I can check them.
+- If you're not sure about a fact, say so instead of guessing.
+- Use [British or American] spelling, and no emojis.

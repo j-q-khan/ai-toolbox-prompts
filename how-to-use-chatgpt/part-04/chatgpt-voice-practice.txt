@@ -1,0 +1,45 @@
+# ChatGPT Voice: things to try with Live
+# From How to Use ChatGPT, Part 4. Facts checked 2026-11-21 from OpenAI's help pages. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it chatgpt-voice-practice.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as chatgpt-voice-practice.txt
+# How to use it: start Live, then say a line that starts with "SAY:" out loud. Change the words in [square brackets].
+# Every example here is made up.
+
+SETUP (from OpenAI's help pages)
+1. Phone app: open the sidebar, select your profile icon to open Settings, then select Voice and check the mode. If it says Advanced or Standard, switch to Live. OpenAI says to use Advanced when you need video or screen sharing.
+2. Phone app: select the Voice icon in the message bar. Allow the microphone if asked. The first time, choose a voice.
+3. Website: go to chatgpt.com and select the Voice icon in the prompt window. Allow the microphone in your browser.
+4. Desktop app (Plus and higher plans): start a new chat and select Start new voice chat. Select Stop voice chat when you finish.
+5. The microphone control mutes or unmutes you. The exit control ends the call.
+
+START CALM
+SAY: Wait until I ask you to respond.
+SAY: Okay, I'm ready. Give me a short summary of what I just said.
+
+STEER IT HALFWAY THROUGH
+SAY: Make me a weekly study plan for my driving test.
+SAY: (cut in while it answers) I only have evenings free.
+SAY: Make that shorter, just the three most important steps.
+
+EVERYDAY QUESTIONS
+SAY: What herbs grow well on a sunny windowsill?
+SAY: Help me plan a simple packed lunch for [number] days, with no nuts.
+
+PRACTISE OUT LOUD
+SAY: Let's have a beginner conversation in [language]. Speak slowly, and correct my mistakes in English.
+SAY: Pretend you're a shop assistant and I'm returning a [thing]. Ask me questions one at a time.
+
+USE A PICTURE OR TYPING MID-CALL
+SAY: (after attaching a picture with the add button in the message bar) What is this, and how do I look after it?
+# You can also type a message while Voice is on, and it answers out loud in the same chat.
+
+GOOD TO KNOW (from OpenAI's help pages, checked 2026-11-21)
+- Advanced and Standard voice retire on December 11, 2026. Anyone still on them is moved to Live.
+- Live does not support video or screen sharing. Today they work in Advanced in the iPhone and Android apps, for eligible subscribers, and OpenAI says they will keep running on Advanced voice until GPT-Live has this capability.
+- Pick a voice: Settings, then Voice, then Voice. Set your language: Settings, then Voice, then Language.
+- After a call, the transcript is added to the chat. It may not match exactly, so check names and numbers.
+- Audio clips are kept for 30 days. Deleting the chat deletes its clips within 30 days, with a few exceptions in OpenAI's privacy policy.
+- On the website and the phone app, limits are counted over a rolling 24 hours and depend on your plan: check help.openai.com before you count on them.
+- Keeps cutting you off? Try headphones or a quieter spot.

@@ -1,0 +1,28 @@
+# ChatGPT day one: checklist and first prompts
+# From How to Use ChatGPT, Part 1. Facts checked 2026-11-21 from OpenAI's help pages. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it chatgpt-day-one.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as chatgpt-day-one.txt
+# Menu names are as OpenAI's help pages gave them on 2026-11-21. If a menu looks different, check help.openai.com.
+
+CHECKLIST
+[ ] 1. Open chatgpt.com in a browser, or the ChatGPT app for iPhone or Android. Type in the message box and send.
+[ ] 2. Answer missed? Reply in the same chat ("Make it shorter and warmer.") instead of starting over.
+[ ] 3. Want plain answers? Website: Settings, then Personalization, then Layout and Visuals, then Simple.
+[ ] 4. Model menu: pick GPT-6, then set the Thinking slider (Instant, Medium, High, Extra High, Pro). Plus gets Medium and High. Free and Go get a lighter model and no slider.
+[ ] 5. Add a file: the + where you type, then "Add photos & files". Free: 3 uploads a day. Nothing private.
+[ ] 6. Search the web: View all tools, then Search (or type / and pick Search). Open the linked pages to check them.
+[ ] 7. Memory: Settings, then Personalization, then Memory. Deleting a chat doesn't necessarily delete a memory made from it.
+[ ] 8. Custom instructions: Settings, then Personalization, Enable customization on, then Custom Instructions. Phone: Settings, then Customize ChatGPT. Free and Go: up to 1,500 characters.
+[ ] 9. Projects (signed in): sidebar, then New project (phone: the + icon). Project instructions: the three-dot menu, then Project settings.
+[ ] 10. Temporary chat: open a new chat, select Temporary, choose Personalized or Unpersonalized before your first message.
+[ ] 11. Training switch: account menu, then Settings, then Data controls, then "Improve the model for everyone". Phone: profile icon, then Settings, then Data controls. A thumbs up or down can still send that chat for training.
+[ ] 12. Keep passwords, bank details and other people's private information out of your prompts. At work, follow your employer's rules.
+
+FIRST PROMPTS (swap every [square bracket] for your own made-up or general details)
+1. Write a short, friendly note telling my [book club] we're meeting on [Thursday] instead.
+2. Make it shorter and warmer.
+3. What are the three main points in this [price list]? Then tell me the one thing I need to do.
+4. Search the web first, then tell me [something recent, like a shop's opening hours], and show me the pages you used.
+5. Ask me three short questions about what I want help with this week, one at a time, then suggest three prompts I could try.
