@@ -1,0 +1,18 @@
+{
+  "model": "claude-opus-5-5",
+  "id": "msg_example_made_up",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "text",
+      "text": "Example output, made up for this video: put the date first, like 2026-11-22-notes.txt, so your files sort in order."
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 14,
+    "output_tokens": 27
+  }
+}
