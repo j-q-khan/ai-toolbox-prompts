@@ -1,0 +1,24 @@
+# Claude Cowork: setup checklist and first-task prompt
+# From Claude Cowork, Part 1. Facts checked 2026-11-22 from Anthropic's help pages. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it cowork-first-task.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as cowork-first-task.txt
+# Menu names are as Anthropic's help pages gave them on 2026-11-22. If a menu looks different, check support.claude.com.
+
+CHECKLIST
+[ ] 1. Paid plan: Cowork is on Pro, Max, Ultra, Team or Enterprise only, not Free (claude.com/pricing).
+[ ] 2. Desktop app from claude.com/download: macOS 13 or newer, or Windows 10 or newer (Linux is in beta).
+[ ] 3. Windows: when the installer asks to make changes, choose Yes. Without admin access, Cowork on desktop isn't available.
+[ ] 4. Your layout: if the message box shows "Chat" and "Cowork", select Cowork in its bottom left corner. If not, ask in any conversation.
+[ ] 5. Make a new folder (for example "Cowork test") and copy a few files into it. Keep backups of anything important.
+[ ] 6. In the desktop app, give Claude access to that one folder. In the new layout it shows under "Trusted folders".
+[ ] 7. SET MANUAL FIRST: in the message box, set the permission setting to Manual before any task on work files.
+[ ] 8. Send the first-task prompt below. When Claude asks, check what it wants to do, then choose Allow or Deny.
+[ ] 9. "Can't find my file"? Claude only works in folders you've connected, and only while the desktop app is open.
+[ ] 10. Check the result yourself: open the spreadsheet and compare two totals with the receipts.
+[ ] 11. Watch for prompt injection: files, emails and web pages can hide instructions meant for Claude. Keep Manual on for real work.
+[ ] 12. Repeat job? Older layout: type /schedule in a Cowork task, or click Scheduled in the sidebar. New layout: say how often it should run, then click Schedule. A folder job needs the desktop app open.
+
+FIRST TASK PROMPT (set Manual first; swap every [square bracket] for your own folder and details)
+Using only the receipts in my [Cowork test] folder, make an Excel spreadsheet with one row per receipt (date, shop, total) and a total at the bottom. Then write a three-line summary. Ask before you create or change anything.
