@@ -1,0 +1,15 @@
+# setup-mac.txt: the Mac (Terminal) lines from Claude API, Part 3. Type them one at a time; don't run this file.
+# From Anthropic's quickstart, checked 2026-11-22.
+# 1. Check Python (3.10 or later). If it's missing or older, install it from python.org/downloads
+python3 --version
+# 2. Check your key is set, without showing it (any number above 0 means it's set; 0 means see Part 1)
+echo ${#ANTHROPIC_API_KEY}
+# 3. Make the folder and the virtual environment, then switch it on ((.venv) appears at the start of the line)
+mkdir claude-quickstart && cd claude-quickstart
+python3 -m venv .venv && source .venv/bin/activate
+# 4. Install Anthropic's package
+pip install anthropic
+# 5. Make the file and open it in TextEdit, paste quickstart.py's code (paste, don't retype), save with Command-S
+touch quickstart.py && open -e quickstart.py
+# 6. Run it
+python quickstart.py

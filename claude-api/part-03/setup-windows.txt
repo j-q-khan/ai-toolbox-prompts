@@ -1,0 +1,19 @@
+# setup-windows.txt: the Windows (PowerShell) lines from Claude API, Part 3. Type them one at a time; don't run this file.
+# From Python's venv docs and Anthropic's quickstart, checked 2026-11-22. Windows PowerShell 5.1 has no &&, so one line each.
+# 1. Check Python (3.10 or later). If "python" isn't found, try "py --version", or install it from python.org/downloads
+python --version
+# 2. Check your key is set, without showing it (any number above 0 means it's set; 0 means see Part 1)
+"$env:ANTHROPIC_API_KEY".Length
+# 3. Make the folder and the virtual environment, then switch it on ((.venv) appears at the start of the line)
+mkdir claude-quickstart
+cd claude-quickstart
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+# If PowerShell won't run that line, type this once (from Python's venv docs), then the line above again:
+# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+# 4. Install Anthropic's package
+pip install anthropic
+# 5. Make the file and open it in Notepad (click Yes if it asks to create it), paste quickstart.py's code, save
+notepad quickstart.py
+# 6. Run it
+python quickstart.py
