@@ -1,0 +1,41 @@
+# Claude Cowork: five use-case prompts and a checklist
+# From Claude Cowork, Part 4. Facts checked 2026-11-22 from Anthropic's help pages. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it cowork-use-case-prompts.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as cowork-use-case-prompts.txt
+# Menu names are as Anthropic's help pages gave them on 2026-11-22. If a menu looks different, check support.claude.com.
+
+BEFORE YOU PASTE ANY PROMPT
+1. Use copies of dummy or spare files in a new test folder, never your only copy of anything.
+2. Connect only that test folder, and set the permission setting in the message box to Manual.
+3. Swap every [square bracket] for your own details, then copy only the prompt paragraph.
+
+PROMPTS
+# JOB 1: sort a messy folder
+In my connected folder [Cowork test], sort the files into folders by type and date. Before you move anything, show me your plan and wait for my OK. Don't delete anything. When you're done, give me a summary of what went where.
+
+# JOB 2: receipts into an expense report
+Using the copies of receipts in my connected folder [Cowork test/receipts], create a formatted expense report as an Excel spreadsheet: one line for each receipt with the date, the shop and the amount, and a total at the bottom that uses a working formula. Show me your plan first and wait for my OK. Don't change or delete the receipts, and save the spreadsheet in the same folder.
+
+# JOB 3: meeting notes into a slide deck
+Make a [ten]-slide deck from the meeting notes in [notes.txt] in my connected folder, as a file I can open in PowerPoint. One idea per slide, short bullet points, and a last slide listing every action item and who owns it. Use only what's in the notes, list anything you weren't sure about, and show me the outline first and wait for my OK.
+
+# JOB 4: research into a short report
+Research [three suppliers of paper cups for a small café] and write it up as a [two]-page report: what each one offers, prices only where they publish them, and a link for every fact. Say plainly where you couldn't find something. Don't sign up for anything, fill in any form or contact anyone, and leave the report in this conversation for me to download.
+
+# JOB 5: a weekly summary on a schedule
+Every [Monday at 9 AM], summarize last week's numbers from [a test sheet of made-up sales numbers in my Google Drive] on one page: compare each number with the week before, flag anything that moved more than [10]%, and list anything you couldn't get. Don't send, share, change or delete anything.
+
+CHECKLIST
+[ ] 1. Cowork needs a paid plan: Pro, Max, Ultra, Team or Enterprise.
+[ ] 2. Your layout: if the message box shows Chat and Cowork, pick Cowork in its bottom left corner. If not, ask in any conversation.
+[ ] 3. Connected folder: give Claude access to one test folder in the Claude desktop app. In the new layout it is listed under Trusted folders.
+[ ] 4. Permission setting: Manual before any real work. Auto is rolling out as the default, and its automated check can miss risky actions.
+[ ] 5. Receipts and other financial files: Anthropic's safety page says to avoid giving Claude sensitive files like financial documents. Use copies.
+[ ] 6. Local files are reached only while the Claude desktop app is open, and files Claude opens are processed on Anthropic's servers.
+[ ] 7. Scheduled tasks: describe the task and how often in any conversation, then click Schedule (older layout: Scheduled in the left sidebar, then New task). Job 5 needs your Google Drive connected to Claude first; support.claude.com shows how. Start simple, never schedule sending messages or purchases, and check the results after each run.
+[ ] 8. Prompt injection: a file, an email or a web page can hide instructions meant for Claude. Keep Manual for email, money and the web.
+[ ] 9. Deleting files: Claude asks first, but that protection doesn't cover computer use.
+[ ] 10. Check every number and name in what Claude makes before anyone else sees it.
+[ ] 11. Save your allowance: group related work into one task, start a new conversation for unrelated work, and check Settings, then Usage.
