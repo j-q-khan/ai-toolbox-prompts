@@ -1,0 +1,37 @@
+# Claude Cowork with Obsidian: vault prompts and a checklist
+# From Claude Cowork, Part 5. Facts checked 2026-11-22 from Anthropic's and Obsidian's help pages. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it cowork-obsidian-vault-prompt.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as cowork-obsidian-vault-prompt.txt
+# Swap every {curly bracket} for your own details. Square brackets [[like this]] are Obsidian's link format: keep them.
+# Menu names are as Anthropic's help pages gave them on 2026-11-22. If a menu looks different, check support.claude.com.
+
+BEFORE YOU PASTE ANY PROMPT
+1. Back up the whole vault folder: copy it onto a flash drive or another drive. A sync service is not a backup.
+2. Connect only the vault folder or one folder inside it, never the folder above your vault.
+3. Keep the Claude desktop app open while the task runs, and set the permission setting in the message box to Manual.
+
+PROMPTS
+# PROMPT 1: a themes note that changes nothing else
+In my connected folder {Test vault/Notes}, look through the notes and write one new Markdown note, {Themes from my notes}.md, beside them. List the main themes you find, with one line on each. Under each theme, link the notes it came from like this: [[Note name]]. Use only what's in the notes. Don't change, rename, move or delete any existing file, and keep out of the .obsidian folder. Show me your plan first and wait for my OK.
+
+# PROMPT 2: edit one existing note, change by change
+In my connected folder {Test vault/Notes}, open the note {Bread notes} and {tidy the headings and fix spelling}. Before you change anything, show me each change and wait for my OK. Keep every [[link]] exactly as it is, don't rename or move the note, and don't touch any other file or the .obsidian folder.
+
+# STANDING INSTRUCTIONS: paste into Instructions for Claude, under Settings, then Your Claude
+# (older Cowork layout: Settings, then Cowork, click Edit next to Global instructions, then Save)
+When you work in my Obsidian vault: keep out of the .obsidian folder, don't rename or move notes, and write links as [[Note name]].
+
+CHECKLIST
+[ ] 1. Cowork needs a paid plan: Pro, Max, Ultra, Team or Enterprise. Set it up first (Part 1 of this series).
+[ ] 2. Backup: copy the whole vault folder to another drive. Obsidian's help page: syncing is not a backup.
+[ ] 3. Your layout: if the message box shows Chat and Cowork, pick Cowork in its bottom left corner. If not, ask in any conversation.
+[ ] 4. In the Claude desktop app, give Claude access to the vault folder (or one folder inside it). In the new layout it is listed under Trusted folders.
+[ ] 5. Files Claude opens are processed on Anthropic's servers. Leave journals and private notes out, or connect one subfolder.
+[ ] 6. Claude reaches local folders only while the Claude desktop app is open.
+[ ] 7. Permission setting: Manual before Claude touches your notes. Auto is rolling out as the default, and its check can miss risky actions.
+[ ] 8. The .obsidian folder holds your vault's settings (most computers hide it by default). Tell Claude to keep out of it. (Our advice.)
+[ ] 9. Renames: Obsidian updates links when you rename inside Obsidian. Tell Claude not to rename or move notes; rename them yourself in Obsidian. (Our advice.)
+[ ] 10. Deleting files: Claude asks first, but that protection doesn't cover computer use. Keep vault jobs inside the connected folder.
+[ ] 11. Obsidian's File recovery keeps snapshots for 7 days by default, but it is not a complete backup solution. Keep your backup.
