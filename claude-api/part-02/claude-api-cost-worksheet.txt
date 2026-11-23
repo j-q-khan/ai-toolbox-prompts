@@ -1,0 +1,51 @@
+# Claude API: cost worksheet
+# From Claude API, Part 2. Facts checked 2026-11-22 from Anthropic's pricing page and help pages. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it claude-api-cost-worksheet.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as claude-api-cost-worksheet.txt
+# Prices change. Check the day's prices first: platform.claude.com/docs/en/about-claude/pricing (and claude.com/pricing)
+
+STEP 1. PRICES (per million tokens). Write in the day's prices.
+  Reference only, was when checked on 2026-11-22:
+    Claude Opus 5.5      input $4      output $20     cache hit $0.20
+    Claude Sonnet 5.5    input $2      output $10     cache hit $0.10
+    Claude Haiku 5.5     input $0.10   output $0.50   (prompts up to 100,000 tokens)
+                         input $0.50   output $2.50   (prompts over 100,000 tokens)
+  Model: ____________   Input price: $______   Output price: $______
+
+STEP 2. TOKENS PER CALL
+  Input tokens (everything you send: question, instructions, earlier messages): ______
+  Output tokens (everything Claude writes back; max_tokens is the most it can be): ______
+  Tip: Anthropic's token counting endpoint gives the input tokens before you send (free to use; can differ by a small amount).
+
+STEP 3. ONE CALL
+  Input cost  = input tokens  x input price  / 1,000,000 = $______
+  Output cost = output tokens x output price / 1,000,000 = $______
+  One call    = input cost + output cost                 = $______
+  Example (made-up counts, Opus 5.5 at the 2026-11-22 prices):
+    2,000 x $4 / 1,000,000 = $0.008
+    500 x $20 / 1,000,000  = $0.010
+    One call               = $0.018
+
+STEP 4. A MONTH
+  Calls per day: ______  x days: ______  = calls per month: ______
+  Calls per month x one call = $______ a month
+
+STEP 5. WAYS TO PAY LESS (from Anthropic's docs, 2026-11-22)
+  [ ] A smaller model: the pricing page says Haiku for simple tasks, Sonnet for most work, Opus for the most complex reasoning.
+  [ ] max_tokens: set a cap big enough for your longest real answer. Claude can stop sooner.
+  [ ] Prompt caching: a cache hit on Opus 5.5 or Sonnet 5.5 is 0.05 x the input price. The first 5-minute save costs 1.25 x.
+      It pays off after one cache hit. Prompts under 512 tokens aren't cached (no error is returned).
+  [ ] Batches API: 50 percent off input and output, for jobs that can wait. Most batches finish within 1 hour;
+      a batch not done in 24 hours expires. Batches and caching can be combined.
+  With a batch: one call = (input cost + output cost) / 2 = $______
+
+STEP 6. BEFORE YOU BUY CREDITS
+  [ ] New users receive free credits to test the API (Anthropic's words; no amount is published).
+  [ ] Credits are bought on the Billing page (platform.claude.com/settings/billing), expire one year from purchase,
+      and are non-refundable. Failed requests aren't charged.
+  [ ] Max, Ultra and Team plans include monthly API credits, spent before credits you buy.
+  [ ] Set a monthly spend limit (platform.claude.com/settings/spend-limits). It can't go above your tier's cap
+      (when checked: Start $500, Build $1,000, Scale $200,000 a month).
+  [ ] Check the Usage page (platform.claude.com/usage) and the Cost page (platform.claude.com/cost) after your first calls.
