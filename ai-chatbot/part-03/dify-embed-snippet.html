@@ -1,0 +1,49 @@
+<!--
+  Dify's chat bubble code, in the shape Dify 1.20.0 writes it under Access Point, Web App, Embed Into Site,
+  the second option ("To add a chat app to the bottom right of your website add this code to your html.").
+  Source: getEmbeddedScriptSnippet in web/app/components/app/overview/app-card-utils.ts, github.com/langgenius/dify,
+  tag 1.20.0, and Dify's docs, Embed Your Web App:
+  https://docs.dify.ai/en/cloud/use-dify/publish/webapp/embedding-in-websites  (checked 2026-11-22; written from the code and docs, not run)
+  Don't copy these values: Dify writes your real code for you, with your app's own token, address and colour.
+  YOUR-APP-TOKEN is a placeholder. https://udify.app is the address Dify's docs show for Dify Cloud; a
+  self-hosted Dify uses your own server's address. #155EEF is the docs' default bubble colour.
+  Publish your app first: "Your web app must be published before embedding."
+  "Web apps are public by default": anyone with this code can chat with your bot. If it leaks, click
+  Regenerate on the Web App card and paste the new code into your site.
+  No model provider key is in this code, and none should be: your key stays in Dify's settings.
+  Paste the whole block into your page's HTML, wherever your site builder lets you add custom code.
+-->
+<script>
+ window.difyChatbotConfig = {
+  token: 'YOUR-APP-TOKEN',
+  baseUrl: 'https://udify.app',
+  inputs: {
+    // You can define the inputs from the Start node here
+    // key is the variable name
+    // e.g.
+    // name: "NAME"
+  },
+  systemVariables: {
+    // user_id: 'YOU CAN DEFINE USER ID HERE',
+    // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+  },
+  userVariables: {
+    // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
+    // name: 'YOU CAN DEFINE USER NAME HERE',
+  },
+ }
+</script>
+<script
+ src="https://udify.app/embed.min.js"
+ id="YOUR-APP-TOKEN"
+ defer>
+</script>
+<style>
+  #dify-chatbot-bubble-button {
+    background-color: #155EEF !important;
+  }
+  #dify-chatbot-bubble-window {
+    width: 24rem !important;
+    height: 40rem !important;
+  }
+</style>

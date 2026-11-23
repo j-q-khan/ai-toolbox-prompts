@@ -1,0 +1,47 @@
+# Dify chatbot on your website: an embed checklist. From AI Chatbot, Part 3.
+# Facts checked 2026-11-22 from Dify's docs (docs.dify.ai), its pricing page and the Dify 1.20.0 app. Written from the docs, not run.
+# How to save this file:
+#   Windows: open Notepad, paste this text, choose File, Save as, set the box called Save as type to All files,
+#   and name it dify-embed-checklist.txt
+#   Mac: open TextEdit, choose Format, Make Plain Text, paste this text, and save it as dify-embed-checklist.txt
+# How to use it: tick every line before you paste the bubble code into a real website.
+
+THE PLAN (Dify Cloud, was this when checked on 2026-11-22)
+[ ] Sandbox: 200 message credits, a one-time allocation that doesn't renew monthly; 5 apps; 50 knowledge documents
+[ ] Sandbox uploads: 1 file per upload, up to 15 MB each; logs kept 30 days
+[ ] I know what happens when credits run out: add my own key on the provider's card, billed to my account
+[ ] My provider key is only in Dify's settings, never in a web page or the bubble code
+
+THE KNOWLEDGE BASE
+[ ] Created under Knowledge, on the Classic tab if the page shows Classic and Agent (the Chatbot app can't search an Agent knowledge base)
+[ ] Default Models has an Embedding Model set, or I picked Economical
+[ ] My documents show Available, not Indexing or Error
+
+THE CHATBOT
+[ ] Instructions: answer only from my documents, say "I don't know" otherwise, never claim to be a person
+[ ] Knowledge: my knowledge base is added (Knowledge, Add, Select reference Knowledge)
+[ ] Tested 10 real customer questions in Debug & Preview
+[ ] Tested a question that isn't in my documents, and it says it doesn't know
+[ ] Features: Citations and Attributions is on, so I can see where answers come from
+[ ] Features: Conversation Opener says it's an AI, not a person, and how to reach a person
+
+PUBLISHING AND EMBEDDING
+[ ] Published ("Your web app must be published before embedding.")
+[ ] Access Point, Web App card: the switch is on
+[ ] Embed Into Site, the second option (the bubble), copied whole
+[ ] Pasted into my site's custom code area, and the bubble shows in the bottom right corner
+[ ] I republish after every change ("If you update your app configuration, republish to see changes in embedded versions.")
+[ ] I know web apps are "public by default", and Regenerate on the Web App card replaces a leaked address
+[ ] My site and the Dify app both use HTTPS (the docs' iframe troubleshooting)
+
+IF I SELF-HOST INSTEAD
+[ ] Docker Compose 2.35.0 or later, Git and OpenSSL; at least 2 CPU cores and 4 GiB of RAM
+[ ] Before anyone else can reach it: HTTPS, and the bundled development credentials replaced
+[ ] Someone looks after the server, its updates and its backups
+[ ] I've checked Dify's LICENSE for my own use: "a modified version of the Apache License 2.0", no multi-tenant use
+    without written permission, keep the LOGO and copyright in the console and applications
+[ ] I've seen that the pricing page calls the free Community edition "For open-source enthusiasts, individual
+    developers, and non-commercial projects." and, for business use, I've asked Dify in writing
+
+AFTER IT GOES LIVE
+[ ] Someone opens the app's Logs page every week and adds what the documents were missing
