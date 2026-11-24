@@ -1,0 +1,16 @@
+# The prompts from this video, for Replit Agent, written for this video (2026-11-24). Not run: nothing was built.
+# To keep a copy: paste this into Notepad and save it as replit-bakery-prompts.txt with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# Send them one at a time, in order, in the chat box. Keep real customer names and passwords out of them: use made-up test data.
+
+# 1. First: the app, and ask for a plan before it builds. Approve the task list when every page is on it.
+Build Test Bakery, an order page. Customers pick a cake and a pickup time, and an orders page lists every order. Save each order: name, cake, pickup time. Made-up test data only. Plan this first, and wait for my OK before you build.
+
+# 2. When something in the preview is wrong: describe that one thing, and ask for only that fix.
+The pickup times don't show on the order form. Fix only that.
+
+# 3. When the preview works: sign-ins with Replit Auth (your users sign in with a Replit account, on a Replit-branded page).
+Add sign-in so customers see only their own orders, and it should feature Replit Auth.
+
+# 4. After the web app is published: a phone app in the same build.
+Add a mobile app to Test Bakery that uses the same orders.
