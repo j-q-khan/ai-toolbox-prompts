@@ -1,0 +1,16 @@
+# Claude build prompt: Google AI Essentials: Is the Course Worth It? Cost, Length and Certificate
+
+Paste this into Claude Code, Anthropic's coding assistant that works with the files in a folder on your computer, opened in a new folder holding only my-course-numbers.txt from this video's files (or your own copy of it). It builds a small Python script that takes the hours a week you can give and the monthly price you type in from Coursera's page that day, and writes a one-page decision sheet with your weeks and a rough cost. It reads only the file you name, writes one new file beside it, calls no website or A.I. service, signs in to nothing and changes no account setting. Written for this video, checked 2026-11-24. Nothing here was run for the video.
+
+Goal: write one Python script, course_decision_sheet.py, that reads a small numbers file and writes a plain-text decision sheet for one Coursera course.
+Input: a file I name on the command line, for example python course_decision_sheet.py my-course-numbers.txt. Lines look like name = value. Skip blank lines and lines starting with #. The names are: course, hours_per_week, listed_hours, monthly_price, currency, trial_days, price_checked_on. hours_per_week, listed_hours and monthly_price must be numbers above zero, and trial_days a whole number of zero or more; if one is missing or wrong, stop and tell me which line to fix, and write nothing.
+Steps, in order:
+1. Tell me in two sentences what the script will do and which file it will create, then wait for me to say go.
+2. Use only Python's standard library. No installs, no internet, no other files read, no calls to Coursera, Google or any AI service, and no browser opened.
+3. Work out: weeks = listed_hours divided by hours_per_week, rounded up to a whole week; days = weeks times 7; months = days divided by 30, rounded up to a whole month; rough cost = months times monthly_price. Show each number with one line saying how it was worked out.
+4. Write the sheet to decision-sheet.txt with: a title line naming the course; the inputs as I typed them; the weeks, the months and the rough cost with the currency; then these lines word for word: "This is a rough estimate. It counts 30 days as a month and does not take the free trial off." / "Check the price on Coursera's page on the day: prices change and differ by country." / "Coursera's course page says: No, you cannot take this course for free." / "The course page does not say how to cancel the trial: look for the answer in Coursera's learner help center before you start." / "Financial aid: the course page says Financial aid available."; and a last line "Price checked on: " followed by price_checked_on.
+5. If decision-sheet.txt already exists, don't overwrite it: write decision-sheet-2.txt instead, then -3 and so on, and tell me the name.
+6. Never add a fact about the course that isn't in step 4 or in my file.
+7. Then run it once on the file I named and show me the sheet it made.
+Safety: read only the file I name. Don't change, move or delete it or anything else. Don't upload anything or call any website or API.
+Output: course_decision_sheet.py, the new decision sheet, and a three-line note saying what you created.

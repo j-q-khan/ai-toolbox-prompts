@@ -1,0 +1,14 @@
+# Numbers for the Claude build prompt: change the values after the = sign, then save.
+# To keep a copy: paste this into Notepad and save it as my-course-numbers.txt with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# The lines starting with # are notes for you, and the script skips them.
+# monthly_price: type in the price Coursera's page shows you today. On 2026-11-24 the page said $49 per month in the U.S. and Canada.
+# currency: type the currency your price is in.
+# listed_hours: 8 is our sum of the five listed course lengths, not Coursera's figure.
+course = Google AI Essentials
+hours_per_week = 2
+listed_hours = 8
+monthly_price = 49
+currency = $
+trial_days = 7
+price_checked_on = 2026-11-24

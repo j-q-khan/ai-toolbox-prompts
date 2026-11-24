@@ -1,0 +1,33 @@
+# Is Google AI Essentials worth it for me? (checked 2026-11-24). Nothing was signed up for or run.
+# Lines starting "Coursera says" are quoted from Coursera's course page; lines starting "Our note" are this video's own notes.
+# Page: https://www.coursera.org/specializations/ai-essentials-google (check it on the day: prices and wording change).
+# To keep a copy: paste this into Notepad and save it as worth-it-checklist.txt with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+THE COST
+[ ] Coursera says: "In the U.S. and Canada, Coursera charges $49 per month after the initial 7-day free trial period." (So it said on 2026-11-24.)
+[ ] Coursera says: "No, you cannot take this course for free."
+[ ] Our note: the "Enroll for free" button starts the 7-day free trial. The course page doesn't say how to cancel, so look for the answer in Coursera's learner help center (linked near the bottom of the course page) before you start.
+[ ] Coursera says: "Financial aid available" and "In select learning programs, you can apply for financial aid or a scholarship if you can't afford the enrollment fee."
+[ ] Coursera says: "Included with Coursera Plus". Our note: if you already pay for Coursera Plus, check there before paying again.
+[ ] Our note: outside the U.S. and Canada, check the price the page shows you.
+
+THE TIME
+[ ] Coursera says: "4 hours to complete" and "In under 10 hours".
+[ ] Our note: the five listed courses add up to 8 hours (1 + 2 + 2 + 1 + 2).
+[ ] My hours a week: ____    Our note: 8 divided by my hours a week = my weeks, about.
+[ ] Coursera says: "Flexible schedule" and "Learn at your own pace".
+
+WHAT I GET
+[ ] Coursera says: "Beginner level" and "Zero experience required."
+[ ] Coursera says: "Write clear and specific prompts to get the output you want"
+[ ] Coursera says: "After you complete the program, you'll earn a certificate from Google to share with your network and potential employers."
+[ ] Coursera says: "This Specialization doesn't carry university credit, but some universities may choose to accept Specialization Certificates for credit."
+[ ] Our note: no page promises a job. Treat it as proof of the basics, not proof of experience.
+
+MY ANSWER (tick one)
+[ ] I want a certificate from Google to show, I have about 8 hours, and the price works for me. Our note: worth it.
+[ ] I'm mainly curious and don't need a certificate. Our note: start somewhere cheaper, and compare beginner courses first (AI for Beginners, Part 4: https://youtu.be/MRw58nvN3g4).
+[ ] I mainly want to get better at prompting. Our note: look at Google Prompting Essentials too, a separate four-course specialization on Coursera: https://www.coursera.org/specializations/prompting-essentials-google
+
+# Not affiliated with Google or Coursera. No referral or affiliate links.
