@@ -1,0 +1,15 @@
+# Review prompt for a council by hand, from the video "LLM Council: Ask Several AI Models, Then Let Them Judge Each Other" (2026-11-23). Written by us.
+# Step 1: ask the same question in two or three chatbots you already use, and copy each answer.
+# Step 2: open a fresh chat, paste this prompt, then fill in the question and the answers below, labelled A, B and C, with no chatbot names.
+# Step 3: send it. For a second opinion, paste the same thing into another chatbot and compare the two rankings.
+Below are one question and three answers to it, labelled A, B and C. You don't know who wrote them, so judge only what each answer says.
+First, rank them from best to worst, for how correct and how useful each one is, with one sentence on why for each.
+Then act as chairman: write one final answer that keeps the strongest parts, says plainly where the answers disagreed, and ends with one next step.
+Question:
+[paste the question here]
+Answer A:
+[paste the first answer here]
+Answer B:
+[paste the second answer here]
+Answer C:
+[paste the third answer here]

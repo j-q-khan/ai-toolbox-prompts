@@ -1,0 +1,15 @@
+# Council prompt for one Claude Code session, from the video "LLM Council: Ask Several AI Models, Then Let Them Judge Each Other" (2026-11-23). Written by us.
+# This is the Claude sub-agent style: every council member is Claude, each with a different role.
+# It is not Karpathy's llm-council app, which sends your question to several companies' models through OpenRouter.
+# To use it: replace the question on the last line first, then start Claude Code in an empty folder, copy everything in this file and paste it in.
+# Each sub-agent's requests count toward your Claude plan's usage limits, so save it for questions worth it.
+Run a council on my question below, in three stages.
+Stage 1, first answers: start four sub-agents at the same time. Give each one only my question and one of these roles, and nothing else from this chat.
+- Skeptic: looks for what could go wrong.
+- Planner: wants the simplest plan that works.
+- Newcomer: answers as someone new to the topic.
+- Checker: lists what would need checking, and where to check it.
+Stage 2, blind review: label the four answers A, B, C and D in a random order and remove the roles. Start four new sub-agents. Give each one all four answers and ask it to rank them from best to worst, for how correct and how useful each one is, with one sentence on each.
+Stage 3, final answer: you are the chairman. Show me each answer's average rank and which role wrote it, where the answers agree and where they clash, then one final answer and one next step.
+Rules: don't create, change or delete any files, don't run commands, and don't search the web unless I say so. If a stage fails, tell me which one and stop.
+My question: Should I learn Python or JavaScript first?
