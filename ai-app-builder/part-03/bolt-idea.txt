@@ -1,0 +1,11 @@
+# Test answers for the Claude build prompt: key: answer, one per line.
+# To keep a copy: paste this into Notepad and save it as bolt-idea.txt with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# The lines starting with # are notes for you, and the script skips them. Made-up data only.
+name: Test Bakery
+what_it_does: customers order a cake and pick a pickup time
+who_uses_it: bakery customers and the bakery owner
+customer_steps: sign up, pick a cake, pick a pickup time, place the order, see my orders
+saves: name, cake, pickup time
+sign_up: yes
+kind: web
