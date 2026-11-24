@@ -1,0 +1,8 @@
+# A made-up shot list for the Claude build prompt: replace the rows with your own products.
+# To keep a copy: paste this into Notepad and save it as shots.csv with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# Lines starting with # are notes for you, and the script skips them. shape is tall or wide. seconds is 3 to 30. sound may be empty.
+product,setting,what_moves,camera,light,sound,shape,seconds
+a white ceramic mug,on a wooden table by a window,steam rising slowly,the camera pushes in gently,soft morning light,soft rain on the window,tall,5
+a glass candle jar,on a shelf beside two books,the flame flickering gently,slow orbit to the right,warm evening light,,wide,5
+a pair of running shoes,on a wet pavement at dusk,puddle ripples around the soles,low tracking shot from the side,street lights reflecting,distant traffic,tall,8
