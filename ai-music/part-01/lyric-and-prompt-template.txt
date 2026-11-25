@@ -1,0 +1,30 @@
+# Paste the style prompt into the tool's style or prompt box, and the lyrics into its lyrics box.
+# The lines starting with # are notes for you: don't paste them.
+# The lyrics below were written for this video; they're free for you to try. For your own song, replace them with your own words.
+# Style prompts: genres, moods, instruments and voice only. No singer or band names, no song titles, no "in the style of".
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Title: Blue Cups and Rain
+
+Style prompt:
+warm acoustic folk pop, fingerpicked guitar, soft brushed drums, gentle female vocal, calm and hopeful
+
+Lyrics:
+[Verse]
+Flour on my sleeves and rain on the glass,
+I line up the blue cups and let the hours pass,
+The kettle is singing a tune of its own,
+So I hum right along in this kitchen of stone.
+[Chorus]
+Blue cups and rain, I'm staying in today,
+Warm little kitchen, where the grey can't find its way.
+
+# Your own song: copy the block from "Title:" down, and swap in your words.
+# Title:
+# Style prompt: (genre), (mood), (two or three instruments), (voice)
+# Lyrics:
+# [Verse]
+# (four lines)
+# [Chorus]
+# (two to four lines)
