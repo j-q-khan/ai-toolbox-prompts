@@ -1,0 +1,7 @@
+# ~/.codex/config.toml  (Windows: C:\Users\YOU\.codex\config.toml   Mac: /Users/YOU/.codex/config.toml)
+# OpenAI's lower-risk local preset ("Auto"): Codex edits and runs routine commands inside your folder,
+# and asks before editing outside it or using the network (network access is off by default).
+# If the file already exists, add these two lines at the very top, above any line in [square brackets].
+# Save as plain text (Notepad: Save as type set to All files; TextEdit: Format, then Make Plain Text).
+sandbox_mode    = "workspace-write"
+approval_policy = "on-request"
