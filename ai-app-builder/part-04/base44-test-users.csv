@@ -1,0 +1,7 @@
+# Made-up users for the Claude build prompt. Example answers: app name Test Bakery; tables orders, cakes; orders own; cakes browse.
+# To keep a copy: paste the lines below this comment block into Notepad and save as base44-test-users.csv with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+name,email,role
+Test Owner,owner@example.com,admin
+Test Customer,customer1@example.com,customer
+Test Customer 2,customer2@example.com,customer
