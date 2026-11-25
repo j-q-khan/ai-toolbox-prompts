@@ -1,0 +1,8 @@
+# Windows PowerShell, in the top folder of your repo:
+mkdir .claude\agents
+
+# Mac Terminal, in the top folder of your repo:
+mkdir -p .claude/agents
+
+# Then check your version (AGENTS.md loads directly from v2.1.277):
+claude --version
