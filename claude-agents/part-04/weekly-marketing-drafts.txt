@@ -1,0 +1,26 @@
+# Weekly marketing drafts: a scheduled task for Claude Cowork (written from Anthropic's help pages, checked 2026-11-24; not run for this video)
+# Replace everything in square brackets first, and update the menu line whenever your menu changes.
+# Then paste everything below the dashed line into Claude, and add how often it should run, for example:
+# Run this every Monday at 10 in the morning.
+# Anthropic's safety page: don't schedule tasks that send messages on your behalf. This one only drafts.
+# ------------------------------------------------------------
+Every week, draft next week's posts for my business. Drafts only: I'll check them and post them myself.
+
+My business: [Test Bakery, a small bakery in your town].
+Who we sell to: [local families and office workers].
+Our tone: [friendly, short, no jargon].
+This season's menu and offers: [list them here].
+
+How to do it:
+1. Split the work into three pieces: one drafts the social posts, one drafts the newsletter paragraph, and one checks the dates coming up in the next 14 days (public holidays and local events in [your town]).
+2. Combine them into one draft document.
+
+The draft:
+- Five short social posts, under 50 words each, each with the day to post it and one idea for a photo.
+- One newsletter paragraph, under 120 words.
+- The dates you used, each with its link.
+
+Rules:
+- Draft only. Never post, send, schedule posts or email anyone.
+- Don't make up prices, offers or opening hours. Use only what's in this prompt, and mark anything else [CHECK].
+- Don't sign in to anything or buy anything.

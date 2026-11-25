@@ -1,0 +1,27 @@
+# Weekly research brief: a scheduled task for Claude Cowork (written from Anthropic's help pages, checked 2026-11-24; not run for this video)
+# Replace everything in square brackets first. Test Bakery and the rival names are made-up examples.
+# Then paste everything below the dashed line into Claude, and add how often it should run, for example:
+# Run this every Monday at 9 in the morning.
+# Don't pick a folder for this task, so it can run with your computer asleep.
+# ------------------------------------------------------------
+Every week, research what changed for my business and write me a one-page brief.
+
+My business: [Test Bakery, a small bakery in your town].
+Rivals to track: [Rival 1], [Rival 2], [Rival 3]. Their public websites and public social pages only.
+Topics to track: [local food news], [flour and butter prices], [one trend you care about].
+
+How to do it:
+1. Research each rival as its own piece of work, and each topic as its own piece, then combine the findings.
+2. Only cover the last 7 days. If you find nothing new for a rival or topic, write "Nothing new found" instead of guessing.
+3. For every finding, give the link you used.
+
+The brief:
+- Title: Week of [date]: rivals and news
+- For each rival and topic: what changed, in one or two sentences, and why it might matter to my business.
+- Three ideas I could act on this week.
+- A short list of anything you couldn't check.
+
+Rules:
+- Use public web pages only. Don't sign in to anything, fill in forms, buy anything or contact anyone.
+- Don't send, post or share the brief. Leave it in this task for me to review.
+- Keep it to one page.
