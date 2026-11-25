@@ -1,0 +1,46 @@
+# The prompts from this video, in order: paste one, choose Yes, test it in your browser, then the next.
+# To keep a copy: paste this into Notepad and save it as prompts.txt with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+# The lines starting with # are notes for you, so don't paste them. Written from Anthropic's docs, checked 2026-11-25; not run for the video.
+
+# Before prompt 1, in a fresh PowerShell (Windows) or Terminal (Mac) window, type these three lines, pressing Enter after each:
+# mkdir arcade
+# cd arcade
+# claude
+
+# Prompt 1: the first prompt
+Make a browser game called Comet Dodge in one file, game.html.
+Use a canvas and plain JavaScript, nothing from the internet.
+A ship at the bottom moves left and right with the arrow keys.
+Comets fall from the top, and touching one ends the game.
+The score goes up every second you survive.
+When you lose, show Game over and Press R to play again.
+R starts a new game.
+Create only game.html, and tell me how to open it.
+
+# To open the game: in a second PowerShell window type  start arcade\game.html
+# or in a second Terminal window on a Mac type  open arcade/game.html
+# After every change: refresh the browser tab (F5 on Windows, Command and R on a Mac).
+
+# Prompt 2: the first change
+Add yellow stars that fall more slowly than the comets.
+Catching a star adds 10 points.
+Change nothing else.
+
+# Prompt 3: the second change
+Make the comets fall 15% faster every 10 seconds.
+Change nothing else.
+
+# When something breaks: say what you did, what you expected and what happened. For example:
+When I press the left arrow, the ship doesn't move.
+It should move left. Please fix only that.
+
+# Going further (optional): this one loads Phaser 4.2.1 from the internet, which the plain game never needed.
+Rebuild my game as a new file, game-phaser.html,
+using Phaser 4.2.1, loaded from this link:
+https://cdn.jsdelivr.net/npm/phaser@4.2.1/dist/phaser.min.js
+Keep the same rules: the ship, the comets, stars worth 10,
+the speed-up and R to restart. Don't change game.html.
+
+# A change broke the game? In Claude Code, press Esc twice with the input empty (or type /rewind),
+# pick the prompt that made the change, then choose Restore code.
