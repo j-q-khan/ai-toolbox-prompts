@@ -1,0 +1,1 @@
+Create an agent team to explore an order-tracking tool for Test Bakery, a made-up shop. Spawn three teammates: one on the customer's side, one on the technical design, one playing devil's advocate. Use Sonnet for each teammate. Have them message each other to challenge each other's ideas, then give me one summary. Don't create, change or delete any files.

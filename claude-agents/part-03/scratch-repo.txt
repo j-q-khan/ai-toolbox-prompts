@@ -1,0 +1,9 @@
+# Run these one at a time, in the folder where you keep test work.
+# git commit needs your git name and email set once; if they aren't, git tells you how.
+mkdir test-bakery-team
+cd test-bakery-team
+git init
+git commit --allow-empty -m "First commit"
+mkdir .claude
+# Then start Claude Code here once and say yes when it asks whether you trust the folder:
+claude

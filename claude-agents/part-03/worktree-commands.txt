@@ -1,0 +1,9 @@
+# Terminal 1, in the top folder of the scratch repo:
+claude --worktree menu
+
+# Terminal 2, in the same folder:
+claude --worktree tests
+
+# They land in .claude/worktrees/menu and .claude/worktrees/tests, on new branches worktree-menu and worktree-tests.
+# See your worktrees:
+git worktree list
