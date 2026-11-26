@@ -1,0 +1,33 @@
+# Paste everything below the notes into a regular Claude chat, then paste your meeting notes where it says.
+# Copy the notes from the meeting's page in Claude. Remove anything private you don't want in the chat.
+# The lines starting with # are notes for you: don't paste them.
+# Written from Anthropic's help page, Use Claude Meetings, checked 2026-11-26.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Turn the meeting notes below into a checklist of action items.
+Write one line per job, in this form: - [ ] the job (owner: name, due: date)
+Take the owner and the due date only from what the notes say. If either is missing, write "not stated". Don't guess.
+Put jobs with no owner at the end, under a heading "Needs an owner".
+Don't add jobs that aren't in the notes, and don't change what anyone agreed to.
+After the checklist, list anything in the notes that sounds like a decision but has no job attached.
+
+Meeting notes:
+(paste the notes here)
+
+# Example notes to try it with (made up):
+# Weekly planning (test)
+# Summary: the team planned the menu launch and the room booking.
+# Action items:
+# - Test User A: send the menu draft by Friday
+# - Test User B: book the room
+# - Ask the team about the budget
+
+# Example output (written by hand, not run):
+# - [ ] Send the menu draft (owner: Test User A, due: Friday)
+# - [ ] Book the room (owner: Test User B, due: not stated)
+# Needs an owner
+# - [ ] Ask the team about the budget (owner: not stated, due: not stated)
+
+# After the meeting, in a regular chat, you can also ask:
+What did we agree in Weekly planning (test)?
