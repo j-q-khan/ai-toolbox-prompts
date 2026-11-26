@@ -1,0 +1,31 @@
+# Keep your key in Gemini CLI's .env file instead of typing it into the terminal.
+# Written from Gemini CLI's authentication docs ("Persisting environment variables"), checked 2026-11-25.
+# Gemini CLI loads the first .env file it finds, searching up from the folder you start it in,
+# then the .env inside the .gemini folder in your home folder. Only one file is loaded, never merged.
+# If you already keep a file called .env in a folder above your work, that one may be loaded instead.
+#
+# Windows (PowerShell): these two lines make the folder and open the file in Notepad.
+# If Notepad asks whether to create the file, click Yes.
+New-Item -ItemType Directory -Force -Path "$HOME\.gemini" | Out-Null
+notepad "$HOME\.gemini\.env"
+
+# Mac (Terminal): these three lines make the folder and the file, and open it in TextEdit.
+mkdir -p ~/.gemini
+touch ~/.gemini/.env
+open -e ~/.gemini/.env
+
+# In the file, type ONE of these lines, with no spaces and no quotes, then save (Ctrl+S on Windows, Command+S on a Mac).
+# No quotes, because TextEdit can turn straight quotes into curly ones, which would break the line.
+# With a paid key from Google AI Studio (https://aistudio.google.com/apikey): replace paste-your-key-here with your own key.
+# A new key starts on the Free Tier: click Set up billing in AI Studio and prepay credit (at least $5 when checked,
+# https://ai.google.dev/gemini-api/docs/billing) to make it a paid key.
+GEMINI_API_KEY=paste-your-key-here
+
+# With a company Code Assist licence: your admin gives you your company's Google Cloud project ID.
+# Then choose "Sign in with Google" with your work account when Gemini CLI starts.
+GOOGLE_CLOUD_PROJECT=your-company-code-from-your-admin
+
+# Never put the company line in the file if you don't have a company licence:
+# Google's troubleshooting page says it forces a company subscription check, and you'll see a "named user" error.
+# Keep this file private: never share it, sync it to a shared folder, or show it in a screenshot.
+# If your key ever leaks, delete it in Google AI Studio and make a new one.

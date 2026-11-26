@@ -1,0 +1,32 @@
+# Gemini CLI install lines, from Google's Gemini CLI README and installation page (checked 2026-11-25).
+# Written from the docs, not run for this video. Read every line before you use it.
+# Before you install: since June 18, 2026, Gemini CLI doesn't serve free accounts or Google AI Pro and Ultra.
+# You need a company Gemini Code Assist licence, or a paid Gemini API key (Google's blog says paid keys still work;
+# the README calls them "legacy"). Free accounts: Google points you to Antigravity CLI instead.
+#
+# Windows: open PowerShell from the Start menu. Mac: open Terminal from Spotlight (Command + Space).
+# Node.js first: Google asks for Node.js 20 or later. Download the LTS version from https://nodejs.org/en/download
+# (it was v26.13.1 when checked), run the installer, and keep its default choices.
+# The lines starting with # are notes for you: don't type them.
+
+# 1. Check Node.js is installed (you should see a version number starting with v):
+node --version
+
+# 2. Install Gemini CLI (Windows PowerShell or Mac Terminal). -g means global: you can start it from any folder.
+npm install -g @google/gemini-cli
+
+# 2a. Windows only: if PowerShell says "running scripts is disabled on this system", Windows is blocking
+# small program files called scripts, which npm and Gemini CLI use there. This line, from Microsoft's PowerShell docs
+# (about_Execution_Policies), lets scripts made on this computer run, for your account only; downloaded scripts
+# still need a signature. If it asks whether to change the execution policy, type Y and press Enter, then try again.
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# 2b. Mac alternative, only if you already use Homebrew. Use this OR the npm line, never both:
+brew install gemini-cli
+
+# 3. Check it worked (it was 0.71.1, the newest stable version, on 2026-11-25).
+# If your terminal can't find gemini, open a new terminal window and try again.
+gemini --version
+
+# Later: update to the newest stable version (Google publishes one every Tuesday):
+npm install -g @google/gemini-cli@latest

@@ -1,0 +1,32 @@
+# A first task in a scratch folder (a throwaway test folder), with made-up data only.
+# Written from Gemini CLI's quickstart, tools reference and file management docs, checked 2026-11-25. Not run for this video.
+#
+# Windows (PowerShell): make the folder, move into it, add a made-up notes file, start Gemini CLI.
+mkdir "$HOME\gemini-scratch"
+cd "$HOME\gemini-scratch"
+Set-Content -Path notes.txt -Value "Test Bakery: open 9 to 5, closed on Sundays. Made-up notes for a test."
+gemini
+
+# Mac (Terminal): the same four steps.
+mkdir -p ~/gemini-scratch
+cd ~/gemini-scratch
+echo "Test Bakery: open 9 to 5, closed on Sundays. Made-up notes for a test." | tee notes.txt
+gemini
+
+# The first time, it asks "Do you trust the files in this folder?": choose "Trust folder (gemini-scratch)".
+# Not "Trust parent folder": here the parent is your whole home folder.
+# It then says "Gemini CLI is restarting to apply the trust changes..." and starts again: that's normal.
+# Then choose how to sign in: "Use Gemini API Key" (already picked if your key is in the .env file),
+# or "Sign in with Google" with your work account if your company gave you a licence.
+# Then type this request (the @ makes Gemini CLI look at that file first):
+@notes.txt Write a one-line summary of this file in a new file called summary.txt.
+
+# Gemini CLI shows the new file and asks "Apply this change?". Choose "Allow once" (yes to this one change only).
+# Then leave Gemini CLI:
+/quit
+
+# Check it worked: show the new file (Windows first, then Mac).
+Get-Content summary.txt
+cat summary.txt
+
+# When you're done, you can delete the whole gemini-scratch folder.
