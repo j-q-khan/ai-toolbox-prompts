@@ -1,0 +1,23 @@
+# Claude Code lines for Opus 5.5, from Anthropic's Claude Code docs (model-config), checked 2026-11-26.
+# Written from the docs, not run for this video. Read every line before you use it.
+# Claude Code is on Pro, Max, Ultra, Team and Enterprise, not Free (claude.com/pricing, checked 2026-11-26).
+# Not installed yet? See the Claude Code for Beginners playlist linked in the description.
+# Windows: PowerShell. Mac: Terminal. The lines starting with # are notes for you: don't type them.
+
+# 1. Opus 5.5 needs Claude Code v2.1.280 or later. Type this in the terminal (not inside Claude Code) to update:
+claude update
+
+# 2. Start Claude Code on Opus (the docs' own example):
+claude --model opus
+
+# 3. Already inside Claude Code? Switch to Opus now (typed like this, it also becomes your default for new sessions):
+/model opus
+
+# 4. Or open the model picker (the left and right arrow keys move its effort slider):
+/model
+
+# 5. Set the effort. On its own, this opens a slider: Enter saves the level as your default, S keeps it for this session only.
+/effort
+
+# 6. Or set a level by name (low, medium, high, xhigh). This saves it as your default:
+/effort medium

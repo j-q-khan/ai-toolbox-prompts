@@ -1,0 +1,3 @@
+# The example job from this video, with made-up data only. Paste your own made-up or non-private notes after it.
+# Written for this video, not run. Works on any model; Opus 5.5 is built for long jobs like this.
+Here are my meeting notes for Test Bakery (made up). Turn them into a one-page plan with a table of tasks, who does each one and by when. Keep it to one page and tell me anything the notes leave unclear.
