@@ -1,0 +1,38 @@
+# Paste the style prompt into Suno's Styles box, and the lyrics into its lyrics box (Create, then Custom).
+# The lines starting with # are notes for you: don't paste them.
+# The lyrics below were written for this video; they're free for you to try. For your own song, replace them with your own words.
+# Labels in square brackets mark each part. Suno's release notes (July 9, 2026) say you can add labels like "Verse" and "Outro"; the brackets are our habit, since Suno's notes show no format.
+# Style prompts: genre, instruments, mood and voice only. No singer or band names, no song titles, no "in the style of".
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Title: Bench at Nine
+
+Style prompt:
+upbeat indie pop, bright electric guitar, handclaps, steady drums, warm male vocal, hopeful late-night mood
+
+Lyrics:
+[Verse]
+Coat zipped up and the streetlights low,
+I count the buses as they come and go,
+A paper cup and a borrowed tune,
+Waiting on the corner by the silver moon.
+[Chorus]
+Bench at nine, I'm right on time,
+Every stop is a little rhyme,
+Hold on tight, the road is mine,
+I'll catch the next one, bench at nine.
+[Outro]
+Bench at nine, bench at nine,
+I'll catch the next one, right on time.
+
+# Your own song: copy the block from "Title:" down, and swap in your words.
+# Title:
+# Style prompt: (genre), (two or three instruments), (mood), (voice)
+# Lyrics:
+# [Verse]
+# (four lines)
+# [Chorus]
+# (two to four lines)
+# [Outro]
+# (one or two lines)
