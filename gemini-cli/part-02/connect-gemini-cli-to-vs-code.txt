@@ -1,0 +1,44 @@
+# Connect Gemini CLI to Visual Studio Code, from Google's Gemini CLI docs (docs/ide-integration, checked 2026-11-25).
+# Written from the docs, not run for this video. Read every line before you use it.
+# Before you start: Gemini CLI installed and signed in (Part 1 of this series), with a company Gemini Code Assist
+# licence or a paid Gemini API key (Google's blog says paid keys still work; the README calls them "legacy").
+# Free and Google AI Pro / Ultra (Google One) accounts can't use Gemini CLI or the Code Assist extension since
+# June 18, 2026: Google points them to Antigravity.
+# The companion extension needs VS Code 1.99 or later (its package.json, v0.71.1).
+# The lines starting with # are notes for you: don't type them.
+
+# 1. In VS Code: File, Open Folder and pick the gemini-scratch folder from Part 1 (or any scratch folder with made-up files only).
+# 2. Terminal, New Terminal. A terminal panel opens along the bottom, in your open folder.
+# 3. Start Gemini CLI there:
+gemini
+
+# 4. It asks "Do you want to connect VS Code to Gemini CLI?". Choose Yes and press Enter.
+#    Google's docs: Yes installs the companion extension and turns on the connection.
+# 5. Said no, or it never asked? Type this inside Gemini CLI:
+/ide install
+
+# 5a. Only if you installed the "Gemini CLI Companion" extension yourself from the VS Code Marketplace
+#     (extension id google.gemini-cli-vscode-ide-companion), turn the connection on:
+/ide enable
+
+# 6. Check it worked. You should see "Connected to VS Code" and a list of files you've had open:
+/ide status
+
+# 7. "Disconnected" or "Directory mismatch"? The terminal can't reach the companion yet, or Gemini CLI is in a
+#    different folder from the one open in VS Code. Google's docs: for "Disconnected", open a new terminal in
+#    VS Code; for "Directory mismatch", go to the folder that's open in VS Code and restart Gemini CLI.
+#    A new terminal from Terminal, New Terminal starts in your open folder (Microsoft's VS Code docs), so it covers both:
+#    leave Gemini CLI (/quit), open a new terminal with Terminal, New Terminal, and start gemini again there.
+
+# 8. Ask for a change (made-up file). The change opens in VS Code's diff view (before and after).
+#    Accept: the checkmark at the top of the diff tab, or save the file (Ctrl+S, or Cmd+S on a Mac).
+#    Reject: the x at the top of the diff tab, or shut the diff tab.
+#    Google's docs: if you choose "Allow for this session" in the terminal, changes are auto-accepted and
+#    stop showing up in VS Code. To see each change in the diff view first, don't choose it.
+
+# Shortcut: open the Command Palette (Ctrl+Shift+P on Windows, Cmd+Shift+P on a Mac), type Gemini and pick:
+Gemini CLI: Run
+# It starts a new Gemini CLI session in VS Code's terminal.
+
+# To switch the connection off later, type this inside Gemini CLI:
+/ide disable
