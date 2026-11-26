@@ -1,0 +1,30 @@
+# Shot list planner for Suno Visuals (or any image to video tool). Facts checked 2026-11-26.
+# Lines starting with # are notes for you. Each clip is one line: section, length, what happens.
+# Suno Visuals clips are 5 to 15 seconds ("Choose a clip length from 5 to 15 seconds."): help.suno.com/en/articles/14662785
+# Google Flow's Omni Flash clips are 3 to 10 seconds without a subscription: support.google.com/flow/answer/16352836
+# How many clips: song length in seconds divided by clip length. A 3:00 song (180 s) at 10 s is about 18 clips.
+# Shape: Landscape (16:9) for YouTube, Vertical (9:16) for phones. Quality: draft in Fast, then remake in Standard.
+# Lip sync: pick a part with clear vocals and describe a shot where the face and mouth are visible.
+# Keep every character made up. No real people, no artists, no public figures, no famous characters.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Song: Bench at Nine (the example song from Part 2; your times will differ)
+Shape: Landscape 16:9
+Character: a cartoon commuter in a long coat (made up for this video)
+
+Verse 1 · 10 s · a quiet bench under a streetlight at night, light rain, the commuter waiting, slow push in
+Verse 1 · 10 s · close on the commuter's hands around a paper cup, steam rising, buses passing behind
+Chorus 1 · 10 s · the bus lights sweep in across the wet street, the commuter stands up, lip sync on
+Chorus 1 · 10 s · inside the bus, city lights sliding past the window, the commuter smiling, lip sync on
+Verse 2 · 10 s · the corner from above, a silver moon over the rooftops, the bench empty
+Verse 2 · 10 s · the commuter counting buses on their fingers, streetlights flickering on one by one
+Chorus 2 · 10 s · the bus pulls away into the night, rain sparkling in its headlights, lip sync on
+Chorus 2 · 10 s · a wide shot of the whole street, every window lit, the commuter waving
+Outro · 10 s · the empty bench again, the rain stops, the streetlight dims, slow pull back
+
+# Your own song: copy the block from "Song:" down and fill it in.
+# Song:
+# Shape:
+# Character: (made up by you)
+# (section) · (5 to 15) s · (what happens in the shot)
