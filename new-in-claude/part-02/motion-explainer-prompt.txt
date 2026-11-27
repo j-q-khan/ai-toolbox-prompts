@@ -1,0 +1,23 @@
+# Paste the request below into a Claude chat after choosing Output, then Motion, in the message box.
+# Or go to the Artifacts tab, select a Motion template, and paste it there.
+# Claude Motion is a beta on Team and Enterprise plans. Written from Anthropic's help page, Get started with Claude Motion, checked 2026-11-26.
+# The lines starting with # are notes for you: don't paste them.
+# Fill in the four parts in brackets. Anthropic's help page says to say who will watch it, where it will play, and roughly how long it should be.
+# Attach the report, data or images you want Claude to use, so the animation is built from your own material. Remove anything private first.
+# Motion doesn't use a video generation model, so it doesn't create realistic footage or people. Ask for words, numbers, charts and shapes.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Make a [length, for example 30-second] explainer of [what it explains], for [who will watch], to play [where it will play].
+Use the attached file for every word and number. Don't add facts that aren't in it.
+Show one step per scene, with big, short text that can be taken in at a glance, and simple shapes or charts, no people.
+Keep the same colours and style in every scene, and end on a scene that sums up the steps.
+
+# Example, made up (the one in the video):
+# Make a 30-second explainer of Test Bakery's three onboarding steps, for new starters, to play on their first morning.
+
+# Then change one detail at a time in the same chat, for example:
+Slow down the second scene.
+Change step 2's title to Meet your buddy.
+
+# When it looks right: click Export and choose MP4. Animations start private to you. To share one, open it and click Share.
