@@ -1,0 +1,22 @@
+# Gmail prompts for Gemini's Help me write and Ask Gemini (facts checked 2026-11-26)
+# To keep a copy: paste into Notepad and save with the box called Save as type set to All files,
+# as gmail-reply-prompts.txt. On a Mac, open TextEdit, choose Format, then Make Plain Text, first.
+# Made-up names only. Fill in the [square brackets] with your own details.
+
+# Where to paste (from Gmail Help, answer 13955415):
+# Compose (top left) → prompt bar (bottom), or the Help me write icon → type your prompt → Create
+# Refine: Formalize, Friendly, Shorten, or type an instruction. Undo and Redo sit at the right of the prompt bar.
+
+1. Ask [Sam] to confirm the [chocolate cake order] for [Saturday] at [10 AM]. Sign it [Harbor Street Bakery].
+   Example: Ask Sam to confirm the chocolate cake order for Saturday at 10 AM. Sign it Harbor Street Bakery.
+2. Reply to say thanks for the order, and that delivery is free within [5 miles].
+3. Write a short, polite email asking [test@example.com] to send the invoice by [Friday].
+4. Make it more professional.
+
+# Where to paste (from Gmail Help, answers 14355636 and 14199860):
+# Ask Gemini (top right) → side panel → prompt box at the bottom → Submit
+
+5. Summarise this thread in 3 bullet points.
+6. What time is my next flight?
+
+# Before you send: check every date, name and price in the draft.
