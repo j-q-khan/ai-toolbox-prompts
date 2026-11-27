@@ -1,0 +1,11 @@
+# Anthropic's example policy, copied exactly from code.claude.com/docs/en/approvals (checked 2026-11-26). The lines from "# .claude/approvals.yml" down are the docs' own.
+# To use it, save it as .claude/approvals.yml in a TEST repository's root, in a pull request of its own, and merge it into the default branch.
+# Set up branch protection first. Observe mode is billed. Claude Approvals is a public beta on Team and Enterprise plans, GitHub only.
+# .claude/approvals.yml
+version: 1
+mode: observe
+rules:
+  - purpose: "A change takes two people, and Claude doesn't approve."
+    paths: ["**"]
+    verdict: { claude: comments, seats: 2 }
+    advisory: [claude/code_review]

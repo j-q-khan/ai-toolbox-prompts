@@ -1,0 +1,15 @@
+# Anthropic's starter policy "Keep two people on each change", copied exactly from code.claude.com/docs/en/approvals-setup (checked 2026-11-26). The lines from "# .claude/approvals.yml" down are the docs' own.
+# The second rule asks for two people on any change under .claude/, which includes the policy file. Enforcing it needs two people with write access.
+# To use it, save it as .claude/approvals.yml in a TEST repository, as above. Delete "mode: observe" only when the check's titles match what your reviewers decide.
+# .claude/approvals.yml
+version: 1
+mode: observe
+rules:
+  - purpose: "A change takes two people."
+    paths: ["**"]
+    verdict: { claude: comments, seats: 2 }
+    advisory: [claude/code_review]
+  - purpose: "A change to the review rules takes two people."
+    paths: ["**/.claude/**"]
+    nested: inherit
+    verdict: { claude: comments, seats: 2 }

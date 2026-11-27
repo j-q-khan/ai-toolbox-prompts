@@ -1,0 +1,15 @@
+# Anthropic's example classifier definition, copied exactly from code.claude.com/docs/en/approvals-classifiers (checked 2026-11-26). The lines from "# .claude/classifiers/change_risk/def.yml" down are the docs' own.
+# To use it, save it as .claude/classifiers/change_risk/def.yml on a TEST repository's default branch, and list repo/change_risk under advisory in a rule that has a verdict.
+# Each run is billed, also in observe mode. With no budget key, a run's cost cap is 10 US dollars (the maximum is also 10), and the docs say the bill can be higher.
+# .claude/classifiers/change_risk/def.yml
+version: 1
+description: "How risky is this change to ship?"
+model: opus
+prompt: |
+  Rate how risky this change is to ship.
+  high: it touches sign-in, billing or a data migration.
+  medium: it changes behavior a user can see.
+  low: anything else.
+  When two ratings fit, pick the higher.
+outputs:
+  risk: { type: ordinal, values: [low, medium, high] }
