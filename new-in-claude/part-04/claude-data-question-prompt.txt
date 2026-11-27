@@ -1,0 +1,21 @@
+# Paste the question below into any Claude chat, or go to the Artifacts tab, select Data, and paste it there.
+# Claude Data is generally available on Pro, Max, Ultra, Team and Enterprise plans. Written from Anthropic's help page, Get started with Claude Data, checked 2026-11-26.
+# The lines starting with # are notes for you: don't paste them.
+# Connect your data source first: a data warehouse (such as Amazon Redshift, BigQuery, ClickHouse, Databricks or Snowflake) or another app you've connected to Claude.
+# Anthropic's tip: say what you want to know, not just what to chart, and if the data is in a specific table or app, name it.
+# Fill in the parts in brackets. Use a test warehouse or numbers you're allowed to use, never private data you shouldn't share.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+How do this month's [what you measure] by [what you split it by] compare with last month's? Use the [table name] table in the [warehouse or app name].
+
+# Example, made up (the one in the video):
+# How do this month's sales by item compare with last month's? Use the sales table in the Test Bakery warehouse.
+
+# Then, to change it, ask in the chat. For example:
+Add a filter for item.
+# Or ask for another format: a Scrollyteller, a Visual short or a Visual analysis. For example:
+Turn this month's sales numbers into a data story.
+
+# Before you trust a number: open the chart's query and check what it's counting. If it's wrong, tell Claude what to change.
+# Before you share: everything starts private to you. With live sharing (beta), people see results from your access, so check what the dashboard shows first.
