@@ -1,0 +1,31 @@
+# AI function formulas for Google Sheets (facts checked 2026-11-27)
+# To keep a copy: paste into Notepad and save with the box called Save as type set to All files,
+# as gemini-sheets-ai-formulas.txt. On a Mac, open TextEdit, choose Format, then Make Plain Text, first.
+# Made-up data only. These assume the practice sheet: column A = Order, column B = Comment, header in line 1.
+
+# Steps (from Docs Editors Help, answer 15877199):
+# Click C2, paste, press Enter
+# Select the cell
+# Generate and insert
+# To do the whole column: copy the cell into the cells below, select them, Generate and insert again.
+# New answer: select the cell, then Refresh and insert (you can't undo or redo the function).
+
+1. Paste into C2:
+=AI("Sort this comment as praise, a complaint or a question. Answer with one word.", B2)
+
+2. Paste into D2:
+=AI("Is this comment positive, negative or neutral? Answer with one word.", B2)
+
+3. Paste into E2:
+=AI("Write a short, friendly reply to this customer from Harbor Street Bakery.", B2)
+
+4. =Gemini() works the same way:
+=Gemini("Write a one sentence summary of this comment.", B2)
+
+5. Paste into F2 (a cell range: the order and the comment together):
+=AI("For the customer, write a one sentence summary of their feedback.", A2:B2)
+
+# Limits (Google's words): "Responses are limited to text."
+# "only the first 350 selected cells with AI functions will be generated."
+# It can't see your whole spreadsheet or your Drive files, only the cells you give it.
+# Needs an eligible Google Workspace or Google AI plan.
