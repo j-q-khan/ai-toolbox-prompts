@@ -1,0 +1,11 @@
+# Made-up brainstorm for the video's example, one idea per line as group: idea. Lines starting with # are notes.
+# Paste the lines below into a Claude Whiteboards chat after "Start a whiteboard from this plan:", or use them with plan_outline.py from the build prompt.
+Drinks: iced lemon tea
+Drinks: strawberry lemonade
+Drinks: cold brew
+Tasting day: a Saturday
+Tasting day: free samples
+Tasting day: ask regulars to vote
+Posters and price list: posters by the counter
+Posters and price list: new price list
+Question: when do we order supplies?
