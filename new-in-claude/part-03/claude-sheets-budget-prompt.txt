@@ -1,0 +1,25 @@
+# Paste the request below into any Claude chat, or go to the Artifacts tab, select the Sheets tile, and paste it there.
+# Claude Sheets is a beta on Pro, Max, Ultra, Team and Enterprise plans. Written from Anthropic's help page, Get started with Claude Sheets, checked 2026-11-26.
+# The lines starting with # are notes for you: don't paste them.
+# Fill in the parts in brackets. Anthropic's help page says to say what the sheet is for and what you want to track, and to give Claude the numbers you already have.
+# Give it your own numbers by pasting them, or import a CSV file such as test-bakery-budget.csv. Remove anything private first.
+# Sheets can't pull live data from connected apps, so import or paste the numbers again when they change.
+# To keep a copy: paste this into Notepad and save it with the box called Save as type set to All files.
+# On a Mac: open TextEdit, choose Format, then Make Plain Text, before you paste and save.
+
+Make a [month] budget for [who it's for], with planned and actual spending for each item.
+Add a column for budget left, as planned minus actual, and a total line under the items.
+Keep the formulas in the cells so I can check how each number was worked out.
+
+# Example, made up (the one in the video):
+# Make a December budget for Test Bakery, with planned and actual spending for each item.
+
+# Then, inside the sheet:
+# A formula in plain words: type = in a cell, describe it, then select Write this formula, then Keep or Discard. For example:
+=money left for each item
+# A chart: select the cells, select Insert chart in the toolbar, describe it, then select Make this chart. For example:
+Spending by item as bars
+# A rule: select Conditional formatting, type the rule, then select Write rules. For example:
+red if over budget
+
+# When it looks right: export it as an .xlsx or CSV file. Sheets start private to you. To share one, open it and click Share.
