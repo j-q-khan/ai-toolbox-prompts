@@ -1,0 +1,18 @@
+# Gemini for Home: where each setting is, in the Google Home app.
+# Written from Google Home Help (answers 16618650 and 16613583), checked 2026-11-26. Not tried on a real home.
+# To keep a copy: paste into Notepad (Save as type: All files) or TextEdit (Format, Make Plain Text first).
+
+# Switch to Gemini for Home (one-way: it can't switch back to Google Assistant)
+Notification: Introducing Gemini for Home → Get started
+Profile picture or initial (top right) → Home settings → banner "Set up Gemini for Home for more natural conversations" → Get started
+
+# Gemini for Home settings, and the voice
+Home settings → Gemini for Home voice assistant
+Home settings → Gemini for Home voice assistant → Voice selection
+
+# Home History (kept 18 months by default; 3 or 36 months, or off)
+Profile picture → Home settings → Privacy → Home History
+On a computer: myactivity.google.com/product/home
+
+# The voice and audio setting (off by default; needs Home History on). Its exact name:
+Improve Google services with your voice, audio, and Gemini Live recordings
