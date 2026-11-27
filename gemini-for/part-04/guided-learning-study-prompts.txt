@@ -1,0 +1,22 @@
+# Gemini Guided Learning: study prompts (facts checked 2026-11-27)
+# To keep a copy: paste into Notepad and save with the box called Save as type set to All files,
+# as guided-learning-study-prompts.txt. On a Mac, open TextEdit, choose Format, then Make Plain Text, first.
+# Fill in the [square brackets] with your own topic, level and goal.
+
+# Where to paste (from Gemini Apps Help, answer 16448384):
+# gemini.google.com (signed in)
+# Add Files (in the text box)
+# More tools (bottom of the menu)
+# Guided Learning
+# Type your topic → Submit
+# On a phone: Add Files → Guided Learning (still arriving gradually; use the website if it's missing)
+
+1. Help me study [photosynthesis] for [a test on Friday]. I'm [a beginner], and all I know is [that plants need sunlight]. Make me a study plan first, then teach me one piece at a time and ask me a question after each piece.
+2. Draw a simple diagram of [a leaf] to explain this.
+3. Give me five multiple choice questions with hints.
+4. Create a quiz about [photosynthesis]
+5. Create flashcards about [adding fractions]
+6. I don't know. Can you explain that part another way?
+
+# Quizzes and flashcards open in Canvas, a panel on the right (Gemini Apps Help, answer 16275879).
+# @OpenStax uses OpenStax textbooks: English only, United States only, not under 18, not on work or school accounts.
