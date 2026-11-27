@@ -1,0 +1,3 @@
+# The example from this video, with made-up data only. Swap in your own jobs (nothing private).
+# Written for this video, not run. Works on any model, Free plan included.
+I use Claude for these jobs (made up for Test Bakery): answering quick customer emails, writing a weekly menu, and turning 40 pages of supplier notes into a one-page plan. For each job, tell me whether Sonnet 5.5, Opus 5.5 or Haiku 5.5 fits best and what effort level to start at, in one line each, and say which jobs might need Fable 5.2.

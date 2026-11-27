@@ -1,0 +1,23 @@
+# Claude Code lines for opusplan, from Anthropic's Claude Code docs (model-config and permission-modes), checked 2026-11-26.
+# Written from the docs, not run for this video. Read every line before you use it.
+# Claude Code is on Pro, Max, Ultra, Team and Enterprise, not Free (claude.com/pricing, checked 2026-11-26).
+# Not installed yet? See the Claude Code for Beginners playlist linked in the description.
+# Windows: PowerShell. Mac: Terminal. The lines starting with # are notes for you: don't type them.
+
+# 1. Inside Claude Code, where you type a message: plan with Opus, carry out with Sonnet (this also becomes your default for new sessions):
+/model opusplan
+
+# 2. Go into plan mode with the keyboard: press these two keys together (it's a key press, not something you type).
+#    Each press moves to the next mode, so keep pressing until the bar at the bottom says "plan mode on":
+Shift+Tab
+
+# 3. Or put plan mode on one message only, by starting the message with this:
+/plan
+
+# 4. At the plan approval question, Shift+Tab approves the plan. To stop instead, press Esc first.
+
+# 5. Back to Opus for everything (also your default for new sessions):
+/model opus
+
+# 6. Or Sonnet for everything:
+/model sonnet
